@@ -7,6 +7,7 @@
 // 2. Include any default variable overrides here
 $body-bg: #FFF;
 $body-color: #111;
+$enable-cssgrid: true;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../node_modules/bootstrap/scss/variables";
@@ -38,6 +39,10 @@ $body-color: #111;
     src: url(../assets/fonts/Brown-Regular.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Brown Regular Alt';
+    src: url(../assets/fonts/Brown-RegularAlt.ttf) format('truetype');
+}
 .logo_text {
     font-family: 'Brown Regular';
 }
@@ -52,18 +57,17 @@ $body-color: #111;
     position: absolute;
 }
 
-#FIRST_LINE {
-    margin-top: 25px;
+#HEADER_LINE {
+    margin-top: 1.2em;
 }
 
+.octobre_row {
+    margin-top: 3em;
+}
 
-.second_line_bg {
+.image_line {
     border-radius: 20px;
-    background-image: url(../assets/photos/autumn-tree-1408307.jpg);
-    background-size: 100%;
-    //font-size: 34px;
-    font-family: 'Brown Regular';
-    color: #FFF;
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15%;
@@ -71,6 +75,48 @@ $body-color: #111;
     padding-left: 10%;
     padding-right: 10%;
     width: 94%;
+}
+
+#FIRST_IMAGE {
+    background-image: url(../assets/photos/autumn-tree-1408307.jpg);
+    background-size: 100%;
+    //font-size: 34px;
+    font-family: 'Brown Regular';
+    color: #FFF;
+    
+}
+
+#SECOND_IMAGE {
+    background-image: url(../assets/photos/autumn-tree-1408307.jpg);
+    background-size: 100%;
+    //font-size: 34px;
+    font-family: 'Brown Regular';
+    color: #FFF;
+    aspect-ratio: 1/1;
+    
+}
+
+#CASE_STUDY_1 {
+    
+}
+
+button {
+    border-radius: 20px;
+    font-size: 1.15em;
+    font-family: 'Brown Regular';   
+    padding: 0.5em;
+    width: 70%;
+    border-width: 0;
+}
+
+.octobre_black {
+    background-color: #1C1C1C;
+    color: #FFF;
+}
+
+.octobre_light {
+    color: #1C1C1C;
+    background-color: #FFF;
 }
 
 .main_text {
@@ -83,10 +129,105 @@ $body-color: #111;
 }
 
 .quefaisons_label {
-    margin-top: 2em;
-    margin-bottom: 0.9em;
     font-size: 1.2em;
     font-family: 'Brown Regular';
     color: #5C5148;
     opacity: 75%;
 }
+
+.verbatim_parent {
+    position: relative;
+}
+.verbatim {
+    font-size: 1.2em;
+    position: absolute;
+    font-family: 'Brown Regular';
+    top: 70%;
+    left: 28%;
+    width: 65%;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 1.5em;
+}
+
+.octobre_content_box_white {
+    font-family: 'Brown Regular Alt';
+    margin-top: 7em;
+    margin-bottom: 7em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.octobre_lightgray_title {
+    padding: .7em;
+    margin-top: 1.5em;
+    color: #9A9A9A;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.octobre_deepdark_desc {
+    padding: 1.5em;
+    font-size: 1.8em;
+    color: #1C1C1C;
+    letter-spacing: 0.1em;
+}
+
+.octobre_domains_array {
+    padding: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.octobre_domains_array > .col {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 30px;
+    background-color: #F4F0EE;
+    text-align: center;
+    font-family: 'Brown Regular';
+    font-style: 1.2em;
+    letter-spacing: 0.1em;
+}
+
+.octobre_domains_array > .col > .octobre_picto > img {
+    max-width: 40%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.case_studies {
+    border-top: 1px solid #E0D0D0;
+    padding-top: 1em;
+}
+
+.case_studies_intro {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+.case_studies_blocks {
+    --bs-columns: 6;
+}
+
+.case_studies_block_large {
+    grid-column: auto/span 6;
+}
+.case_studies_block_small {
+    grid-column: auto/span 6;
+}
+
+@include media-breakpoint-up(lg) { 
+    .case_studies_block_large {
+        grid-column: auto/span 8;
+    }
+    .case_studies_block_small {
+        grid-column: auto/span 4;
+    }
+    .case_studies_blocks {
+        --bs-columns: 12;
+    }
+ }
