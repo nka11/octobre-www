@@ -98,6 +98,78 @@ $enable-cssgrid: true;
 
 #CASE_STUDY_1 {
     
+    font-family: 'Brown Regular';
+}
+
+#CASE_STUDY_1 > div.case_study_block_large {
+    border-radius: 20px;
+    background-image: url(../assets/photos/autumn-tree-1408307.jpg);
+    background-size: 100%;
+    //font-size: 34px;
+}
+
+#CASE_STUDY_1 > div.case_study_block_large > div.case_study_title {
+    background-color: #EDDFD4;
+    border-radius: 20px;
+    color: #000000;
+    display: inline-block;
+    padding: 0.4em;
+    margin: 0.5em;
+}
+
+#CASE_STUDY_1 > div.case_study_block_large > div.case_study_description {
+    border-radius: 20px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0.4em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 5em;
+}
+
+#CASE_STUDY_1 > div.case_study_block_small {
+    background-color: #EDDFD4;
+    border-radius: 20px;
+    color: #000;
+}
+
+// -----------
+
+#CASE_STUDY_2 {
+    flex-direction: row-reverse;
+    font-family: 'Brown Regular';
+}
+
+#CASE_STUDY_2 > div.case_study_block_large {
+    border-radius: 20px;
+    background-image: url(../assets/photos/autumn-tree-1408307.jpg);
+    background-size: 100%;
+    //font-size: 34px;
+}
+
+#CASE_STUDY_2 > div.case_study_block_large > div.case_study_title {
+    background-color: #EDDFD4;
+    border-radius: 20px;
+    color: #000000;
+    display: inline-block;
+    padding: 0.4em;
+    margin: 0.5em;
+}
+
+#CASE_STUDY_2 > div.case_study_block_large > div.case_study_description {
+    border-radius: 20px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0.4em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 5em;
+}
+
+#CASE_STUDY_2 > div.case_study_block_small {
+    background-color: #EDDFD4;
+    border-radius: 20px;
+    color: #000;
 }
 
 button {
@@ -155,10 +227,10 @@ button {
     margin-top: 7em;
     margin-bottom: 7em;
     background-color: #fff;
-    text-align: center;
 }
 
 .octobre_lightgray_title {
+    text-align: center;
     padding: .7em;
     margin-top: 1.5em;
     color: #9A9A9A;
@@ -171,15 +243,18 @@ button {
     font-size: 1.8em;
     color: #1C1C1C;
     letter-spacing: 0.1em;
+    text-align: center;
 }
 
-.octobre_domains_array {
+.octobre_domains_grid {
+    text-align: center;
+    --bs-columns: 2;
     padding: 0.5em;
     margin-left: 1em;
     margin-right: 1em;
 }
 
-.octobre_domains_array > .col {
+.octobre_domains_grid > div {
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-top: 3em;
@@ -194,10 +269,16 @@ button {
     letter-spacing: 0.1em;
 }
 
-.octobre_domains_array > .col > .octobre_picto > img {
+.octobre_domains_grid > div > .octobre_picto > img {
     max-width: 40%;
     padding-top: 1em;
     padding-bottom: 2em;
+}
+
+@include media-breakpoint-up(md) {
+    .octobre_domains_grid {
+        --bs-columns: 4;
+    }
 }
 
 .case_studies {
@@ -211,23 +292,25 @@ button {
 }
 .case_studies_blocks {
     --bs-columns: 6;
+    margin-bottom: 1em;
 }
 
-.case_studies_block_large {
+.case_study_block_large {
     grid-column: auto/span 6;
 }
-.case_studies_block_small {
+.case_study_block_small {
     grid-column: auto/span 6;
 }
 
 @include media-breakpoint-up(lg) { 
-    .case_studies_block_large {
+    .case_study_block_large {
         grid-column: auto/span 8;
     }
-    .case_studies_block_small {
+    .case_study_block_small {
         grid-column: auto/span 4;
     }
     .case_studies_blocks {
         --bs-columns: 12;
+        margin-bottom: 1em;
     }
  }
