@@ -1,0 +1,92 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$body-bg: #FFF;
+$body-color: #111;
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+@font-face {
+    font-family: 'Brown Regular';
+    src: url(../assets/fonts/Brown-Regular.ttf) format('truetype');
+}
+
+.logo_text {
+    font-family: 'Brown Regular';
+}
+
+#FIRST_BACKGROUND {
+    background-color: #EDDFD4;
+    z-index: -1000;
+    top: 15em;
+    left: 0;
+    width: 100%;
+    height: 1245px;
+    position: absolute;
+}
+
+#FIRST_LINE {
+    margin-top: 25px;
+}
+
+
+.second_line_bg {
+    border-radius: 20px;
+    background-image: url(../assets/photos/autumn-tree-1408307.jpg);
+    background-size: 100%;
+    //font-size: 34px;
+    font-family: 'Brown Regular';
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 94%;
+}
+
+.main_text {
+    font-size: 1.8em;
+    font-family: 'Brown Regular';
+}
+.main_text_dark {
+    color: #1C1C1C;
+    text-align: center;
+}
+
+.quefaisons_label {
+    margin-top: 2em;
+    margin-bottom: 0.9em;
+    font-size: 1.2em;
+    font-family: 'Brown Regular';
+    color: #5C5148;
+    opacity: 75%;
+}

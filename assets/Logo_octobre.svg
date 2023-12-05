@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="154px" height="49px" viewBox="0 0 154 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E1F68E85-BA40-490C-B841-7DDF46BA5171</title>
+    <style>
+        @font-face {
+            font-family: 'Brown Regular';
+            src: url(fonts/Brown-Regular.ttf) format('truetype');
+        }
+    </style>
+    <defs>
+        <linearGradient x1="14.1851327%" y1="85.4110516%" x2="100%" y2="18.3966546%" id="linearGradient-1">
+            <stop stop-color="#B5530C" offset="0%"></stop>
+            <stop stop-color="#EB9D34" offset="49.261484%"></stop>
+            <stop stop-color="#F72900" offset="100%"></stop>
+        </linearGradient>
+        <path d="M78,40 C84.0751322,40 89,35.0751322 89,29 C89,22.9248678 84.0751322,18 78,18 C71.9248678,18 67,22.9248678 67,29 C67,35.0751322 71.9248678,40 78,40 Z" id="path-2"></path>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="22" height="22" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MOBILE" transform="translate(-130, -25)">
+            <g id="Group-5" transform="translate(130, 25)">
+                <text id="oct" font-family="Brown Regular, Brown" font-size="44" font-weight="normal" line-spacing="49" letter-spacing="-1.00722892" fill="#1C1C1C">
+                    <tspan x="0" y="33">oct</tspan>
+                </text>
+                <text id="bre" font-family="Brown Regular, Brown" font-size="44" font-weight="normal" line-spacing="49" letter-spacing="-1.00722892" fill="#1C1C1C">
+                    <tspan x="90" y="33">bre</tspan>
+                </text>
+                <use id="Oval-Copy" stroke="url(#linearGradient-1)" mask="url(#mask-3)" stroke-width="8" stroke-linejoin="round" stroke-dasharray="6,2.6" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>
