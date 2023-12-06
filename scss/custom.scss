@@ -102,36 +102,70 @@ $enable-cssgrid: true;
 }
 
 #CASE_STUDY_1 > div.case_study_block_large {
-    border-radius: 20px;
+    border-radius: 30px;
     background-image: url(../assets/photos/autumn-tree-1408307.jpg);
     background-size: 100%;
+    padding: 3em;
+
     //font-size: 34px;
 }
 
 #CASE_STUDY_1 > div.case_study_block_large > div.case_study_title {
     background-color: #EDDFD4;
-    border-radius: 20px;
+    border-radius: 30px;
     color: #000000;
     display: inline-block;
     padding: 0.4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
     margin: 0.5em;
+    margin-bottom: 5em;
+    font-weight: 500;
 }
 
 #CASE_STUDY_1 > div.case_study_block_large > div.case_study_description {
+
     border-radius: 20px;
     color: #FFFFFF;
     display: inline-block;
     padding: 0.4em;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    padding-left: 5em;
+    font-size: 24px
 }
 
 #CASE_STUDY_1 > div.case_study_block_small {
     background-color: #EDDFD4;
     border-radius: 20px;
     color: #000;
+    padding: 3em;
+
 }
+
+#CASE_STUDY_1 > div.case_study_block_small > div.case_study_title {
+    background-color: hsl(26, 41%, 88%);
+    border-radius: 20px;
+    color: #000;
+    margin-bottom: 5em;
+}
+
+#CASE_STUDY_1 > div.case_study_block_small > div.case_study_number {
+    background-color: hsl(26, 41%, 88%);
+    border-radius: 20px;
+    color: #000;
+    font-size: 66px;
+    font-weight: 500;
+    margin-bottom: 0.3em;
+
+}
+
+#CASE_STUDY_1 > div.case_study_block_small > div.case_study_description {
+    background-color: hsl(26, 41%, 88%);
+    border-radius: 20px;
+    color: #000;
+    font-size: 26px;
+    padding-bottom: 1em;
+}
+
+
 
 // -----------
 
@@ -141,19 +175,26 @@ $enable-cssgrid: true;
 }
 
 #CASE_STUDY_2 > div.case_study_block_large {
-    border-radius: 20px;
+    border-radius: 30px;
     background-image: url(../assets/photos/autumn-tree-1408307.jpg);
     background-size: 100%;
+    padding: 3em;
+
     //font-size: 34px;
 }
 
 #CASE_STUDY_2 > div.case_study_block_large > div.case_study_title {
     background-color: #DDE8D8;
-    border-radius: 20px;
+    border-radius: 30px;
     color: #000000;
     display: inline-block;
     padding: 0.4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
     margin: 0.5em;
+    margin-bottom: 5em;
+    font-weight: 500;
+
 }
 
 #CASE_STUDY_2 > div.case_study_block_large > div.case_study_description {
@@ -161,24 +202,44 @@ $enable-cssgrid: true;
     color: #FFFFFF;
     display: inline-block;
     padding: 0.4em;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    padding-left: 5em;
+    font-size: 24px
+
 }
 
 #CASE_STUDY_2 > div.case_study_block_small {
     background-color: #DDE8D8;
     border-radius: 20px;
     color: #000;
+    padding: 3em;
+    word-wrap: break-word;
+}
+
+
+#CASE_STUDY_2 > div.case_study_block_small > div.case_study_title {
+    border-radius: 20px;
+    color: #000;
+    margin-bottom: 5em;
+}
+
+
+#CASE_STUDY_2 > div.case_study_block_small > div.case_study_description {
+    border-radius: 20px;
+    color: #000;
+    font-size:40px;
+    font-weight: 500;
+    padding-bottom: 1em;
+    letter-spacing: 0px;
 }
 
 button {
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 1.15em;
     font-family: 'Brown Regular';   
     padding: 0.5em;
-    width: 70%;
+    padding-left: 1em;
+    padding-right: 1em;
     border-width: 0;
+    
 }
 
 .octobre_black {
@@ -242,7 +303,7 @@ button {
     padding: 1.5em;
     font-size: 1.8em;
     color: #1C1C1C;
-    letter-spacing: 0.1em;
+    letter-spacing: 0em;
     text-align: center;
 }
 
@@ -306,6 +367,8 @@ button {
     flex: 0 100%;
 }
 
+
+
 @include media-breakpoint-up(md) { 
     .case_study_block_large {
         flex: 0 59%;
@@ -315,4 +378,7 @@ button {
         flex: 0 38.5%;
         max-width: 38.5%;
     }
+
  }
+
+
