@@ -175,7 +175,7 @@ $enable-cssgrid: true;
 
 #CASE_STUDY_2 > div.case_study_block_large {
     border-radius: 30px;
-    background-image: url(../assets/photos/autumn-tree-1408307.jpg);
+    background-image: url(../assets/photos/case_study_2_back.png);
     background-size: 100%;
     padding: 3em;
 
@@ -338,8 +338,14 @@ button {
 
 .partners {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners img {
+    margin: 1em;
 }
 
 
@@ -373,6 +379,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .contact-us .contact-us-title {
@@ -386,14 +393,14 @@ button {
 
 .picture {
     margin: 2rem;
-
+    
 
 }
 
 .picture img {
     border-radius: 30px;
-    width: 500px;
-    height: 500px;
+    width: 20em;
+    height: 20em;
 
 }
 
@@ -402,14 +409,15 @@ button {
 }
 
 .form input {
-    width: 20em;
-    height: 3em;
+    width: 49%;
+    height: 3.8em;
     border: 2px solid #CFCFE0;
     border-radius: 13px;
     background-color: #FCFCFC;
     margin-bottom: 1em;
-    padding: 1em;
+    padding-left: 0.5em;
     font-family: 'Brown Regular Alt';
+    font-size: 14px;
 
 }
 
@@ -417,7 +425,6 @@ button {
     font-family: 'Brown Regular Alt';
     color: #768295;
     letter-spacing: 0;
-    line-height: 18px;
     margin-bottom: 1em;
 }
 
@@ -433,6 +440,7 @@ button {
     width: 100%;
     height: 10em;
     padding: 1em;
+    font-size: 14px;
 }
 
 .form button {
@@ -441,9 +449,149 @@ button {
     color: white;
 }
 
+.footer  {
+    border-top: 1px solid #E0D0D0;
+    padding-top: 4em;
+    font-family: 'Brown Regular Alt';
+    margin-bottom: 3em;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .footer-menu {
+    margin-top: 2em;
+    font-size: 16px;
+    color: #768295;
+    text-align: left;
+    
+}
+
+.footer-menu .menu-1 {
+    width: 40%;
+}
+.footer-menu .menu-2 {
+    width: 40%;
+}
+
+.footer .transformation {
+    display: flex;
+    margin-top: 2em;
+}
+
+.footer .transformation img {
+    width: 10em;
+}
+
+.footer .transformation p {
+    color: #768295;
+    font-size: 14px;
+    width: 49%;
+
+}
+
+.footer .button-mail {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+.footer .button-mail button {
+    background-color: #fff;
+    font-size: 14px;
+    border: 1px solid #CFCFE0;
+    border-radius: 24px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.footer .button-mail span {
+    padding: 1em;
+}
+
+.footer .rights  {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .rights p {
+    text-align: center;
+    color: #768295;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+
+}
 @include media-breakpoint-up(lg) {
     .octobre_domains_grid {
         --bs-columns: 4;
+    }
+    .contact-us {
+        display: flex;
+    }
+    
+    .picture {
+        flex: 1; /* Permet au conteneur de prendre autant d'espace que possible */
+        margin-right: 20px; /* Espace entre les deux divs */
+    }
+    
+    .form {
+        flex: 1; /* Permet au conteneur de prendre autant d'espace que possible */
+    }
+
+    .contact-us .picture img {
+        width: 30em;
+        height: 30em;
+    }
+
+    .contact-us .form input::placeholder {
+        font-size: 16px;
+    }
+
+    .footer .logo {
+        display: block;
+    }
+
+    .footer-container {
+        display: flex;
+    }
+    
+    .footer-container .transformation {
+        order: -1;
+    }
+
+    .footer-container .footer-menu {
+        margin-left: 400px;
+
+    }
+
+    .footer .text-partenaire {
+        flex: none;
+        order: -1;
+    }
+
+    .footer .mail-rights {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer .mail-rights .rights {
+        order: -1;
+        padding-top: 1.5em;
+        margin-left: 6em;
+    }
+
+    .footer .mail-rights .button-mail button {
+        padding: 0.5em;
+    }
+
+    .footer .mail-rights .button-mail span {
+        padding-left: 0.5em;
     }
 }
 
@@ -471,7 +619,6 @@ button {
 .case_study_block_small {
     flex: 0 100%;
 }
-
 
 
 @include media-breakpoint-up(md) { 

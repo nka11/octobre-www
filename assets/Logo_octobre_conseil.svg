@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="279px" height="52px" viewBox="0 0 279 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E0DF8195-BB19-4516-9267-2490CC9B6BF9</title>
+        <style>
+        @font-face {
+            font-family: 'Brown Regular';
+            src: url(fonts/Brown-Regular.ttf) format('truetype');
+        }
+    </style>
+    <defs>
+        <linearGradient x1="14.1851327%" y1="85.4110516%" x2="100%" y2="18.3966546%" id="linearGradient-1">
+            <stop stop-color="#B5530C" offset="0%"></stop>
+            <stop stop-color="#EB9D34" offset="49.261484%"></stop>
+            <stop stop-color="#F72900" offset="100%"></stop>
+        </linearGradient>
+        <path d="M93,42 C100.179702,42 106,36.1797017 106,29 C106,21.8202983 100.179702,16 93,16 C85.8202983,16 80,21.8202983 80,29 C80,36.1797017 85.8202983,42 93,42 Z" id="path-2"></path>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="26" height="26" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Capture-d’écran-2023-11-22-à-16.31.05" transform="translate(-201, -5557)">
+            <g id="Group-17-Copy" transform="translate(201, 5557)">
+                <g id="Group-5">
+                    <text id="oct" font-family="Brown-Regular, Brown" font-size="52" font-weight="normal" line-spacing="49" letter-spacing="-1.19036145" fill="#1C1C1C">
+                        <tspan x="0" y="39">oct</tspan>
+                    </text>
+                    <text id="bre" font-family="Brown-Regular, Brown" font-size="52" font-weight="normal" line-spacing="49" letter-spacing="-1.19036145" fill="#1C1C1C">
+                        <tspan x="107" y="39">bre</tspan>
+                    </text>
+                    <use id="Oval-Copy" stroke="url(#linearGradient-1)" mask="url(#mask-3)" stroke-width="8" stroke-linejoin="round" stroke-dasharray="6,2.6" xlink:href="#path-2"></use>
+                </g>
+                <text id="Conseil" font-family="Brown-Regular, Brown" font-size="16" font-weight="normal" line-spacing="44" fill="#000000">
+                    <tspan x="223.752" y="23">Conseil</tspan>
+                </text>
+                <line x1="206.5" y1="16.5" x2="206.5" y2="41.5" id="Line-3" stroke="#979797" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>
