@@ -7386,6 +7386,10 @@ progress {
   font-family: "Brown Regular Alt";
   src: url(../assets/fonts/Brown-RegularAlt.ttf) format("truetype");
 }
+body, html {
+  overflow-x: hidden;
+}
+
 .logo_text {
   font-family: "Brown Regular";
 }
@@ -7781,6 +7785,13 @@ button {
   width: 100%;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer .footer-menu {
   margin-top: 2em;
   font-size: 16px;
@@ -7871,6 +7882,9 @@ button {
   }
   .footer-container {
     display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: normal;
   }
   .footer-container .transformation {
     order: -1;
@@ -7888,11 +7902,12 @@ button {
   }
   .footer .mail-rights .rights {
     order: -1;
-    padding-top: 1.5em;
+    padding-top: 0.8em;
     margin-left: 6em;
   }
   .footer .mail-rights .button-mail button {
-    padding: 0.5em;
+    padding: 1em;
+    height: min-content;
   }
   .footer .mail-rights .button-mail span {
     padding-left: 0.5em;
@@ -7933,6 +7948,79 @@ button {
     flex: 0 38.5%;
     max-width: 38.5%;
   }
+  .expertise {
+    background-color: #F4F0EE;
+    border-radius: 30px;
+    display: block !important;
+  }
+  .card img {
+    width: 63px;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto;
+    padding-top: 5em;
+  }
+  .card .card-body {
+    display: flex;
+    justify-content: center;
+  }
+  .card .card-body p {
+    width: 70%;
+    margin-top: 3em !important;
+    margin-bottom: 3em !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    margin-left: 0px !important;
+  }
+  .card .card-body #break {
+    width: 60%;
+  }
+  .button_row {
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+}
+/**
+
+
+
+
+**/
+.octobre_content_box_white {
+  font-family: "Brown Regular Alt";
+  margin-top: 7em;
+  margin-bottom: 3em;
+  background-color: #fff;
+}
+
+.expertise {
+  background-color: #F4F0EE;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.card img {
+  width: 50px;
+  margin-left: 20px;
+}
+
+.card .card-body {
+  display: flex;
+}
+
+.card .card-body p {
+  width: 70%;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.button_row {
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
 /*# sourceMappingURL=custom.css.map */
