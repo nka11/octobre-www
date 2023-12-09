@@ -1,0 +1,118 @@
+
+.first_section {
+    font-family: 'Brown Regular Alt';
+}
+
+.first_section .quefaisons_label {
+    font-size: 1.2em;
+    font-family: 'Brown Regular';
+    color: #5C5148;
+    opacity: 75%;
+}
+
+.first_section .split {
+    margin-top: 2em;
+    background: linear-gradient(
+        to top,
+        #EDDFD4 0%,
+        #EDDFD4 50%,
+        white 50%,
+        white 100%
+    );
+}
+
+.first_section .split .image-container {
+    position: relative;
+    margin: 0 10%; /* Adjust the margin values as needed */
+    max-width: 80%; /* Adjust the max-width as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_section .split img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.first_section .split .text-overlay {
+    position: absolute;
+    text-align: center;
+    max-width: 80%; /* Adjust the max-width as needed */
+    box-sizing: border-box; /* Include padding and borders in the total width and height */
+    padding: 20px; /* Add padding as needed */
+}
+
+.first_section .split .text-overlay p {
+    font-size: 2.5vw; /* Use percentage for responsive font size */
+    color: #fff; /* Adjust the text color as needed */
+    /* Add any additional styles as needed */
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-bottom: 2em;
+    max-width: 100%; /* Allow text to scale with the image */
+}
+
+
+
+
+.first_section .about-us {
+    background-color: #EDDFD4;
+
+}
+.first_section .about-us h5 {
+    text-align: center;
+    padding-top: 4em;
+
+}
+
+.first_section .about-us h3 {
+
+    color: #1C1C1C;
+    font-size: 2em;
+    letter-spacing: 0;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.first_section .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_section .buttons button {
+    margin: 1em;
+    margin-top: 2em;
+    max-width: 200px; /* ou toute autre valeur en pixels */
+    width: 100%;
+}
+
+.first_section .buttons #contact-button {
+    background-color: #1C1C1C;
+    color: #fff;
+}
+
+.first_section .about-us2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    padding-bottom: 7em;
+}
+
+
+.first_section .about-us2 .image-container {
+    margin: 0 10%; /* Adjust the margin values as needed */
+    max-width: 80%; /* Adjust the max-width as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_section .about-us2 img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+}
