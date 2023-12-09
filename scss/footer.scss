@@ -1,0 +1,133 @@
+.footer  {
+    border-top: 1px solid #E0D0D0;
+    padding-top: 4em;
+    font-family: 'Brown Regular Alt';
+    margin-bottom: 3em;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer .footer-menu {
+    margin-top: 2em;
+    font-size: 16px;
+    color: #768295;
+    text-align: left;
+    
+}
+
+.footer-menu .menu-1 {
+    width: 40%;
+}
+.footer-menu .menu-2 {
+    width: 40%;
+}
+
+.footer .transformation {
+    display: flex;
+    margin-top: 2em;
+}
+
+.footer .transformation img {
+    width: 10em;
+}
+
+.footer .transformation p {
+    color: #768295;
+    font-size: 14px;
+    width: 49%;
+
+}
+
+.footer .button-mail {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+.footer .button-mail button {
+    background-color: #fff;
+    font-size: 14px;
+    border: 1px solid #CFCFE0;
+    border-radius: 24px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.footer .button-mail span {
+    padding: 1em;
+}
+
+.footer .rights  {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .rights p {
+    text-align: center;
+    color: #768295;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+}
+
+@include media-breakpoint-up(lg) {
+
+    .footer .logo {
+        display: block;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: normal;
+        align-items: normal;
+    }
+    
+    .footer-container .transformation {
+        order: -1;
+    }
+
+    .footer-container .footer-menu {
+        margin-left: 400px;
+
+    }
+
+    .footer .text-partenaire {
+        flex: none;
+        order: -1;
+    }
+
+    .footer .mail-rights {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer .mail-rights .rights {
+        order: -1;
+        padding-top: 0.8em;
+        margin-left: 6em;
+    }
+
+    .footer .mail-rights .button-mail button {
+        padding: 1em;
+        height: min-content;
+    }
+
+    .footer .mail-rights .button-mail span {
+        padding-left: 0.5em;
+    }
+}

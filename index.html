@@ -7,7 +7,6 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
-    <div id="FIRST_BACKGROUND"></div>
     <header id="HEADER_LINE" class="container-md text-center">
         <div class="row">
             <div class="col">
@@ -48,46 +47,32 @@
           </div>
     </header>
     <main>
-        <section id="FIRST_IMAGE" class="container-md text-center image_line">
-            <div class="row">
-                <div class="col main_text main_text_light" >
-                    Construisons une stratégie digitale au service de l'efficacité opérationnelle et commerciale
+        <section class="first_section">
+            <div class="split">
+                <div class="image-container">
+                    <img src="./assets/photos/first_back.png" />
+                    <div class="text-overlay">
+                        <p>Construisons une strategie digitale ambitieuse pour ameliorer l'efficacité opérationelle et commerciale</p>
+                        <img src="./assets/pictos/arrow.svg" style="width: 2vw;">
+                    </div>
                 </div>
             </div>
-        </section>
-        <section id="THIRD_LINE" class="container-md text-center">
-            <div class="row octobre_row">
-                <div class="col main_text quefaisons_label" >
-                        QUE FAISONS-NOUS ?
+            
+            
+            <div class="about-us">
+                <h5 class="quefaisons_label">QUE FAISONS-NOUS ?</h5>
+                <h3>Nous aidons les entreprises à entrer dans l’ère digitale avec pragmatisme et creativite</h3>
+                <div class="buttons">
+                    <button>Prendre RDV</button>
+                    <button id="contact-button">Contact</button>
                 </div>
-            </div>
-            <div class="row octobre_row">
-                <div class="col main_text main_text_dark">
-                    Nous aidons les entreprises à entrer dans l’ère digitale avec pragmatisme et creativite
+                <div class="about-us2">
+                    <div class="image-container">
+                        <img src="./assets/photos/first_back.png" />
+                    </div>
                 </div>
+            
             </div>
-            <div class="row octobre_row">
-                <div class="col">
-                    <button class="octobre_light">Prendre RDV</button>
-                </div>
-                <div class="col">
-                    <button class="octobre_black">Contact</button>
-            </div>
-            </div>
-        </section>
-        <section class="container-md verbatim_parent">
-            <div id="SECOND_IMAGE" class="image_line">
-            </div>
-            <div class="row">
-                <div class="verbatim">
-                    80 % des utilisateurs estiment 
-    que les évolutions ont un impact 
-    positif sur leur efficacité.
-    
-                </div>
-    
-            </div>
-    
         </section>
         <section class="container-sm octobre_content_box_white">
             <div class="row">
@@ -100,7 +85,7 @@
                     A la croisée des chemin entre l'IT et les Métiers
                 </div>
             </div>
-            <div class="container mt-4">
+            <div class="container mt-4 expertise-presentation">
                 <div class="row justify-content-center">
                     <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card expertise h-100">
@@ -156,53 +141,61 @@
                     Nos clients témoignent
                 </div>
             </div>
-            <div id="CASE_STUDY_1" class="case_studies_blocks case_study_left">
-                <div class="case_study_block_large">
-                    <h3>PRÉVENTION DES RISQUES</h3>
-                    <div class="case_study_description">
-                        <div>
-                            Pascal, directeur commercial, dans le domaine aéronautique (BtB)
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
+                    <div class="card  case-study-large-card h-100 case-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Prévention des risques</h5>
+                            <h3 class="card-text">Octobre nous a dessiner une infrastructure souveraine pour le traitement données sensibles.</h3>
                         </div>
-                        <blockquote>
-                            Octobre a réalisé un audit de notre système et nous a accompagné pour obtenir les certifications de conformité exigées par nos partenaires .</div>
-                        </blockquote>
-                </div>
-                <div class="case_study_block_small">
-                    <div class="case_study_title">UNE ELIGIBILITÉ SUR</div>
-                    <div class="case_study_number">+ 30 %</div>
-                    <div class="case_study_description">d'appels d'offre supplémentaire en moins d'un an.</div>
-                </div>
-            </div>
-            <div id="CASE_STUDY_2" class="case_studies_blocks case_study_right">
-                <div class="case_study_block_large">
-                    <h3>EXPERTISE DEVOPS</h3>
-                    <div class="case_study_description">
-                        <div>Robert, Directeur général, Editeur BtB de solutions métiers.</div>
-                        <blockquote>
-                            "L'expertise Devops d'octobre nous a permis d'accélérer l'évolution des fonctionnalité de notre produit et de pouvoir apporter une réponses rapides aux demandes des clients.  
-                        </blockquote>
                     </div>
                 </div>
-                <div class="case_study_block_small">
-                    <div class="case_study_title">AMELIORATION DE</div>
-                    <div class="case_study_number">+ 20 %</div>
-                    <div class="case_study_description">de satisfaction client en augmentant la fréquence de mise à jour de notre produit.</div>
-                </div>
-            </div>
-            <div id="CASE_STUDY_3" class="case_studies_blocks case_study_left">
-                <div class="case_study_block_large">
-                    <h3>Marque employeur 3.0</h3>
-                    <div class="case_study_description">
-                        <div>Xavier, DRH, ETI dans le domaine de la logistique</div>
-                        <blockquote>
-                            "L'amélioration de notre CRM et de notre processus de recrutement nous a permis d'améliorer l'expérience candidats.
-                        </blockquote>
+                <div class="col-lg-4 col-md-5 col-sm-12 mb-4">
+                    <div class="card case-study-small-card h-100 case-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Une egelibite sur</h5>
+                            <h3 class="card-text">+30%</h3>
+                            <h4 class="card-text">d'appels d'offre supplémentaire en moins d'un an.</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="case_study_block_small">
-                    <div class="case_study_title">ACQUISITION DE</div>
-                    <div class="case_study_number">+ 20 %</div>
-                    <div class="case_study_description">sur les fonctions supports et commerciales et une réduction significative du Turn Over.</div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-5 col-sm-12 mb-4">
+                    <div class="card case-study-small-card h-100 case-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Amelioration de</h5>
+                            <h3 class="card-text">+20%</h3>
+                            <h4 class="card-text">de satisfaction client en augmentant la fréquence de mise à jour de notre produit.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
+                    <div class="card  case-study-large-card h-100 case-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Expertise DevOps</h5>
+                            <h3 class="card-text">Octobre nous a dessiner une infrastructure souveraine pour le traitement données sensibles.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
+                    <div class="card  case-study-large-card h-100 case-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Marque employeur 3.0</h5>
+                            <h3 class="card-text">L'amélioration de notre CRM et de notre processus de recrutement nous a permis d'améliorer l'expérience candidats.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 mb-4">
+                    <div class="card case-study-small-card h-100 case-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Acquisition de</h5>
+                            <h3 class="card-text">+40%</h3>
+                            <h4 class="card-text">sur les fonctions supports et commerciales et une réduction significative du Turn Over.</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -224,53 +217,69 @@
                 </div>
             </div>
         </section>
-        <section class="container-md our-team">
+        <section class="container-fluid our-team">
             <div class="row our-team-title">Notre équipe</div>
-            <div class="row" style="margin-bottom: 1em;">
-                <div class="col">
+            <div class="row cards-container">
+                <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
                     <div class="card team-card">
                         <div class="card-body">
-                          This is some text within a card body.
+                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                            <h5>Nicolas Karageuzian</h5>
+                            <h6>Architect Solution</h6>
+                            <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
                     <div class="card team-card">
                         <div class="card-body">
-                          This is some text within a card body.
+                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                            <h5>Nicolas Karageuzian</h5>
+                            <h6>Architect Solution</h6>
+                            <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
                     <div class="card team-card">
                         <div class="card-body">
-                          This is some text within a card body.
+                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                            <h5>Nicolas Karageuzian</h5>
+                            <h6>Architect Solution</h6>
+                            <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                         </div>
-                      </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card team-card">
-                        <div class="card-body">
-                          This is some text within a card body.
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card team-card">
+                            <div class="card-body">
+                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                <h5>Nicolas Karageuzian</h5>
+                                <h6>Architect Solution</h6>
+                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
+                            </div>
                         </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card team-card">
-                        <div class="card-body">
-                          This is some text within a card body.
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
+                        <div class="card team-card">
+                            <div class="card-body">
+                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                <h5>Nicolas Karageuzian</h5>
+                                <h6>Architect Solution</h6>
+                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
+                            </div>
                         </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card team-card">
-                        <div class="card-body">
-                          This is some text within a card body.
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card team-card">
+                            <div class="card-body">
+                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                <h5>Nicolas Karageuzian</h5>
+                                <h6>Architect Solution</h6>
+                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
+                            </div>
                         </div>
-                      </div>
-                </div>
+                    </div>
             </div>
         </section>
         <section class="container-lg contact-us">
