@@ -103,16 +103,18 @@
 }
 
 
-.first_section .about-us2 .image-container {
+.first_section .about-us2 .main_use_case {
+    border-radius: 30px;
     margin: 0 10%; /* Adjust the margin values as needed */
     max-width: 80%; /* Adjust the max-width as needed */
+    background-image: url(../assets/photos/first_back.png);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .first_section .about-us2 img {
-    border-radius: 30px;
+    
     width: 100%;
     height: auto;
 }
