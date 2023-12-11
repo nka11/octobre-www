@@ -1,18 +1,16 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="en" prefix="dc: http://purl.org/dc/terms/ schema: http://schema.org/">
+  <head typeof="schema:Organization" resource="https://octobre.tech/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Octobre.tech Expertise et Conseil en Direction de Systemes d'information</title>
+    <title property="schema:description">Octobre.tech Expertise et Conseil en Direction de Systemes d'information</title>
     <link href="css/custom.css" rel="stylesheet">
-    <meta name="description" content="Octobre tech, Expertise et conseil en direction de Systemes d'information.
-                                      Aide a la transformation digitale, vers la DATA et l'IA.">
+    <meta name="description" property="schema:description" content="Aide a la transformation digitale, vers la DATA et l'IA.">
   </head>
-  <body prefix="dc: http://purl.org/dc/terms/ schema: http://schema.org/">
+  <body>
     <header id="HEADER_LINE" class="container-md text-center">
         <div class="row">
-            <div class="col">
-              
+            <div class="col">            
             </div>
             <div class="col">
                 <svg width="154px" height="49px" viewBox="0 0 154 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -53,7 +51,7 @@
             <div class="split">
                 <div class="image-container">
                     <img src="./assets/photos/first_back.png" />
-                    <div typeof="schema:Organization" resource="https://octobre.tech/" class="text-overlay">
+                    <div class="text-overlay" typeof="schema:Organization" resource="https://octobre.tech/">
                         <p property="schema:description">Construisons une strategie digitale ambitieuse pour ameliorer l'efficacité opérationelle et commerciale</p>
                         <img src="./assets/pictos/arrow.svg" style="width: 2vw;">
                     </div>
@@ -61,7 +59,7 @@
             </div>
             
             
-            <div typeof="schema:Organization" resource="https://octobre.tech/" class="about-us">
+            <div class="about-us" typeof="schema:Organization" resource="https://octobre.tech/">
                 <h5 class="quefaisons_label">QUE FAISONS-NOUS ?</h5>
                 <h3 property="schema:description">Nous aidons les entreprises à entrer dans l’ère digitale avec pragmatisme et creativite</h3>
                 <div class="buttons">
@@ -76,15 +74,15 @@
             
             </div>
         </section>
-        <section class="container-sm octobre_content_box_white">
+        <section class="container-sm octobre_content_box_white" typeof="schema:Organization" resource="https://octobre.tech/">
             <div class="row">
                 <div class="col octobre_lightgray_title">
                     DOMAINES D’EXPERTISE
                 </div>
             </div>
             <div class="row">
-                <div class="col octobre_deepdark_desc">
-                    A la croisée des chemin entre l'IT et les Métiers
+                <div class="col octobre_deepdark_desc" property="schema:description">
+                    A la croisée des chemin entre l'IT et les Métiers <span style="display:none">nous vous aidons à</span>
                 </div>
             </div>
             <div class="container mt-4 expertise-presentation">
@@ -93,7 +91,7 @@
                     <div class="card expertise h-100">
                       <img src="./assets/pictos/code-daffichage.svg" class="card-img-top" alt="Image 1">
                       <div class="card-body">
-                        <p class="card-text" id="break">Valoriser les actifs digitaux</p>
+                        <p class="card-text" id="break" property="schema:description">Valoriser les actifs digitaux</p>
                       </div>
                     </div>
                   </div>
@@ -102,7 +100,7 @@
                     <div class="card expertise h-100">
                       <img src="./assets/pictos/afficher-la-fleche-vers-le-bas.svg" class="card-img-top" alt="Image 1">
                       <div class="card-body">
-                        <p class="card-text" id="break">Déjouer les cyber-attaques</p>
+                        <p class="card-text" id="break" property="schema:description">Déjouer les cyber-attaques</p>
                       </div>
                     </div>
                   </div>
@@ -111,7 +109,7 @@
                     <div class="card expertise h-100">
                       <img src="./assets//pictos/cloud-upload-alt.svg" class="card-img-top" alt="Image 1">
                       <div class="card-body">
-                        <p class="card-text">DataBoost : une présence en ligne enrrichie</p>
+                        <p class="card-text" property="schema:description">DataBoost : une présence en ligne enrrichie</p>
                       </div>
                     </div>
                   </div>
@@ -120,7 +118,7 @@
                     <div class="card expertise h-100">
                       <img src="./assets//pictos/enveloppes.svg" class="card-img-top" alt="Image 1">
                       <div class="card-body">
-                        <p class="card-text">Passer à une Stratégie de Marque Employeur 3.0</p>
+                        <p class="card-text" property="schema:description">Passer à une Stratégie de Marque Employeur 3.0</p>
                       </div>
                     </div>
                   </div>
@@ -153,15 +151,17 @@
                                 </span>
                             </h2>
                             <div property="schema:author" typeOf="schema:Person">
-                                <span property="schema:name">
-                                    Pascal
-                                </span>, 
-                                <span property="schema:jobTitle">
-                                    directeur commercial, dans le domaine aéronautique (BtB)
-                                </span>
+                                <div property="schema:name">
+                                    <span property="schema:givenName">
+                                        Pascal
+                                    </span>, 
+                                    <span property="schema:jobTitle">
+                                        directeur commercial, dans le domaine aéronautique (BtB)
+                                    </span>
+                                </div>
                             </div>
                             <blockquote class="card-text" property="schema:reviewBody">
-                                Octobre a réalisé un audit de notre système et nous a accompagné pour obtenir les certifications de conformité exigées par nos partenaires.
+                                Octobre a réalisé un <span property="schema:keywords">audit</span> de notre système et nous a accompagné pour obtenir les <span property="schema:keywords">certifications</span> de <span property="schema:keywords">conformité</span> exigées par nos partenaires.
                             </blockquote>
                         </div>
                     </div>
@@ -187,15 +187,17 @@
                                 </span>
                             </h2>
                             <div property="schema:author" typeOf="schema:Person">
-                                <span property="schema:name">
-                                    Robert
-                                </span>, 
-                                <span property="schema:jobTitle">
-                                    Directeur général, Editeur BtB de solutions métiers.
-                                </span>
+                                <div property="schema:name">
+                                    <span property="schema:givenName">
+                                        Robert
+                                    </span>, 
+                                    <span property="schema:jobTitle">
+                                        Directeur général, Editeur BtB de solutions métiers.
+                                    </span>
+                                </div>
                             </div>
                             <blockquote class="card-text" property="schema:reviewBody">
-                                L'expertise Devops d'octobre nous a permis d'accélérer l'évolution des fonctionnalité de notre produit et de pouvoir apporter une réponses rapides aux demandes des clients.
+                                L'expertise <span property="schema:keywords">Devops</span> d'octobre nous a permis d'accélérer l'évolution des fonctionnalité de notre <span property="schema:keywords" content="projet"></span>produit et de pouvoir apporter une réponses rapides aux demandes des clients.
                             </blockquote>
                         </div>
                     </div>
@@ -220,12 +222,14 @@
                                 </span>
                             </h2>
                             <div property="schema:author" typeOf="schema:Person">
-                                <span property="schema:name">
-                                    Xavier
-                                </span>, 
-                                <span property="schema:jobTitle">
-                                    DRH, ETI dans le domaine de la logistique
-                                </span>
+                                <div property="schema:name">
+                                    <span property="schema:givenName">
+                                        Xavier
+                                    </span>, 
+                                    <span property="schema:jobTitle">
+                                        DRH, ETI dans le domaine de la logistique
+                                    </span>
+                                </div>
                             </div>
                             <blockquote class="card-text" property="schema:reviewBody">
                                 L'amélioration de notre CRM et de notre processus de recrutement nous a permis d'améliorer l'expérience candidats.
@@ -266,52 +270,64 @@
             <div class="row our-team-title">Notre équipe</div>
             <div class="row cards-container">
                 <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
-                    <div class="card team-card" property="schema:funder" typeOf="schema:Person">
+                    <div class="card team-card" property="schema:member" typeOf="schema:Role">
                         <div class="card-body">
-                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                            <h5>
-                                <span property="schema:givenName">
-                                    Samuel
-                                </span> 
-                                <span property="schema:familyName">
-                                    Assoun
-                                </span>
-                            </h5>
-                            <h6 property="jobTitle">Co-fondateur & Responsable des opérations</h6>
+                            <a id="/#samuel.assoun" property="schema:member" typeOf="schema:Person" resource="/#samuel.assoun">
+                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                <h5 property="schema:name">
+                                    <span property="schema:givenName">
+                                        Samuel
+                                    </span> 
+                                    <span property="schema:familyName">
+                                        Assoun
+                                    </span>
+                                </h5>
+                            </a>
+                            <h6 property="schema:roleName">Co-fondateur & Responsable des opérations</h6>
                             <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
-                    <div class="card team-card" property="schema:funder" typeOf="schema:Person">
+                    <div class="card team-card" property="schema:member" typeOf="schema:Role">
                         <div class="card-body">
-                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                            <h5>
-                                <span property="schema:givenName">
-                                    Nicolas
-                                </span> 
-                                <span property="schema:familyName">
-                                    Karageuzian
-                                </span>
-                            </h5>
-                            <h6 property="jobTitle">Co-fondateur & Architect Solution</h6>
+                            <a id="/#nicolas.karageuzian" property="schema:member" typeOf="schema:Person" resource="/#nicolas.karageuzian">
+                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                <h5 property="schema:name">
+                                    <span property="schema:givenName">
+                                        Nicolas
+                                    </span> 
+                                    <span property="schema:familyName">
+                                        Karageuzian
+                                    </span>
+                                </h5>
+                            </a>
+                            <h6 property="schema:roleName">Co-fondateur & Architect Solution</h6>
+                            <div style="display:none">
+                                <p property="schema:description">IAM & SSO Expert (SAML/OIDC - LDAP & Provider + client implementation)</p>
+                            </div>
                             <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
-                    <div class="card team-card" property="schema:member" typeOf="schema:Person">
+                    <div class="card team-card" property="schema:member" typeof="schema:Role">
                         <div class="card-body">
-                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                            <h5>
-                                <span property="schema:givenName">
-                                    Sylvain
-                                </span> 
-                                <span property="schema:familyName">
-                                    Zyssman
-                                </span>
-                            </h5>
-                            <h6 property="jobTitle">Data Officer et Devops</h6>
+                            <a id="/#sylvain.zyssman" property="schema:member" typeOf="schema:Person" resource="/#sylvain.zyssman">
+                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                <h5 property="schema:name">
+                                    <span property="schema:givenName">
+                                        Sylvain
+                                    </span> 
+                                    <span property="schema:familyName">
+                                        Zyssman
+                                    </span>
+                                </h5>
+                            </a>
+                            <h6 property="schema:roleName">Data Officer et Devops</h6>
+                            <div style="display:none">
+                                <p property="schema:description">IA, machine learning & MLOps expert</p>
+                            </div>
                             <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                         </div>
                     </div>
@@ -341,7 +357,7 @@
                             <div class="card-body">
                                 <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
                                 <h5>Nicolas Karageuzian</h5>
-                                <h6>Architect Solution</h6>
+                                <h6>Architecte Solution</h6>
                                 <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                             </div>
                         </div>
@@ -367,6 +383,8 @@
         </section>
     </main>
     <footer class="container-md footer" typeof="schema:Organization" resource="https://octobre.tech/">
+        <div property="schema:funder" typeOf="schema:Person" resource="/#samuel.assoun"></div>
+        <div property="schema:funder" typeOf="schema:Person" resource="/#nicolas.karageuzian"></div>
         <div class="logo">
             <img property="schema:logo" src="assets/Logo_octobre_conseil.svg">
         </div>
