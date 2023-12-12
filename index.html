@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang="en" prefix="dc: http://purl.org/dc/terms/ schema: http://schema.org/">
-  <head typeof="schema:Organization" resource="https://octobre.tech/">
+  <head typeof="schema:Organization" resource="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title property="schema:description">Octobre.tech Expertise et Conseil en transformation digitale</title>
     <link href="css/custom.css" rel="stylesheet">
     <meta name="description" property="schema:description" content="Aide a la transformation digitale, vers la DATA et l'IA.">
-  </head>
+    <meta property="schema:keyword" content="digital,digitalisation,transformation digitale"/>
+    <meta property="schema:keyword" content="Conseil,DATA"/>
+    <meta property="schema:keyword" content="IA,Intelligence Artificielle"/>
+    <meta property="schema:keyword" content="PME,ETI"/>
+</head>
   <body>
     <header id="HEADER_LINE" class="container-md text-center">
         <div class="row">
@@ -51,7 +55,7 @@
             <div class="split">
                 <div class="image-container">
                     <img src="./assets/photos/first_back.png" />
-                    <div class="text-overlay" typeof="schema:Organization" resource="https://octobre.tech/">
+                    <div class="text-overlay" typeof="schema:Organization" resource=".">
                         <p property="schema:description">
                             Construisons ensemble des solutions digitales sur-mesures
                         </p>
@@ -61,7 +65,7 @@
             </div>
             
             
-            <div class="about-us" typeof="schema:Organization" resource="https://octobre.tech/">
+            <div class="about-us" typeof="schema:Organization" resource=".">
                 <h5 class="quefaisons_label">QUE FAISONS-NOUS ?</h5>
                 <h3 property="schema:description">
                     Nous libérons la puissance du digital au service de votre business
@@ -71,8 +75,8 @@
                     <button id="contact-button">Contact</button>
                 </div>
                 <div class="about-us2">
-                    <div class="main_use_case" property="schema:review" typeOf="schema:Review">
-                        <div property="schema:itemReviewed" typeOf="schema:Thing">
+                    <div class="main_use_case" property="schema:review" typeOf="schema:Review" resource="#review-digitalisation">
+                        <div property="schema:itemReviewed" typeOf="schema:Thing" resource="#digitalisation">
                             <div property="schema:name">
                                 Digitalisation de l'operationnel
                             </div>
@@ -83,12 +87,15 @@
                                     Eric
                                 </span>, 
                                 <span property="schema:jobTitle">
-                                    DSI, PME spécialisée dans le domaine de la logistique
+                                    "Directeur des Opération", PME dans le domaine de la logistique
                                 </span>
                             </div>
                         </div>
                         <blockquote class="card-text" property="schema:reviewBody">
-                            Octobre nous a aidés a mettre en oeuvre un nouvel outil de gestion "ERP" en s'appuyant sur notre système existant, et l'a configuré pour qu'il soit adapté à nos  besoins et nos <span property="schema:keywords">processus metiers</span>.
+
+                            Octobre nous a aidés a mettre en oeuvre un nouvel
+                            <span property="schema:keywords">outil de gestion "ERP"</span> en s'appuyant sur notre système existant,
+                            et l'a configuré de sorte qu'il reponde à nos  besoins et nos <span property="schema:keywords">processus metiers</span>.
                         </blockquote>
                         <div property="schema:reviewBody">
                             80% des utilisateurs estiment que les évolutions ont un impact positif sur leur efficacité.
@@ -98,7 +105,7 @@
             
             </div>
         </section>
-        <section class="container-sm octobre_content_box_white" typeof="schema:Organization" resource="https://octobre.tech/">
+        <section class="container-sm octobre_content_box_white" typeof="schema:Organization" resource=".">
             <div class="row">
                 <div class="col octobre_lightgray_title">
                     DOMAINES D’EXPERTISE
@@ -124,7 +131,7 @@
                     <div class="card expertise h-100">
                       <img src="./assets/pictos/afficher-la-fleche-vers-le-bas.svg" class="card-img-top" alt="Image 1">
                       <div class="card-body">
-                        <p class="card-text" id="break" property="schema:description">Déjouer les cyber-attaques</p>
+                        <p class="card-text" id="break" property="schema:description">Déjouer les <span property="schema:keywords">cyber-attaques</span></p>
                       </div>
                     </div>
                   </div>
@@ -142,7 +149,7 @@
                     <div class="card expertise h-100">
                       <img src="./assets//pictos/enveloppes.svg" class="card-img-top" alt="Image 1">
                       <div class="card-body">
-                        <p class="card-text" property="schema:description">Passer à une Stratégie de Marque Employeur 3.0</p>
+                        <p class="card-text" property="schema:description">Passer à une <span property="schema:keywords">Stratégie de Marque Employeur 3.0</span></p>
                       </div>
                     </div>
                   </div>
@@ -154,7 +161,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-md case_studies octobre_content_box_white"  typeof="schema:Organization" resource="https://octobre.tech/">
+        <section class="container-md case_studies octobre_content_box_white"  typeof="schema:Organization" resource=".">
             <div class="row">
                 <div class="col octobre_lightgray_title">
                     ETUDES DE CAS
@@ -165,13 +172,13 @@
                     Nos clients témoignent
                 </div>
             </div>
-            <div class="row justify-content-center" property="schema:review" typeOf="schema:Review">
+            <div class="row justify-content-center" property="schema:review" typeOf="schema:Review" resource="#review-conformite">
                 <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
                     <div class="card case-study-large-card h-100 case-1">
                         <div class="card-body">
-                            <h2 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing">
+                            <h2 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#conformite">
                                 <span property="schema:name">
-                                    Prévention des risques
+                                    Performance Sécurisée / Cyber-Hygiène
                                 </span>
                             </h2>
                             <div property="schema:author" typeOf="schema:Person">
@@ -185,7 +192,7 @@
                                 </div>
                             </div>
                             <blockquote class="card-text" property="schema:reviewBody">
-                                Octobre a réalisé un <span property="schema:keywords">audit</span> de notre système et nous a accompagné pour obtenir les <span property="schema:keywords">certifications</span> de <span property="schema:keywords">conformité</span> exigées par nos partenaires.
+                                Octobre a réalisé un <span property="schema:keywords">audit</span> de notre <span property="schema:keywords">système d'information</span> et nous a accompagné pour obtenir les <span property="schema:keywords">certifications</span> de <span property="schema:keywords">conformité</span> exigées par nos partenaires.
                             </blockquote>
                         </div>
                     </div>
@@ -201,13 +208,13 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center" property="schema:review" typeOf="schema:Review">
+            <div class="row justify-content-center" property="schema:review" typeOf="schema:Review" resource="#review-devops">
                 <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
                     <div class="card case-study-large-card h-100 case-2">
                         <div class="card-body">
-                            <h2 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing">
+                            <h2 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#devops">
                                 <span property="schema:name">
-                                    Organisation Projet
+                                    Une approche <span property="schema:keywords">integrée</span>
                                 </span>
                             </h2>
                             <div property="schema:author" typeOf="schema:Person">
@@ -229,18 +236,18 @@
                 <div class="col-lg-4 col-md-5 col-sm-12 mb-4">
                     <div class="card case-study-small-card h-100 case-2">
                         <div class="card-body" property="schema:reviewBody">
-                            <div class="card-title">Amélioration de</div>
+                            <div class="card-title"><span property="schema:keywords">Amélioration</span> de</div>
                             <div class="card-text">+ 20 %</div>
                             <div class="card-text">de satisfaction client en augmentant la fréquence de mise à jour de notre produit.</div>
                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center"  property="schema:review" typeOf="schema:Review">
+            <div class="row justify-content-center"  property="schema:review" typeOf="schema:Review" resource="#review-bramding">
                 <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
                     <div class="card case-study-large-card h-100 case-3">
                         <div class="card-body">
-                            <h2 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing">
+                            <h2 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#bramding">
                                 <span property="schema:name">
                                     Marque employeur 3.0
                                 </span>
@@ -256,7 +263,7 @@
                                 </div>
                             </div>
                             <blockquote class="card-text" property="schema:reviewBody">
-                                L'amélioration de notre CRM et de notre processus de recrutement nous a permis d'améliorer l'expérience candidats.
+                                L'amélioration de notre CRM et de notre <span property="schema:keywords">processus de recrutement</span> nous a permis d'améliorer l'<span property="schema:keywords">expérience candidats</span>.
                             </blockquote>
                         </div>
                     </div>
@@ -264,7 +271,7 @@
                 <div class="col-lg-4 col-md-5 col-sm-12 mb-4">
                     <div class="card case-study-small-card h-100 case-3">
                         <div class="card-body" property="schema:reviewBody">
-                            <h5 class="card-title">Acquisition de</h5>
+                            <h5 class="card-title"><span property="schema:keywords">Acquisition</span> de</h5>
                             <h3 class="card-text">+40%</h3>
                             <h4 class="card-text">sur les fonctions supports et commerciales et une réduction significative du Turn Over.</h4>
                         </div>
@@ -290,13 +297,13 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid our-team" typeof="schema:Organization" resource="https://octobre.tech/">
+        <section class="container-fluid our-team" typeof="schema:Organization" resource=".">
             <div class="row our-team-title">Notre équipe</div>
             <div class="row cards-container">
                 <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
                     <div class="card team-card" property="schema:member" typeOf="schema:Role">
                         <div class="card-body">
-                            <a id="/#samuel.assoun" property="schema:member" typeOf="schema:Person" resource="/#samuel.assoun">
+                            <a id="/#samuel.assoun" property="schema:member" typeOf="schema:Person" resource="#samuel.assoun">
                                 <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
                                 <h5 property="schema:name">
                                     <span property="schema:givenName">
@@ -309,13 +316,16 @@
                             </a>
                             <h6 property="schema:roleName">Co-fondateur & Responsable des opérations</h6>
                             <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
+                            <div style="display:none">
+                                <p property="schema:description">L'alchimiste</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
                     <div class="card team-card" property="schema:member" typeOf="schema:Role">
                         <div class="card-body">
-                            <a id="/#nicolas.karageuzian" property="schema:member" typeOf="schema:Person" resource="/#nicolas.karageuzian">
+                            <a id="#nicolas.karageuzian" property="schema:member" typeOf="schema:Person" resource="#nicolas.karageuzian">
                                 <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
                                 <h5 property="schema:name">
                                     <span property="schema:givenName">
@@ -329,6 +339,9 @@
                             <h6 property="schema:roleName">Co-fondateur & Architect Solution</h6>
                             <div style="display:none">
                                 <p property="schema:description">IAM & SSO Expert (SAML/OIDC - LDAP & Provider + client implementation)</p>
+                                <p property="schema:description">Artisan du code</p>
+                                <p property="schema:description">Digital shamane</p>
+
                             </div>
                             <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                         </div>
@@ -337,7 +350,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
                     <div class="card team-card" property="schema:member" typeof="schema:Role">
                         <div class="card-body">
-                            <a id="/#sylvain.zyssman" property="schema:member" typeOf="schema:Person" resource="/#sylvain.zyssman">
+                            <a id="#sylvain.zyssman" property="schema:member" typeOf="schema:Person" resource="#sylvain.zyssman">
                                 <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
                                 <h5 property="schema:name">
                                     <span property="schema:givenName">
@@ -351,6 +364,7 @@
                             <h6 property="schema:roleName">Data Officer et Devops</h6>
                             <div style="display:none">
                                 <p property="schema:description">IA, machine learning & MLOps expert</p>
+                                <p property="schema:description">Intelligent non artificiel / Le mentor</p>
                             </div>
                             <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                         </div>
@@ -359,9 +373,22 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
                         <div class="card team-card">
                             <div class="card-body">
-                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                                <h5>Nicolas Karageuzian</h5>
-                                <h6>Architect Solution</h6>
+                                <a id="#remy.teboul" property="schema:member" typeOf="schema:Person" resource="#remy.teboul">
+                                    <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                    <h5 property="schema:name">
+                                        <span property="schema:givenName">
+                                            Remy
+                                        </span> 
+                                        <span property="schema:familyName">
+                                            Teboul
+                                        </span>
+                                    </h5>
+                                </a>
+                                <h6 property="schema:roleName">UX / UI Designer</h6>
+                                <div style="display:none">
+                                    <p property="schema:description">L'artiste</p>
+    
+                                </div>
                                 <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                             </div>
                         </div>
@@ -369,9 +396,22 @@
                     <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
                         <div class="card team-card">
                             <div class="card-body">
-                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                                <h5>Nicolas Karageuzian</h5>
-                                <h6>Architect Solution</h6>
+                                <a id="#ethan.fajnkuchen" property="schema:member" typeOf="schema:Person" resource="#ethan.fajnkuchen">
+                                    <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                    <h5 property="schema:name">
+                                        <span property="schema:givenName">
+                                            Ethan
+                                        </span> 
+                                        <span property="schema:familyName">
+                                            Fajnkuchen
+                                        </span>
+                                    </h5>
+                                </a>
+                                <h6 property="schema:roleName">Lead Developper</h6>
+                                <div style="display:none">
+                                    <p property="schema:description">Le prince des pirates informatiques / Petit scarabée </p>
+    
+                                </div>
                                 <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                             </div>
                         </div>
@@ -379,9 +419,22 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
                         <div class="card team-card">
                             <div class="card-body">
-                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                                <h5>Nicolas Karageuzian</h5>
-                                <h6>Architecte Solution</h6>
+                                <a id="#celine.cherqui" property="schema:member" typeOf="schema:Person" resource="#celine.cherqui">
+                                    <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                    <h5 property="schema:name">
+                                        <span property="schema:givenName">
+                                            celine
+                                        </span> 
+                                        <span property="schema:familyName">
+                                            Cherqui
+                                        </span>
+                                    </h5>
+                                </a>
+                                <h6 property="schema:roleName">Responsable recrutement / Stratégie marque employeur</h6>
+                                <div style="display:none">
+                                    <p property="schema:description">L'Attrape-talents</p>
+    
+                                </div>
                                 <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                             </div>
                         </div>
@@ -406,9 +459,9 @@
             </div>
         </section>
     </main>
-    <footer class="container-md footer" typeof="schema:Organization" resource="https://octobre.tech/">
-        <div property="schema:funder" typeOf="schema:Person" resource="/#samuel.assoun"></div>
-        <div property="schema:funder" typeOf="schema:Person" resource="/#nicolas.karageuzian"></div>
+    <footer class="container-md footer" typeof="schema:Organization" resource=".">
+        <div property="schema:funder" typeOf="schema:Person" resource="#samuel.assoun"></div>
+        <div property="schema:funder" typeOf="schema:Person" resource="#nicolas.karageuzian"></div>
         <div class="logo">
             <img property="schema:logo" src="assets/Logo_octobre_conseil.svg">
         </div>
