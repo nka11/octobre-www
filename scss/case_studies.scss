@@ -5,6 +5,14 @@
     padding-top: 1em;
 }
 
+@include media-breakpoint-up(md) { 
+    div.case_study:nth-child(even) {
+        flex-flow: row-reverse;
+    }
+    div.case_study:nth-child(odd) {
+        flex-flow: row;
+    }
+}
 /**
 CASE STUDIES
 **/
@@ -20,14 +28,17 @@ CASE STUDIES
 
 .case_studies .case-study-large-card.case-1 {
     background-image: url(./../assets/photos/case_study_1_back.png);
+    background-size: cover;
 }
 
 .case_studies .case-study-large-card.case-2 {
     background-image: url(./../assets/photos/case_study_2_back.png);
+    background-size: cover;
 }
 
 .case_studies .case-study-large-card.case-3 {
     background-image: url(./../assets/photos/case_study_3_back.png);
+    background-size: cover;
 }
 
 
@@ -50,16 +61,22 @@ CASE STUDIES
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     text-transform: uppercase;
-    margin-bottom: 10em;
+    margin-bottom: 2em;
 
 }
 
-.case_studies .case-study-large-card .card-body h3 {
+.case_studies .case-study-large-card .card-body h2 {
     color: #FFFFFF;
     font-size: 28px;
     letter-spacing: 0;
     width: 70%;
     
+}
+
+.case_studies .case-study-large-card .card-body blockquote {
+    font-size: 1.75em;
+    color: #FFFFFF;
+    padding-right: 2em;
 }
 
 .case_studies .case-study-small-card .card-body {
@@ -68,6 +85,8 @@ CASE STUDIES
     padding-bottom: 2em;
 }
 
+
+
 .case_studies .case-study-small-card .card-title {
     text-transform: uppercase;
     margin-bottom: 6em;
@@ -75,13 +94,13 @@ CASE STUDIES
     letter-spacing: 0.7px;
 }
 
-.case_studies .case-study-small-card .card-body h3 {
+.case_studies .case-study-small-card .card-body strong.card-text {
     font-size: 66px;
     letter-spacing: 0;
     margin-bottom: 0.5em;
 }
 
-.case_studies .case-study-small-card .card-body h4 {
+.case_studies .case-study-small-card .card-body div.card-text {
     font-size: 26px;
     letter-spacing: 0;
     padding-right: 10px;
@@ -92,7 +111,6 @@ CASE STUDIES
 
 .case_studies .case-study-large-card.case-1 .card-title {
     background-color: #EDDFD4;
-
 }
 .case_studies .case-study-large-card.case-2 .card-title {
     background-color: #DDE8D8;
