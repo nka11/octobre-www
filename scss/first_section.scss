@@ -36,6 +36,8 @@
     height: auto;
 }
 
+
+
 .first_section .split .text-overlay {
     position: absolute;
     text-align: center;
@@ -45,16 +47,25 @@
 }
 
 .first_section .split .text-overlay p {
-    font-size: 2.5vw; /* Use percentage for responsive font size */
-    color: #fff; /* Adjust the text color as needed */
-    /* Add any additional styles as needed */
-    padding-left: 3em;
-    padding-right: 3em;
-    margin-bottom: 2em;
-    max-width: 100%; /* Allow text to scale with the image */
+    font-size: 1em;
+    color: #fff;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    max-width: 100%;
 }
 
-
+@include media-breakpoint-up(md) { 
+    .first_section .split .text-overlay p {
+        font-size: 2.5vw; /* Use percentage for responsive font size */
+        color: #fff; /* Adjust the text color as needed */
+        /* Add any additional styles as needed */
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-bottom: 2em;
+        max-width: 100%; /* Allow text to scale with the image */
+    }
+}    
 
 
 .first_section .about-us {
