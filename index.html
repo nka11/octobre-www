@@ -58,13 +58,12 @@
     <main>
         <section class="first_section">
             <div class="split">
-                <div class="image-container">
-                    <img src="./assets/photos/first_back.png" />
-                    <div class="text-overlay" typeof="schema:Organization" resource=".">
+                <div class="image-back container-sm">
+                    <div class="text-over" typeof="schema:Organization" resource=".">
                         <p property="schema:description">
                             Construisons ensemble des solutions digitales sur-mesures
                         </p>
-                        <img src="./assets/pictos/arrow.svg" style="width: 2vw;">
+                        <img src="./assets/pictos/arrow.svg">
                     </div>
                 </div>
             </div>
@@ -327,11 +326,11 @@
                 </div>
             </div>
         </section>
-        <section class="container-xl our-team" typeof="schema:Organization" resource=".">
+        <section class="container-fluid our-team" typeof="schema:Organization" resource=".">
             <div class="row our-team-title">Notre équipe</div>
-            <div class="row cards-container">
-                <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
-                    <div class="card team-card" property="schema:member" typeOf="schema:Role">
+            <div class="row cards-container container-xl">
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
                         <div class="card-body">
                             <a id="#samuel.assoun" href="#" property="schema:member" typeOf="schema:Person" resource="#samuel.assoun">
                                 <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
@@ -356,7 +355,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
-                    <div class="card team-card" property="schema:member" typeOf="schema:Role">
+                    <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
                         <div class="card-body">
                             <a id="#nicolas.karageuzian" href="#" property="schema:member" typeOf="schema:Person" resource="#nicolas.karageuzian">
                                 <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
@@ -384,7 +383,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
-                    <div class="card team-card" property="schema:member" typeof="schema:Role">
+                    <div class="card team-card h-100" property="schema:member" typeof="schema:Role">
                         <div class="card-body">
                             <a id="#sylvain.zyssman" href="#" property="schema:member" typeOf="schema:Person" resource="#sylvain.zyssman">
                                 <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
@@ -411,7 +410,7 @@
                     </div>
                 </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card team-card" property="schema:member" typeOf="schema:Role">
+                        <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
                             <div class="card-body">
                                 <a id="#remy.teboul" href="#" property="schema:member" typeOf="schema:Person" resource="#remy.teboul">
                                     <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
@@ -436,34 +435,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
-                        <div class="card team-card" property="schema:member" typeOf="schema:Role">
-                            <div class="card-body">
-                                <a id="#ethan.fajnkuchen" href="#" property="schema:member" typeOf="schema:Person" resource="#ethan.fajnkuchen">
-                                    <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                                    <h5 property="schema:name">
-                                        <span property="schema:givenName">
-                                            Ethan
-                                        </span> 
-                                        <span property="schema:familyName">
-                                            Fajnkuchen
-                                        </span>
-                                    </h5>
-                                    <div style="display:none">
-                                        <p property="schema:jobTitle">Le prince des hackers / Petit scarabée</p>
-                                    </div>
-                                </a>
-                                <h6 property="schema:roleName">Ingénieur DATA</h6>
-                                <div style="display:none">
-                                    <p property="schema:description"> </p>
-    
-                                </div>
-                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card team-card" property="schema:member" typeOf="schema:Role">
+                        <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
                             <div class="card-body">
                                 <a id="#celine.cherqui" href="#" property="schema:member" typeOf="schema:Person" resource="#celine.cherqui">
                                     <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
@@ -479,9 +452,35 @@
                                         <p property="schema:jobTitle">L'Attrape-talents</p>
                                     </div>
                                 </a>
-                                <h6 property="schema:roleName">Responsable recrutement / Stratégie marque employeur</h6>
+                                <h6 property="schema:roleName">Responsable recrutement / marque employeur</h6>
                                 <div style="display:none">
                                     <p property="schema:description"></p>
+    
+                                </div>
+                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
+                        <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
+                            <div class="card-body">
+                                <a id="#ethan.fajnkuchen" href="#" property="schema:member" typeOf="schema:Person" resource="#ethan.fajnkuchen">
+                                    <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                    <h5 property="schema:name">
+                                        <span property="schema:givenName">
+                                            Ethan
+                                        </span> 
+                                        <span property="schema:familyName">
+                                            Fajnkuchen
+                                        </span>
+                                    </h5>
+                                    <div style="display:none">
+                                        <p property="schema:jobTitle">Le prince des hackers / Petit scarabée</p>
+                                    </div>
+                                </a>
+                                <h6 property="schema:roleName">Ingénieur Logiciel</h6>
+                                <div style="display:none">
+                                    <p property="schema:description"> </p>
     
                                 </div>
                                 <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
