@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="Octobre Conseil" />
 </head>
   <body>
-    <header id="HEADER_LINE" class="container-md text-center">
+    <header id="HEADER_LINE" class="container-xl text-center">
         <div class="row">
             <div class="col">            
             </div>
@@ -80,14 +80,14 @@
                     <button id="contact-button">Contact</button>
                 </div>
                 <div class="about-us2">
-                    <div class="main_use_case" property="schema:review" typeOf="schema:Review" resource="#review-digitalisation">
-                        <div property="schema:itemReviewed" typeOf="schema:Thing" resource="#digitalisation">
-                            <div property="schema:name">
+                    <div class="main_use_case container text-center" property="schema:review" typeOf="schema:Review" resource="#review-digitalisation">
+                        <div class="row" property="schema:itemReviewed" typeOf="schema:Thing" resource="#digitalisation">
+                            <div class="col" property="schema:name">
                                 Digitalisation de l'operationnel
                             </div>
                         </div>
-                        <div property="schema:author" typeOf="schema:Person">
-                            <div property="schema:name">
+                        <div class="row" property="schema:author" typeOf="schema:Person">
+                            <div class="col" property="schema:name">
                                 <span property="schema:givenName">
                                     Eric
                                 </span>, 
@@ -95,18 +95,22 @@
                                     Directeur des opérations
                                 </span>
                             </div>,
-                            <div property="schema:memberOf" typeOf="schema:Organization">
+                            <div class="col" property="schema:memberOf" typeOf="schema:Organization">
                                 <span property="schema:name">PME  dans le domaine de la logistique</span>
                             </div>
                         </div>
-                        <blockquote class="card-text" property="schema:reviewBody">
-
-                            Octobre nous a aidés à mettre en oeuvre un nouvel
-                            <span property="schema:keywords">outil de gestion "ERP"</span> en s'appuyant sur notre système existant,
-                            et l'a configuré de sorte qu'il reponde à nos besoins et nos <span property="schema:keywords">processus metiers</span>.
-                        </blockquote>
-                        <div property="schema:reviewBody">
-                            80% des utilisateurs estiment que les évolutions ont eu un impact positif sur leur efficacité.
+                        <div class="row">
+                            <blockquote class="col card-text" property="schema:reviewBody">
+    
+                                Octobre nous a aidés à mettre en oeuvre un nouvel
+                                <span property="schema:keywords">outil de gestion "ERP"</span> en s'appuyant sur notre système existant,
+                                et l'a configuré de sorte qu'il reponde à nos besoins et nos <span property="schema:keywords">processus metiers</span>.
+                            </blockquote>
+                        </div>
+                        <div class="row">
+                            <div class="col" property="schema:reviewBody">
+                                80% des utilisateurs estiment que les évolutions ont eu un impact positif sur leur efficacité.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,7 +327,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid our-team" typeof="schema:Organization" resource=".">
+        <section class="container-xl our-team" typeof="schema:Organization" resource=".">
             <div class="row our-team-title">Notre équipe</div>
             <div class="row cards-container">
                 <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
@@ -504,7 +508,7 @@
             </div>
         </section>
     </main>
-    <footer class="container-md footer" typeof="schema:Organization" resource=".">
+    <footer class="container-xl footer" typeof="schema:Organization" resource=".">
         <div class="logo">
             <img property="schema:logo" src="assets/Logo_octobre_conseil.svg">
         </div>
