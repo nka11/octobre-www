@@ -4,7 +4,9 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: 
+      - "main"
+      - "develop"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -45,6 +47,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
+        if: ${{ github.ref == 'refs/heads/develop' }}
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
@@ -54,6 +57,7 @@ jobs:
         uses: actions/deploy-pages@v3
       - name: Assemble and deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        if: ${{ github.ref == 'refs/heads/main' && (vars.OCTOBRE_FTP_TARGET_HOST && vars.OCTOBRE_FTP_TARGET_USER ) }}
         with:
           server: ${{ vars.OCTOBRE_FTP_TARGET_HOST }}
           username: ${{ vars.OCTOBRE_FTP_TARGET_USER }}

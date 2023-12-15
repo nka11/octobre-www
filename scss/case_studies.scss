@@ -17,6 +17,10 @@
 CASE STUDIES
 **/
 
+.case_studies .octobre_lightgray_title a {
+    color: #9A9A9A;
+    text-decoration: none;
+}
 
 .case_studies .card {
     border-radius: 30px;
@@ -65,7 +69,7 @@ CASE STUDIES
 
 }
 
-.case_studies .case-study-large-card .card-body h2 {
+.case_studies .case-study-large-card .card-body h3 {
     color: #FFFFFF;
     font-size: 28px;
     letter-spacing: 0;

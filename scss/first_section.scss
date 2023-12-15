@@ -55,13 +55,20 @@
     background-color: #EDDFD4;
 
 }
-.first_section .about-us h5 {
+
+.first_section .about-us a {
+    color: #5C5148;
+    text-decoration: none;
+}
+
+.first_section .about-us h2.quefaisons_label {
     text-align: center;
+    font-weight: normal;
     padding-top: 4em;
 
 }
 
-.first_section .about-us h3 {
+.first_section .about-us p.quefaisons_description {
 
     color: #1C1C1C;
     font-size: 2em;
@@ -88,7 +95,7 @@
     color: #fff;
 }
 
-.first_section .about-us2 {
+.first_section .about-use-case {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +104,7 @@
 }
 
 
-.first_section .about-us2 .main_use_case {
+.first_section .about-use-case .main_use_case {
     border-radius: 30px;
     margin: 0 10%; /* Adjust the margin values as needed */
     max-width: 80%; /* Adjust the max-width as needed */
@@ -108,11 +115,11 @@
     color: #EDDFD4;
 }
 
-.first_section .about-us2 .main_use_case > div {
+.first_section .about-use-case .main_use_case > div {
     width: 100%;
 }
 
-.first_section .about-us2 img {
+.first_section .about-use-case img {
     
     width: 100%;
     height: auto;

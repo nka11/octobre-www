@@ -56,75 +56,33 @@
           </div>
     </header>
     <main>
+        <h1 style="display:none">Octobre Conseil</h1>
+        
         <section class="first_section">
             <div class="split">
                 <div class="image-back container-sm">
                     <div class="text-over" typeof="schema:Organization" resource=".">
                         <p property="schema:description">
-                            Construisons ensemble des solutions digitales sur-mesures
+                            Construisons ensemble des solutions digitales sur-mesure
                         </p>
                         <img src="./assets/pictos/arrow.svg">
                     </div>
                 </div>
             </div>
-            
-            
-            <div class="about-us" typeof="schema:Organization" resource=".">
-                <h5 class="quefaisons_label">QUE FAISONS-NOUS ?</h5>
-                <h3 property="schema:description">
-                    Nous libérons la puissance du digital au service de votre business
-                </h3>
-                <div class="buttons">
-                    <button>Prendre RDV</button>
-                    <button id="contact-button">Contact</button>
-                </div>
-                <div class="about-us2">
-                    <div class="main_use_case container text-center" property="schema:review" typeOf="schema:Review" resource="#review-digitalisation">
-                        <div class="row" property="schema:itemReviewed" typeOf="schema:Thing" resource="#digitalisation">
-                            <div class="col" property="schema:name">
-                                Digitalisation de l'operationnel
-                            </div>
-                        </div>
-                        <div class="row" property="schema:author" typeOf="schema:Person">
-                            <div class="col" property="schema:name">
-                                <span property="schema:givenName">
-                                    Eric
-                                </span>, 
-                                <span property="schema:jobTitle">
-                                    Directeur des opérations
-                                </span>
-                            </div>,
-                            <div class="col" property="schema:memberOf" typeOf="schema:Organization">
-                                <span property="schema:name">PME  dans le domaine de la logistique</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <blockquote class="col card-text" property="schema:reviewBody">
-    
-                                Octobre nous a aidés à mettre en oeuvre un nouvel
-                                <span property="schema:keywords">outil de gestion "ERP"</span> en s'appuyant sur notre système existant,
-                                et l'a configuré de sorte qu'il reponde à nos besoins et nos <span property="schema:keywords">processus metiers</span>.
-                            </blockquote>
-                        </div>
-                        <div class="row">
-                            <div class="col" property="schema:reviewBody">
-                                80% des utilisateurs estiment que les évolutions ont eu un impact positif sur leur efficacité.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
         </section>
         <section class="container-sm octobre_content_box_white" typeof="schema:Organization" resource=".">
             <div class="row">
-                <div class="col octobre_lightgray_title">
-                    DOMAINES D’EXPERTISE
+                <div class="col">
+                    <h2 class="octobre_lightgray_title">
+                        <a id="expertises" href="#expertises">
+                            DOMAINES D’EXPERTISE
+                        </a>
+                    </h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col octobre_deepdark_desc" property="schema:description">
-                    A la croisée des chemin entre l'IT et les Métiers
+                <div class="col" property="schema:description">
+                    <p class="octobre_deepdark_desc">A la croisée des chemins entre l'IT et les Métiers</p>
                 </div>
             </div>
             <div class="container mt-4 expertise-presentation">
@@ -172,10 +130,27 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <div class="about-us" typeof="schema:Organization" resource=".">
+                <h2 class="quefaisons_label"><a id="about" href="#about">QUE FAISONS-NOUS ?</a></h2>
+                <p class="quefaisons_description" property="schema:description">
+                    Nous libérons la puissance du digital au service de votre business
+                </p>
+                <div class="buttons">
+                    <button>Prendre RDV</button>
+                    <button id="contact-button">Contact</button>
+                </div>
+            </div>
+        </section>
         <section class="container-md case_studies octobre_content_box_white"  typeof="schema:Organization" resource=".">
             <div class="row">
-                <div class="col octobre_lightgray_title">
-                    ETUDES DE CAS
+                <div class="col">
+                    <h2 class="octobre_lightgray_title">
+                        <a id="case-studies" href="#case-studies">
+                            ETUDES DE CAS
+                        </a>
+                    </h2>
                 </div>
             </div>
             <div class="row case_studies_intro">
@@ -187,11 +162,54 @@
                 <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
                     <div class="card case-study-large-card h-100 case-1">
                         <div class="card-body">
-                            <h2 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#conformite">
+                            <h3 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#conformite">
+                                <span property="schema:name">
+                                    Digitalisation de l'operationnel
+                                </span>
+                            </h3>
+                            <div property="schema:author" typeOf="schema:Person">
+                                <div property="schema:name">
+                                    <span property="schema:givenName">
+                                        Eric
+                                    </span>, 
+                                    <span property="schema:jobTitle">
+                                        Directeur des opérations
+                                    </span>
+                                </div>,
+                                <div property="schema:memberOf" typeOf="schema:Organization">
+                                    <span property="schema:name">
+                                        PME  dans le domaine de la logistique
+                                    </span>
+                                </div>
+                            </div>
+                            <blockquote class="card-text" property="schema:reviewBody">
+                                Octobre nous a aidés à mettre en oeuvre un nouvel
+                                <span property="schema:keywords">outil de gestion "ERP"</span> en s'appuyant sur notre système existant,
+                                et l'a configuré de sorte qu'il reponde à nos besoins et nos <span property="schema:keywords">processus metiers</span>.
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 mb-4">
+                    <div class="card case-study-small-card h-100 case-1">
+                        <div property="schema:reviewBody" class="card-body">
+                            <!-- 80% des utilisateurs estiment que les évolutions ont eu un impact positif sur leur efficacité. -->
+                            <div class="card-title">Enquete interne:</div>
+                            <strong class="card-text">80%</strong>
+                            <div class="card-text">des utilisateurs sont convaincus par les améliorations apportées.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="case_study row justify-content-center" property="schema:review" typeOf="schema:Review" resource="#review-conformite">
+                <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
+                    <div class="card case-study-large-card h-100 case-1">
+                        <div class="card-body">
+                            <h3 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#conformite">
                                 <span property="schema:name">
                                     Performance Sécurisée / Cyber-Hygiène
                                 </span>
-                            </h2>
+                            </h3>
                             <div property="schema:author" typeOf="schema:Person">
                                 <div property="schema:name">
                                     <span property="schema:givenName">
@@ -226,11 +244,11 @@
                 <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
                     <div class="card case-study-large-card h-100 case-2">
                         <div class="card-body">
-                            <h2 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#devops">
+                            <h3 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#devops">
                                 <span property="schema:name">
                                     Usine logicelle
                                 </span>
-                            </h2>
+                            </h3>
                             <div property="schema:author" typeOf="schema:Person">
                                 <div property="schema:name">
                                     <span property="schema:givenName">
@@ -268,11 +286,11 @@
                 <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
                     <div class="card case-study-large-card h-100 case-3">
                         <div class="card-body">
-                            <h2 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#bramding">
+                            <h3 class="card-title" property="schema:itemReviewed" typeOf="schema:Thing" resource="#bramding">
                                 <span property="schema:name">
                                     Marque employeur 3.0
                                 </span>
-                            </h2>
+                            </h3>
                             <div property="schema:author" typeOf="schema:Person">
                                 <div property="schema:name">
                                     <span property="schema:givenName">
@@ -326,7 +344,13 @@
             </div>
         </section>
         <section class="container-fluid our-team" typeof="schema:Organization" resource=".">
-            <div class="row our-team-title">Notre équipe</div>
+            <div class="row">
+                <h2 class="our-team-title">
+                    <a id="team" href="#team">
+                        Notre équipe
+                    </a>
+                </h2>
+            </div>
             <div class="row cards-container container-xl">
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
                     <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
@@ -552,7 +576,11 @@
                 <img src="./assets/photos/contact-pic.png" />
             </div>
             <div class="form">
-                <h1 class="contact-us-title">Contactez-nous</h1>
+                <h2 class="contact-us-title">
+                    <a id="contact" href="#contact">
+                        Contactez-nous
+                    </a>
+                </h2>
                 <form>
                     <input placeholder="Nom" type="text" />
                     <input placeholder="Prénom" type="text" />
@@ -573,11 +601,11 @@
             <div class="footer-menu">
                 <div class="row">
                     <ul class="menu-1 col">
-                        <li>A propos</li>
-                        <li>Nos expertises</li>
-                        <li>Etudes de cas</li>
-                        <li>L'Equipe</li>
-                        <li>Contact</li>
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#expertises">Nos expertises</a></li>
+                        <li><a href="#case-studies">Etudes de cas</a></li>
+                        <li><a href="#team">L'Equipe</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <ul class="menu-2 col" style="display:none">
                         <li>Mentions Légales</li>
