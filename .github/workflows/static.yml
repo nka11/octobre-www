@@ -76,6 +76,8 @@ jobs:
       - run: lhci autorun
 
   test:
+    needs: 
+      - deploy
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
