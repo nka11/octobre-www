@@ -54,6 +54,7 @@ jobs:
         uses: actions/deploy-pages@v3
       - name: Assemble and deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        if: ${{ (vars.OCTOBRE_FTP_TARGET_HOST && vars.OCTOBRE_FTP_TARGET_USER ) }}
         with:
           server: ${{ vars.OCTOBRE_FTP_TARGET_HOST }}
           username: ${{ vars.OCTOBRE_FTP_TARGET_USER }}
