@@ -43,7 +43,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
       - run: npm install
-      - run: node_modules/sass/sass.js ./scss/custom.scss ./css/custom.css
+      # - run: node_modules/sass/sass.js ./scss/custom.scss ./css/custom.css
       - run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
