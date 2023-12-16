@@ -1,5 +1,4 @@
 
-import React from 'react';
 import IconArrow from '../../icons/arrow.svg';
 
 const FirstSection = () => {
