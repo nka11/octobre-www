@@ -22,17 +22,26 @@ export function OctobreIndex() {
                 <ExpertiseSection/>
 
                 <section>
-                    <div className="about-us" typeof="schema:Organization" resource=".">
-                        <h2 className="quefaisons_label"><a id="about" href="#about">QUE FAISONS-NOUS ?</a></h2>
-                        <p className="quefaisons_description" property="schema:description">
-                            Nous libérons la puissance du digital au service de votre business
-                        </p>
-                        <div className="buttons">
-                            <button>Prendre RDV</button>
-                            <button id="contact-button">Contact</button>
+            <div className="about-us" typeof="schema:Organization" resource=".">
+                <div className="container-xl">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 col-sm-12 quefaisons_text mb-4">
+                            <h2 className="quefaisons_label"><a id="about" href="#about">QUE FAISONS-NOUS ?</a></h2>
+                            <p className="quefaisons_description" property="schema:description">
+                                <span>Nous libérons</span> la puissance du digital au service de votre business
+                            </p>
+                            <div className="buttons">
+                                <button id="rdv-button">Prendre RDV</button>
+                                <button id="contact-button">Contact</button>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12 col-sm-12 quefaisons_image mt-4">   
+                            <img src="./assets/photos/Que-faisons-nous@2x.jpeg" alt="quefaisonsnous_image" />   
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
 
                 <CaseStudies />
 

@@ -1,3 +1,13 @@
+.domaine-expertise a {
+   color: #686868;
+   font-size: 18px;
+   letter-spacing: 0;
+   text-decoration: none;
+   pointer-events: none;
+
+}
+
+
 .expertise-presentation .expertise {
     background-color: #F4F0EE;
     border-radius: 30px;
@@ -6,10 +16,13 @@
     flex-direction: row;
     padding: 10px
 }
+
+.expertise-presentation .card.expertise {
+   background-color: white;
+}
 .expertise-presentation .card img {
     width: 50px;
     margin-left: 20px;
-
  }
 
  .expertise-presentation .card .card-body {

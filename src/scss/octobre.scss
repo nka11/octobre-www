@@ -78,10 +78,9 @@ button {
     color: #FFF;
 }
 
-
 .octobre_content_box_white {
     font-family: 'Brown Regular Alt';
-    margin-top: 7em;
+    margin-top: 3em;
     margin-bottom: 7em;
     background-color: #fff;
 }
@@ -115,7 +114,8 @@ button {
 }
 
 .partners img {
-    margin: 1em;
+    margin: 2em;
+    width: 120px;
 }
 
 
@@ -125,15 +125,17 @@ button {
     }
 }
 
- .octobre_content_box_white {
+ .octobre_content_box_brown {
     font-family: 'Brown Regular Alt';
-    margin-top: 7em;
-    margin-bottom: 3em;
-    background-color: #fff;
+    margin-bottom: 7em;
+    background-color: #F4F0EE;
+    padding-top:3em;
+    padding-bottom: 3em;
 }
 
 @import './first_section.scss';
 @import './expertise.scss';
+@import './about_us.scss';
 @import "./case_studies.scss";
 @import './our_team.scss';
 @import './contact_us.scss';

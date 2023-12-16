@@ -1,0 +1,103 @@
+.about-us {
+    font-family: "Brown Regular";
+}
+
+.about-us .quefaisons_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us  #about {
+    pointer-events: none;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 44px;
+    color: #686868;
+}
+
+
+.about-us .quefaisons_label {
+    margin-bottom: 1em;
+}
+
+.about-us .quefaisons_description {
+    color: #1C1C1C;
+    font-size: 50px;
+    letter-spacing: 0;
+    margin-bottom: 1em;
+    text-align: center;
+    
+}
+
+.about-us .quefaisons_description span {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.125rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      height: 0.75rem;
+      background-image: url(./../assets/decorations/Path\ 3.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+
+  .about-us .buttons #rdv-button {
+    border: 1px solid #000000;
+    border-radius: 21px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .about-us .buttons #contact-button {
+    border-radius: 21px;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .about-us .quefaisons_image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+    height: 20em;
+    border-radius: 30px; 
+   }
+
+   @include media-breakpoint-up(lg) {
+    .about-us .quefaisons_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: normal;
+      align-items: normal;
+    }
+
+    .about-us .quefaisons_description {
+      color: #1C1C1C;
+      font-size: 50px;
+      letter-spacing: 0;
+      margin-bottom: 1em;
+      text-align: left;
+  }
+}
+
+   @include media-breakpoint-up(md) {
+    .about-us .quefaisons_image img {
+      width: 31em;
+      height: 30em;
+     }
+   }
