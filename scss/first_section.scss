@@ -14,15 +14,15 @@
     margin-top: 2.5em;
     background: linear-gradient(
         to top,
-        #EDDFD4 0%,
-        #EDDFD4 50%,
+        #F4F0EE 0%,
+        #F4F0EE 50%,
         white 50%,
         white 100%
     );
 }
 
 .first_section .image-back {
-    background-image: url(./../assets/photos/first_back.png);
+    background-image: url(./../assets/photos/first_back.jpeg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 1em;
 }
 
 .first_section .image-back .text-over p {
@@ -43,84 +44,26 @@
     color: #fff;
     max-width: 70%;
     text-align: center;
+    letter-spacing: -1.01px;
+    margin-top: 1em;
 }
 
+.first_section .split span {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.125rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      height: 0.75rem;
+      background-image: url(./../assets/decorations/ligne-header.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
 .first_section .image-back .text-over img {
     width: 30px;
     padding-top: 7em;
-}
-
-
-.first_section .about-us {
-    background-color: #EDDFD4;
-
-}
-
-.first_section .about-us a {
-    color: #5C5148;
-    text-decoration: none;
-}
-
-.first_section .about-us h2.quefaisons_label {
-    text-align: center;
-    font-weight: normal;
-    padding-top: 4em;
-
-}
-
-.first_section .about-us p.quefaisons_description {
-
-    color: #1C1C1C;
-    font-size: 2em;
-    letter-spacing: 0;
-    text-align: center;
-    padding-top: 1em;
-}
-
-.first_section .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.first_section .buttons button {
-    margin: 1em;
-    margin-top: 2em;
-    max-width: 200px; /* ou toute autre valeur en pixels */
-    width: 100%;
-}
-
-.first_section .buttons #contact-button {
-    background-color: #1C1C1C;
-    color: #fff;
-}
-
-.first_section .about-use-case {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3em;
-    padding-bottom: 7em;
-}
-
-
-.first_section .about-use-case .main_use_case {
-    border-radius: 30px;
-    margin: 0 10%; /* Adjust the margin values as needed */
-    max-width: 80%; /* Adjust the max-width as needed */
-    background-image: url(../assets/photos/first_back.png);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #EDDFD4;
-}
-
-.first_section .about-use-case .main_use_case > div {
-    width: 100%;
-}
-
-.first_section .about-use-case img {
-    
-    width: 100%;
-    height: auto;
 }
