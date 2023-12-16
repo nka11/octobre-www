@@ -50,6 +50,7 @@
 
 .first_section .split span {
     position: relative;
+    white-space: nowrap;
     &::after {
       content: '';
       position: absolute;

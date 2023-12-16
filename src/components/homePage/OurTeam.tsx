@@ -23,7 +23,7 @@ const OurTeam = () => {
                                         <div property="schema:member" typeof="schema:Person" resource="#samuel.assoun">
                                             <div className="person-name" property="schema:name">
                                                 <span property="schema:givenName">
-                                                    Samuel
+                                                    Samuel&nbsp;
                                                 </span>
                                                 <span property="schema:familyName">
                                                     Assoun
@@ -61,7 +61,7 @@ const OurTeam = () => {
                                         <div property="schema:member" typeof="schema:Person" resource="#nicolas.karageuzian">
                                             <div className="person-name" property="schema:name">
                                                 <span property="schema:givenName">
-                                                    Nicolas
+                                                    Nicolas&nbsp;
                                                 </span>
                                                 <span property="schema:familyName">
                                                     Karageuzian
@@ -99,7 +99,7 @@ const OurTeam = () => {
                                         <div property="schema:member" typeof="schema:Person" resource="#sylvain.zyssman">
                                             <div className="person-name" property="schema:name">
                                                 <span property="schema:givenName">
-                                                    Sylvain
+                                                    Sylvain&nbsp;
                                                 </span>
                                                 <span property="schema:familyName">
                                                     Zyssman
@@ -135,7 +135,7 @@ const OurTeam = () => {
                                         <div property="schema:member" typeof="schema:Person" resource="#remy.teboul">
                                             <div className="person-name" property="schema:name">
                                                 <span property="schema:givenName">
-                                                    Remy
+                                                    Remy&nbsp;
                                                 </span>
                                                 <span property="schema:familyName">
                                                     Teboul
@@ -171,7 +171,7 @@ const OurTeam = () => {
 
                                             <div className="person-name" property="schema:name">
                                                 <span property="schema:givenName">
-                                                    Céline
+                                                    Céline&nbsp;
                                                 </span>
                                                 <span property="schema:familyName">
                                                     Cherqui
@@ -206,7 +206,7 @@ const OurTeam = () => {
                                         <div property="schema:member" typeof="schema:Person" resource="#ethan.fajnkuchen">
                                             <div className="person-name" property="schema:name">
                                                 <span property="schema:givenName">
-                                                    Ethan
+                                                    Ethan&nbsp; 
                                                 </span>
                                                 <span property="schema:familyName">
                                                     Fajnkuchen

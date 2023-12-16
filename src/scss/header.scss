@@ -1,0 +1,37 @@
+.navbar .logo-text {
+    color: #686868;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-family: 'Brown Regular';
+    width: 50%;
+    border-left: 1px solid #6B6B6B;
+    padding-left: 1em;
+    width: fit-content;
+    max-width: 250px;
+}
+
+
+
+.navbar .nav-item {
+    color: #1C1C1C;
+    font-size: 15px;
+    font-family: 'Brown Regular';
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: max-content;
+    padding: 1.5em;
+}
+
+.navbar .nav-link {
+    color: #1C1C1C;
+}
+
+.navbar button {
+    width: max-content;
+    background-color: #1C1C1C;
+    color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+}
