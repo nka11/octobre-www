@@ -1,3 +1,4 @@
+
 const ExpertiseSection = () => {
     return (
         <section className="container-sm octobre_content_box_white" typeof="schema:Organization" resource=".">

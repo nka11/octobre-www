@@ -1,4 +1,23 @@
-# React + TypeScript + Vite
+# Octobre website
+
+## Development
+
+### Running the dev server
+
+Install node.js runtime on your environment
+
+from current directory run :
+
+```
+npm install
+npm run dev
+```
+
+### Guidelines
+
+
+
+# Default readme
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

@@ -1,5 +1,5 @@
 import './App.css'
-import './scss/custom.scss'
+import './scss/octobre.scss'
 import OctobreHeader from './components/OctobreHeader';
 import FirstSection from './components/homePage/FirstSection';
 import ExpertiseSection from './components/homePage/ExpertiseSection';

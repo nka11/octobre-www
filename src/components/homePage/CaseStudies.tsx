@@ -1,3 +1,4 @@
+
 const CaseStudies = () => {
     return (
         <section className="container-md case_studies octobre_content_box_white" typeof="schema:Organization" resource=".">
