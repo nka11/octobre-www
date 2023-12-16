@@ -1,0 +1,149 @@
+.our-team {
+    font-family: 'Brown Regular Alt';
+    margin-top: 7em;
+    margin-bottom: 7em;
+    display: flex;
+    align-items: center;
+    background-color: #F4F0EE;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.our-team .cards-container {
+    padding-bottom: 3em;
+}
+.our-team-title {
+    padding: 1.5em;
+    font-size: 2.5em;
+    color: #1C1C1C;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.our-team-title a {
+    color: #1C1C1C;
+    text-decoration: none;
+}
+
+.team-card {
+    background-color: #fff;
+    border-radius: 30px;
+    
+}
+
+.our-team .card .card-body {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.our-team .card .card-body .card-infos {
+    display: flex;
+}
+
+.our-team .card .card-body .card-infos .avatar-name-role {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.our-team .card .card-body .card-infos .avatar {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    border-radius: 50%;
+
+}
+
+.our-team .card .card-body .card-infos .name-role {
+    text-align: left;
+    
+}
+
+
+.our-team .card .card-body .card-infos a {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+}
+
+.our-team .card .card-body .card-infos .name-role .person-name {
+    font-size: 18px;
+    margin-bottom: 0.5em;
+    color: #1C1C1C !important;
+    letter-spacing: 0;
+}
+
+.our-team .card .card-body .card-infos .name-role {
+    color: #8F9AAB;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.our-team .card .card-body .icon {
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+
+.our-team .card .card-body .role-name {
+    color: #8F9AAB;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+
+@include media-breakpoint-up(sm) {
+
+    .our-team .card-body .card-infos {
+        display: block !important;
+    }
+
+    .our-team .card-body .card-infos  {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .our-team .card .card-body .card-infos .name-role {
+        text-align: center;
+        padding-left: 0 !important;
+    }
+
+
+    .our-team .avatar {
+        width: 110px !important;
+        height: 110px !important;
+        border-radius: 50%;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 2em !important;
+    }
+    
+    .our-team .card .card-body {
+        padding-top: 5em !important;
+        padding-bottom: 5em !important;
+        text-align: center !important;
+    }
+    
+    .our-team .card .card-body .card-infos .name-role .person-name {
+        font-size: 22px !important;
+        letter-spacing: 0;
+    }
+    
+    
+    .our-team .card .card-body .icon {
+        margin-top: 1em !important;
+        padding: 0 !important;
+    }
+
+    .our-team .card .card-body .card-infos .avatar-name-role {
+        display: block !important;
+        width: 100% !important;
+    }
+    
+}

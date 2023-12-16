@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns# dc: http://purl.org/dc/terms/ schema: http://schema.org/">
   <head typeof="schema:Organization" resource=".">
+    <link rel="icon" type="image/svg+xml" href="assets/Octobre-Icon.svg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title property="schema:description og:title">Octobre, Expertise et Conseil en transformation digitale</title>
-    <link href="css/custom.css" rel="stylesheet">
+    <!-- <link href="css/custom.css" rel="stylesheet"> -->
     <meta name="description" property="schema:description og:description" content="Aide a la transformation digitale, a travers l'utilisation de la DATA et l'IA.">
     <meta property="schema:keywords" content="digital,digitalisation,transformation digitale"/>
     <meta property="schema:keywords" content="Conseil,DATA"/>
@@ -15,10 +16,9 @@
     <meta property="og:url" content="https://octobre.tech/" />
 
     <meta property="og:site_name" content="Octobre Conseil" />
+    <script type="module" src="/src/main.tsx"></script>
 </head>
-  <body>
-    
-    
+  <body id="root">
     <header id="HEADER_LINE" class="container-xl text-center">
         <div class="row">
             <div class="col">            
@@ -202,7 +202,12 @@
                                 <div id='title-avis' class="card-title"  property="schema:memberOf" typeOf="schema:Organization">
                                     <span property="schema:name">PME dans le domaine de la logistique</span>
                                 </div>
-                                <div id='body-avis'class="card-text" property="schema:reviewBody">Octobre nous a aidés à mettre en oeuvre un nouvel <span property="schema:keywords">outil de gestion "ERP"</span> en s'appuyant sur notre système existant, et l'a configuré de sorte qu'il reponde à nos besoins et nos <span property="schema:keywords">processus metiers.</span></div>
+                                <div id='body-avis' class="card-text" property="schema:reviewBody">
+                                    Octobre nous a aidés à mettre en oeuvre un nouvel
+                                    <span property="schema:keywords">outil de gestion "ERP"</span> 
+                                    en s'appuyant sur notre système existant, et l'a configuré de sorte qu'il reponde à nos besoins et nos 
+                                    <span property="schema:keywords">processus metiers.</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -236,10 +241,10 @@
                                 </div>
                             </div>
                             <div id="avis">
-                                <div id='title-avis' lass="card-title" property="schema:memberOf" typeOf="schema:Organization">
+                                <div id='title-avis' class="card-title" property="schema:memberOf" typeOf="schema:Organization">
                                     <span property="schema:name">Editeur BtB de solutions métiers</span>
                                 </div>
-                                <div id='body-avis'class="card-text" property="schema:reviewBody">La pratique <span property="schema:keywords">agile</span> et l'expertise <span property="schema:keywords">Devops</span> d'Octobre ont permis d'accélérer l'évolution des fonctionnalités de notre produit et d'apporter des réponses adaptées aux demandes des clients.</div>
+                                <div id='body-avis' class="card-text" property="schema:reviewBody">La pratique <span property="schema:keywords">agile</span> et l'expertise <span property="schema:keywords">Devops</span> d'Octobre ont permis d'accélérer l'évolution des fonctionnalités de notre produit et d'apporter des réponses adaptées aux demandes des clients.</div>
                             </div>
                         </div>
                     </div>
@@ -272,8 +277,8 @@
                                 </div>
                             </div>
                             <div id="avis" property="schema:memberOf" typeOf="schema:Organization">
-                                <div id='title-avis' lass="card-title" property="schema:name">ETI dans le domaine de la logistique</div>
-                                <div id='body-avis'class="card-text" property="schema:reviewBody">Notre nouvelle campagne de communication a été intégrée a notre CRM ce qui a fortement impacté notre <span property="schema:keywords">processus de recrutement</span> et notre <span property="schema:keywords">expérience candidats.</span></div>
+                                <div id='title-avis' class="card-title" property="schema:name">ETI dans le domaine de la logistique</div>
+                                <div id='body-avis' class="card-text" property="schema:reviewBody">Notre nouvelle campagne de communication a été intégrée a notre CRM ce qui a fortement impacté notre <span property="schema:keywords">processus de recrutement</span> et notre <span property="schema:keywords">expérience candidats.</span></div>
                             </div>
                         </div>
                     </div>
@@ -311,10 +316,10 @@
                                 </div>
                             </div>
                             <div id="avis">
-                                <div id='title-avis' lass="card-title" property="schema:memberOf" typeOf="schema:Organization">
+                                <div id='title-avis' class="card-title" property="schema:memberOf" typeOf="schema:Organization">
                                     <span property="schema:name">PME dans le domaine aéronautique (BtB)</span>
                                 </div>
-                                <div id='body-avis'class="card-text" property="schema:reviewBody">Octobre a réalisé un <span property="schema:keywords">audit</span> de notre <span property="schema:keywords">système d'information</span> et nous a accompagné pour obtenir les <span property="schema:keywords">certifications</span> de <span property="schema:keywords">conformité</span> exigées par nos partenaires.</div>
+                                <div id='body-avis' class="card-text" property="schema:reviewBody">Octobre a réalisé un <span property="schema:keywords">audit</span> de notre <span property="schema:keywords">système d'information</span> et nous a accompagné pour obtenir les <span property="schema:keywords">certifications</span> de <span property="schema:keywords">conformité</span> exigées par nos partenaires.</div>
                             </div>
                         </div>
                     </div>
@@ -425,227 +430,228 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
-                    <div class="card team-card h-100" property="schema:member" typeof="schema:Role">
-                        <div class="card-body">
-                            <div class="card-infos">
-                                <a id="#sylvain.zyssman" href="#"></a>
-                                <div class="avatar-name-role">
-                                    <div property="schema:member" typeOf="schema:Person" resource="#sylvain.zyssman">
-                                        <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                                    </div>
-                                    <div class="name-role">
+                    <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
+                        <div class="card team-card h-100" property="schema:member" typeof="schema:Role">
+                            <div class="card-body">
+                                <div class="card-infos">
+                                    <a id="#sylvain.zyssman" href="#"></a>
+                                    <div class="avatar-name-role">
                                         <div property="schema:member" typeOf="schema:Person" resource="#sylvain.zyssman">
-                                            <div class="person-name" property="schema:name">
-                                                <span property="schema:givenName">
-                                                    Sylvain
-                                                </span> 
-                                                <span property="schema:familyName">
-                                                    Zyssman
-                                                </span>
+                                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                        </div>
+                                        <div class="name-role">
+                                            <div property="schema:member" typeOf="schema:Person" resource="#sylvain.zyssman">
+                                                <div class="person-name" property="schema:name">
+                                                    <span property="schema:givenName">
+                                                        Sylvain
+                                                    </span>
+                                                    <span property="schema:familyName">
+                                                        Zyssman
+                                                    </span>
+                                                </div>
+                                                <div style="display:none">
+                                                    <p property="schema:jobTitle">IA, machine learning & MLOps expert</p>
+                                                    <p property="schema:description">Le mentor</p>
+                                                </div>
+                                            </div>
+                                            <div class="role-name" property="schema:roleName">Data Strategy Officer</div>
+                                        </div>
+                                        <div style="display:none">
+                                            <p property="schema:description"></p>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                            <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
+                                <div class="card-body">
+                                    <div class='card-infos'>
+                                        <a id="#remy.teboul" href="#"></a>
+                                        <div class="avatar-name-role">
+                                            <div  property="schema:member" typeOf="schema:Person" resource="#remy.teboul">
+                                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                            </div>
+                                            <div class="name-role">
+                                                <div  property="schema:member" typeOf="schema:Person" resource="#remy.teboul">
+                                                    <div class="person-name" property="schema:name">
+                                                        <span property="schema:givenName">
+                                                            Remy
+                                                        </span>
+                                                        <span property="schema:familyName">
+                                                            Teboul
+                                                        </span>
+                                                    </div>
+                                                    <div style="display:none">
+                                                        <p property="schema:jobTitle">L'artiste</p>
+                                                    </div>
+                                                </div>
+                                                <div class="role-name" property="schema:roleName">UX / UI Designer</div>
                                             </div>
                                             <div style="display:none">
-                                                <p property="schema:jobTitle">IA, machine learning & MLOps expert</p>
-                                                <p property="schema:description">Le mentor</p>
+                                                <p property="schema:description"></p>
                                             </div>
                                         </div>
-                                        <div class="role-name" property="schema:roleName">Data Strategy Officer</div>
+                                        <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                                     </div>
-                                    <div style="display:none">
-                                        <p property="schema:description"></p>
-                                    </div>
-                                </div>
-                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
-                            <div class="card-body">
-                                <div class='card-infos'>
-                                    <a id="#remy.teboul" href="#"></a>
-                                    <div class="avatar-name-role">
-                                        <div  property="schema:member" typeOf="schema:Person" resource="#remy.teboul">
-                                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                                        </div>
-                                        <div class="name-role">
-                                            <div  property="schema:member" typeOf="schema:Person" resource="#remy.teboul">
-                                                <div class="person-name" property="schema:name">
-                                                    <span property="schema:givenName">
-                                                        Remy
-                                                    </span> 
-                                                    <span property="schema:familyName">
-                                                        Teboul
-                                                    </span>
-                                                </div>
-                                                <div style="display:none">
-                                                    <p property="schema:jobTitle">L'artiste</p>
-                                                </div>
-                                            </div>
-                                            <div class="role-name" property="schema:roleName">UX / UI Designer</div>
-                                        </div>
-                                        <div style="display:none">
-                                            <p property="schema:description"></p>
-                                        </div>
-                                    </div>
-                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
-                            <div class="card-body">
-                                <div class="card-infos">
-                                    <a id="#celine.cherqui" href="#"></a>
-                                    <div class="avatar-name-role">
-                                        <div property="schema:member" typeOf="schema:Person" resource="#celine.cherqui">
-                                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                                        </div>
-                                        <div class="name-role">
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                            <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
+                                <div class="card-body">
+                                    <div class="card-infos">
+                                        <a id="#celine.cherqui" href="#"></a>
+                                        <div class="avatar-name-role">
                                             <div property="schema:member" typeOf="schema:Person" resource="#celine.cherqui">
-                                            
-                                                <div class="person-name" property="schema:name">
-                                                    <span property="schema:givenName">
-                                                        Céline
-                                                    </span> 
-                                                    <span property="schema:familyName">
-                                                        Cherqui
-                                                    </span>
-                                                </div>
-                                                <div style="display:none">
-                                                    <p property="schema:jobTitle">L'Attrape-talents</p>
-                                                </div>
+                                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
                                             </div>
-                                            <div class="role-name" property="schema:roleName">Responsable recrutement / marque employeur</div>
-                                        </div>
-                                        <div style="display:none">
-                                            <p property="schema:description"></p>
-                                        </div>
-                                    </div>
-                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                            <div class="name-role">
+                                                <div property="schema:member" typeOf="schema:Person" resource="#celine.cherqui">
 
-                    <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
-                        <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
-                            <div class="card-body">
-                                <div class="card-infos">
-                                    <a id="#ethan.fajnkuchen" href="#"></a>
-                                    <div class="avatar-name-role">
-                                        <div property="schema:member" typeOf="schema:Person" resource="#ethan.fajnkuchen">
-                                            <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
-                                        </div>
-                                        <div class="name-role">
-                                            <div property="schema:member" typeOf="schema:Person" resource="#ethan.fajnkuchen">
-                                                <div class="person-name" property="schema:name">
-                                                    <span property="schema:givenName">
-                                                        Ethan
-                                                    </span> 
-                                                    <span property="schema:familyName">
-                                                        Fajnkuchen
-                                                    </span>
+                                                    <div class="person-name" property="schema:name">
+                                                        <span property="schema:givenName">
+                                                            Céline
+                                                        </span>
+                                                        <span property="schema:familyName">
+                                                            Cherqui
+                                                        </span>
+                                                    </div>
+                                                    <div style="display:none">
+                                                        <p property="schema:jobTitle">L'Attrape-talents</p>
+                                                    </div>
                                                 </div>
-                                                <div style="display:none">
-                                                    <p property="schema:jobTitle">Le prince des hackers / Petit scarabée</p>
-                                                </div>
+                                                <div class="role-name" property="schema:roleName">Responsable recrutement / marque employeur</div>
                                             </div>
-                                            <div class="role-name" property="schema:roleName">Ingénieur Logiciel</div>
+                                            <div style="display:none">
+                                                <p property="schema:description"></p>
+                                            </div>
                                         </div>
-                                        <div style="display:none">
-                                            <p property="schema:description"> </p>
-                                        </div>
+                                        <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                                     </div>
-                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                                 </div>
                             </div>
                         </div>
-                    </div>
-            </div>
-        </section>
-        <section class="container-lg contact-us">
-            <div class="picture">
-                <img src="./assets/photos/contact-pic.png" />
-            </div>
-            <div class="form">
-                <h2 class="contact-us-title">
-                    <a id="contact" href="#contact">
-                        Contactez-nous
-                    </a>
-                </h2>
-                <form>
-                    <input placeholder="Nom" type="text" />
-                    <input placeholder="Prénom" type="text" />
-                    <input placeholder="Nom de l'entreprise" type="text" id="entreprise" />
-                    <input placeholder="Email" type="email" />
-                    <input placeholder="Téléphone" type="tel" />
-                    <textarea placeholder="Votre message"></textarea>
-                    <button type="submit">Envoyer</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer class="container-xl footer" typeof="schema:Organization" resource=".">
-        <div class="logo">
-            <img property="schema:logo" src="assets/Logo_octobre_conseil.svg">
-        </div>
-        <nav class="footer-container">
-            <div class="footer-menu">
-                <div class="row">
-                    <ul class="menu-1 col">
-                        <li><a href="#about">A propos</a></li>
-                        <li><a href="#expertises">Nos expertises</a></li>
-                        <li><a href="#case-studies">Etudes de cas</a></li>
-                        <li><a href="#team">L'Equipe</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <ul class="menu-2 col" style="display:none">
-                        <li>Mentions Légales</li>
-                        <li>Conditions générales</li>
-                        <li>Cookies</li>
-                        <li>RGPD</li>
-                        <li>Licenses</li>
-                    </ul>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6  mb-4">
+                            <div class="card team-card h-100" property="schema:member" typeOf="schema:Role">
+                                <div class="card-body">
+                                    <div class="card-infos">
+                                        <a id="#ethan.fajnkuchen" href="#"></a>
+                                        <div class="avatar-name-role">
+                                            <div property="schema:member" typeOf="schema:Person" resource="#ethan.fajnkuchen">
+                                                <img src="./assets/photos/profil-pic.png" class="avatar" alt="avatar" />
+                                            </div>
+                                            <div class="name-role">
+                                                <div property="schema:member" typeOf="schema:Person" resource="#ethan.fajnkuchen">
+                                                    <div class="person-name" property="schema:name">
+                                                        <span property="schema:givenName">
+                                                            Ethan
+                                                        </span>
+                                                        <span property="schema:familyName">
+                                                            Fajnkuchen
+                                                        </span>
+                                                    </div>
+                                                    <div style="display:none">
+                                                        <p property="schema:jobTitle">Le prince des hackers / Petit scarabée</p>
+                                                    </div>
+                                                </div>
+                                                <div class="role-name" property="schema:roleName">Ingénieur Logiciel</div>
+                                            </div>
+                                            <div style="display:none">
+                                                <p property="schema:description"> </p>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
+            </section>
+            <section class="container-lg contact-us">
+                <div class="picture">
+                    <img src="./assets/photos/contact-pic.png" />
+                </div>
+                <div class="form">
+                    <h2 class="contact-us-title">
+                        <a id="contact" href="#contact">
+                            Contactez-nous
+                        </a>
+                    </h2>
+                    <form>
+                        <input placeholder="Nom" type="text" />
+                        <input placeholder="Prénom" type="text" />
+                        <input placeholder="Nom de l'entreprise" type="text" id="entreprise" />
+                        <input placeholder="Email" type="email" />
+                        <input placeholder="Téléphone" type="tel" />
+                        <textarea placeholder="Votre message"></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="container-xl footer" typeof="schema:Organization" resource=".">
+            <div class="logo">
+                <img property="schema:logo" src="assets/Logo_octobre_conseil.svg">
             </div>
-            <div class="transformation ">
-                <div class="row">
-                    <div class="pic-td col">
-                    <img src="./assets/photos/logo_TN.png" alt="pic_transition-digital" />
-                    </div>
-                    <div class="text-partenaire col">
-                        <p property="schema:description">Partenaire de la transformation digitale des PME et ETI.</p>
+            <nav class="footer-container">
+                <div class="footer-menu">
+                    <div class="row">
+                        <ul class="menu-1 col">
+                            <li><a href="#about">A propos</a></li>
+                            <li><a href="#expertises">Nos expertises</a></li>
+                            <li><a href="#case-studies">Etudes de cas</a></li>
+                            <li><a href="#team">L'Equipe</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <ul class="menu-2 col" style="display:none">
+                            <li>Mentions Légales</li>
+                            <li>Conditions générales</li>
+                            <li>Cookies</li>
+                            <li>RGPD</li>
+                            <li>Licenses</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <div class="mail-rights">
-            <div class="button-mail">
-                <button type="submit">
-                    <svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>46239B28-9170-4840-BB7C-1AD42CB3A647</title>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Capture-d’écran-2023-11-22-à-16.31.05" transform="translate(-843, -5798)" fill="#000000" fill-rule="nonzero">
-                                <g id="Group-31" transform="translate(827, 5781)">
-                                    <g id="envelopes" transform="translate(16, 17)">
-                                        <path d="M14.1428571,0 L3.85714286,0 C1.72285714,0 0,1.675 0,3.75 L0,11.25 C0,13.325 1.72285714,15 3.85714286,15 L14.1428571,15 C16.2771429,15 18,13.325 18,11.25 L18,3.75 C18,1.675 16.2771429,0 14.1428571,0 Z M14.1428571,0.833333333 C14.9571429,0.833333333 15.7028571,1.15 16.2428571,1.66666667 L11.1257143,6.64166667 C9.95142857,7.78333333 8.05714286,7.78333333 6.88285714,6.64166667 L1.75714286,1.66666667 C2.29714286,1.15 3.04285714,0.833333333 3.85714286,0.833333333 L14.1428571,0.833333333 Z M17.1428571,11.25 C17.1428571,12.8583333 15.7971429,14.1666667 14.1428571,14.1666667 L3.85714286,14.1666667 C2.20285714,14.1666667 0.857142857,12.8583333 0.857142857,11.25 L0.857142857,3.75 C0.857142857,3.23333333 0.994285714,2.75833333 1.23428571,2.33333333 L6.27428571,7.23333333 C7.02857143,7.96666667 8.01428571,8.33333333 9,8.33333333 C9.98571429,8.33333333 10.9714286,7.96666667 11.7257143,7.23333333 L16.7657143,2.33333333 C17.0057143,2.75 17.1428571,3.23333333 17.1428571,3.75 L17.1428571,11.25 Z" id="Shape"></path>
+                <div class="transformation ">
+                    <div class="row">
+                        <div class="pic-td col">
+                        <img src="./assets/photos/logo_TN.png" alt="pic_transition-digital" />
+                        </div>
+                        <div class="text-partenaire col">
+                            <p property="schema:description">Partenaire de la transformation digitale des PME et ETI.</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="mail-rights">
+                <div class="button-mail">
+                    <button type="submit">
+                        <svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>46239B28-9170-4840-BB7C-1AD42CB3A647</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Capture-d’écran-2023-11-22-à-16.31.05" transform="translate(-843, -5798)" fill="#000000" fill-rule="nonzero">
+                                    <g id="Group-31" transform="translate(827, 5781)">
+                                        <g id="envelopes" transform="translate(16, 17)">
+                                            <path d="M14.1428571,0 L3.85714286,0 C1.72285714,0 0,1.675 0,3.75 L0,11.25 C0,13.325 1.72285714,15 3.85714286,15 L14.1428571,15 C16.2771429,15 18,13.325 18,11.25 L18,3.75 C18,1.675 16.2771429,0 14.1428571,0 Z M14.1428571,0.833333333 C14.9571429,0.833333333 15.7028571,1.15 16.2428571,1.66666667 L11.1257143,6.64166667 C9.95142857,7.78333333 8.05714286,7.78333333 6.88285714,6.64166667 L1.75714286,1.66666667 C2.29714286,1.15 3.04285714,0.833333333 3.85714286,0.833333333 L14.1428571,0.833333333 Z M17.1428571,11.25 C17.1428571,12.8583333 15.7971429,14.1666667 14.1428571,14.1666667 L3.85714286,14.1666667 C2.20285714,14.1666667 0.857142857,12.8583333 0.857142857,11.25 L0.857142857,3.75 C0.857142857,3.23333333 0.994285714,2.75833333 1.23428571,2.33333333 L6.27428571,7.23333333 C7.02857143,7.96666667 8.01428571,8.33333333 9,8.33333333 C9.98571429,8.33333333 10.9714286,7.96666667 11.7257143,7.23333333 L16.7657143,2.33333333 C17.0057143,2.75 17.1428571,3.23333333 17.1428571,3.75 L17.1428571,11.25 Z" id="Shape"></path>
+                                        </g>
                                     </g>
                                 </g>
                             </g>
-                        </g>
-                    </svg>
-                    <span property="schema:email">conseil@octobre.tech</span></button>
+                        </svg>
+                        <span property="schema:email">conseil@octobre.tech</span></button>
+                </div>
+                <div class="rights">
+                    <p>Tous droits réservés. <span property="schema:name">Octobre</span> 2023</p>
+                </div>
             </div>
-            <div class="rights">
-                <p>Tous droits réservés. <span property="schema:name">Octobre</span> 2023</p>
-            </div>
-        </div>
-        
-    </footer>
+
+        </footer>
+    </div>
  </body>
 </html>

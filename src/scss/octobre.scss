@@ -1,0 +1,142 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$body-bg: #FFF;
+$body-color: #111;
+$enable-cssgrid: true;
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+@font-face {
+    font-display: swap;
+    font-family: 'Brown Regular';
+    src: url(/assets/fonts/Brown-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Brown Regular Alt';
+    src: url(/assets/fonts/Brown-RegularAlt.ttf) format('truetype');
+}
+
+body, html {
+    overflow-x: hidden;
+}
+.logo_text {
+    font-family: 'Brown Regular';
+}
+
+
+header {
+    margin-top: 1.2em;
+}
+
+.octobre_row {
+    margin-top: 3em;
+}
+
+
+button {
+    border-radius: 30px;
+    font-size: 1.15em;
+    font-family: 'Brown Regular';   
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-width: 0;
+}
+
+.octobre_black {
+    background-color: #1C1C1C;
+    color: #FFF;
+}
+
+.octobre_content_box_white {
+    font-family: 'Brown Regular Alt';
+    margin-top: 3em;
+    margin-bottom: 7em;
+    background-color: #fff;
+}
+
+.octobre_lightgray_title {
+    text-align: center;
+    padding: .7em;
+    margin-top: 1.5em;
+    color: #9A9A9A;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.octobre_deepdark_desc {
+    padding: 1.5em;
+    font-size: 1.8em;
+    color: #1C1C1C;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: 'Brown Regular';
+}
+
+
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners img {
+    margin: 2em;
+    width: 120px;
+}
+
+
+@include media-breakpoint-up(lg) {
+    .octobre_domains_grid {
+        --bs-columns: 4;
+    }
+}
+
+ .octobre_content_box_brown {
+    font-family: 'Brown Regular Alt';
+    margin-bottom: 7em;
+    background-color: #F4F0EE;
+    padding-top:3em;
+    padding-bottom: 3em;
+}
+
+@import './first_section.scss';
+@import './expertise.scss';
+@import './about_us.scss';
+@import "./case_studies.scss";
+@import './our_team.scss';
+@import './contact_us.scss';
+@import './footer.scss';
