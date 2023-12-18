@@ -54,6 +54,7 @@ jobs:
           # Upload the generated build
           path: 'dist'
       - name: Deploy to GitHub Pages
+        if: ${{ github.ref == 'refs/heads/develop' }}
         id: deployment
         uses: actions/deploy-pages@v3
       - name: Assemble and deploy via FTP
