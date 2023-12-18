@@ -60,7 +60,7 @@ export function OctobreIndex() {
                     </div>
                 </section>
                 <OurTeam />
-                <section className="container-lg contact-us">
+                <section style={{display: "none"}} className="container-lg contact-us">
                     <div className="picture">
                         <img src="./assets/photos/contact-pic.png" />
                     </div>
