@@ -9,7 +9,7 @@ const OctobreHeader = () => {
     <header className='container-xl'>
       <Navbar expand="lg" bg="white" variant="light">
         <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand className='logo' href="#">
           <OctobreLogo />
         </Navbar.Brand>
           <div className="ml-2 mr-4 desktop-logo-text">
