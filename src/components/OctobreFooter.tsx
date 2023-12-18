@@ -1,3 +1,4 @@
+import ContactSvgLabel from './contact.svg'
 
 const OctobreFooter = () => {
     return (
@@ -50,7 +51,7 @@ const OctobreFooter = () => {
                                 </g>
                             </g>
                         </svg>
-                        <span property="schema:email">conseil@octobre.tech</span></button>
+                        <span property="schema:email" content="conseil_at_octobre_dot_tech"><ContactSvgLabel /></span></button>
                 </div>
                 <div className="rights">
                     <p>Tous droits réservés. <span property="schema:name">Octobre</span> 2023</p>
