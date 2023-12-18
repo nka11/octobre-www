@@ -30,11 +30,14 @@ $enable-cssgrid: true;
 @import "../node_modules/bootstrap/scss/helpers";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/transitions";
+
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+
 
 @font-face {
     font-display: swap;
@@ -83,7 +86,7 @@ button {
 .octobre_content_box_white {
     font-family: 'Brown Regular Alt';
     margin-top: 3em;
-    margin-bottom: 7em;
+    //margin-bottom: 7em;
     background-color: #fff;
 }
 
@@ -98,6 +101,8 @@ button {
 
 .octobre_deepdark_desc {
     padding: 1.5em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     font-size: 1.8em;
     color: #1C1C1C;
     letter-spacing: 0em;
@@ -125,14 +130,27 @@ button {
     .octobre_domains_grid {
         --bs-columns: 4;
     }
+
+    .octobre_content_box_brown {
+        padding-top: 3em !important ;
+        padding-bottom: 3em !important;
+        margin-bottom: 7em !important;
+
+
+    }
+
+    .octobre_deepdark_desc {
+        padding: 1.5em !important;
+
+    }
 }
 
  .octobre_content_box_brown {
     font-family: 'Brown Regular Alt';
-    margin-bottom: 7em;
+    margin-bottom: 3em;
     background-color: #F4F0EE;
-    padding-top:3em;
-    padding-bottom: 3em;
+    padding-top:0em;
+    padding-bottom: 0em;
 }
 
 @import './header.scss';

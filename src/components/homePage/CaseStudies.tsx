@@ -6,7 +6,7 @@ const CaseStudies = () => {
                 <div className="col">
                     <h2 className="octobre_lightgray_title">
                         <a id="case-studies" href="#case-studies">
-                            ETUDES DE CAS
+                            CAS CLIENTS
                         </a>
                     </h2>
                 </div>
@@ -50,9 +50,9 @@ const CaseStudies = () => {
                                 </div>
                                 <div id='body-avis' className="card-text" property="schema:reviewBody">
                                     Octobre nous a aidés à mettre en oeuvre un nouvel
-                                    <span property="schema:keywords">outil de gestion "ERP"</span> 
+                                    <span property="schema:keywords"> outil de gestion "ERP" </span> 
                                     en s'appuyant sur notre système existant, et l'a configuré de sorte qu'il reponde à nos besoins et nos 
-                                    <span property="schema:keywords">processus metiers.</span>
+                                    <span property="schema:keywords"> processus metiers.</span>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ const CaseStudies = () => {
                                 </div>
                                 <div className="infos-auteur" property="schema:name">
                                     <div id="new" className='card-text' property="schema:givenName">Robert</div>
-                                    <div id="new" className='card-text' property="schema:jobTitle">Directeur générale</div>
+                                    <div id="new" className='card-text' property="schema:jobTitle">Directeur général</div>
                                 </div>
                             </div>
                             <div id="avis">
@@ -124,7 +124,7 @@ const CaseStudies = () => {
                             </div>
                             <div id="avis" property="schema:memberOf" typeof="schema:Organization">
                                 <div id='title-avis' className="card-title" property="schema:name">ETI dans le domaine de la logistique</div>
-                                <div id='body-avis' className="card-text" property="schema:reviewBody">Notre nouvelle campagne de communication a été intégrée a notre CRM ce qui a fortement impacté notre <span property="schema:keywords">processus de recrutement</span> et notre <span property="schema:keywords">expérience candidats.</span></div>
+                                <div id='body-avis' className="card-text" property="schema:reviewBody">Notre nouvelle campagne de communication a été intégrée à notre CRM ce qui a fortement impacté notre <span property="schema:keywords">processus de recrutement</span> et notre <span property="schema:keywords">expérience candidats.</span></div>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ const CaseStudies = () => {
                                         <span property="schema:givenName">Pascal</span>
                                     </div>
                                     <div id="new" className='card-text'>
-                                        <span property="schema:jobTitle">Directeur commerciale</span>
+                                        <span property="schema:jobTitle">Directeur commercial</span>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +173,7 @@ const CaseStudies = () => {
             </div>            
             <div className="row octobre_row text-center">
                 <div className="col">
-                    <button className="octobre_black">Voir + d’étude de cas</button>
+                    <button className="octobre_black" style={{display: 'none'}}>Voir + d’étude de cas</button>
                 </div>
             </div>
         </section>

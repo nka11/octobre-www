@@ -51,9 +51,11 @@
     padding-left: 0.5em;
     font-family: 'Brown Regular Alt';
     font-size: 14px;
-
 }
 
+.form .left-input {
+    margin-right: 2%;
+}
 .form textarea,input::placeholder {
     font-family: 'Brown Regular Alt';
     color: #768295;

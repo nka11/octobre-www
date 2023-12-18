@@ -8,10 +8,10 @@ const ContactForm = () => {
                 </a>
             </h2>
             <form>
-                <input placeholder="Nom" type="text" />
+                <input className="left-input" placeholder="Nom" type="text" />
                 <input placeholder="Prénom" type="text" />
                 <input placeholder="Nom de l'entreprise" type="text" id="entreprise" />
-                <input placeholder="Email" type="email" />
+                <input className="left-input" placeholder="Email" type="email" />
                 <input placeholder="Téléphone" type="tel" />
                 <textarea placeholder="Votre message"></textarea>
                 <button type="submit">Envoyer</button>

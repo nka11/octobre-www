@@ -9,11 +9,11 @@ const OctobreFooter = () => {
                 <div className="footer-menu">
                     <div className="row">
                         <ul className="menu-1 col">
-                            <li><a href="#about">A propos</a></li>
+                            <li><a href="#about">À propos</a></li>
                             <li><a href="#expertises">Nos expertises</a></li>
-                            <li><a href="#case-studies">Etudes de cas</a></li>
-                            <li><a href="#team">L'Equipe</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#case-studies">Cas clients</a></li>
+                            <li><a href="#team">L'équipe</a></li>
+                            <li><a href="#contact">Nous contacter</a></li>
                         </ul>
                         <ul className="menu-2 col" style={{ "display": "none" }}>
                             <li>Mentions Légales</li>

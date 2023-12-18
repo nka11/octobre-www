@@ -5,6 +5,9 @@
     padding-top: 1em;
 }
 
+.case_studies .photo-auteur {
+    display: none;
+}
 
 
 @include media-breakpoint-up(lg) { 
@@ -53,15 +56,13 @@
 
     // Background Images
     .case_studies .case-study-large-card.case-1 {
-        background-image: url(./../assets/photos/case_study_4_back.jpeg);
+        background-image: url(./../assets/photos/case_study_2_back.jpeg);
         background-size: cover;
     }
 
     .case_studies .case-study-large-card.case-2 {
-        background-image: url(./../assets/photos/case_study_2_back.jpeg);
+        background-image: url(./../assets/photos/case_study_4_back.jpeg);
         background-size: cover;
-
-
     }
 
     .case_studies .case-study-large-card.case-3 {
@@ -140,15 +141,16 @@
 
 .case_studies .spe-col .case-study-small-card .card-title {
     text-align: left !important;
+    width: 80%;
+}
+
+.case_studies .case-study-small-card .card-body #avis .card-text#body-avis {
+    text-align: left !important;
 }
 
 
 }
 
-
-/**
-CASE STUDIES
-**/
 
 .case_studies .octobre_lightgray_title a {
     color: #9A9A9A;
@@ -287,6 +289,7 @@ CASE STUDIES
     font-size: 16px;
     letter-spacing: 0;
     margin-top: 1em;
+    text-align: center;
 }
 
 .case_studies .case-study-small-card .card-body #avis {
@@ -406,7 +409,7 @@ CASE STUDIES
     color: #000000;
     font-size: 30px;
     letter-spacing: 0;
-    width: 80%;
+    width: 100%;
     margin-bottom: 1em;
     text-transform: uppercase;
     text-align: center;

@@ -17,7 +17,7 @@ const OurTeam = () => {
                                 <a id="#samuel.assoun" href="#"></a>
                                 <div className="avatar-name-role">
                                     <div property="schema:member" typeof="schema:Person" resource="#samuel.assoun">
-                                        <img src="./assets/photos/profil-pic.png" className="avatar" alt="avatar" />
+                                        <img src="/assets/team-members/samuel_picture.jpg" className="avatar" alt="avatar" />
                                     </div>
                                     <div className="name-role">
                                         <div property="schema:member" typeof="schema:Person" resource="#samuel.assoun">
@@ -42,7 +42,9 @@ const OurTeam = () => {
                                         <p property="schema:description"></p>
                                     </div>
                                 </div>
-                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                <a href="https://www.linkedin.com/in/samuel-assoun-72847367/" target="_blank">
+                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +57,7 @@ const OurTeam = () => {
                                 <a id="#nicolas.karageuzian" href="#"></a>
                                 <div className="avatar-name-role">
                                     <div property="schema:member" typeof="schema:Person" resource="#nicolas.karageuzian">
-                                        <img src="./assets/photos/profil-pic.png" className="avatar" alt="avatar" />
+                                        <img src="/assets/team-members/nicolas_picture.jpg" className="avatar" alt="avatar" />
                                     </div>
                                     <div className="name-role">
                                         <div property="schema:member" typeof="schema:Person" resource="#nicolas.karageuzian">
@@ -80,7 +82,9 @@ const OurTeam = () => {
                                         <p property="schema:description"></p>
                                     </div>
                                 </div>
-                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                <a href="https://www.linkedin.com/in/nicolask/" target="_blank">
+                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                </a>                           
                             </div>
                         </div>
                     </div>
@@ -93,7 +97,7 @@ const OurTeam = () => {
                                 <a id="#sylvain.zyssman" href="#"></a>
                                 <div className="avatar-name-role">
                                     <div property="schema:member" typeof="schema:Person" resource="#sylvain.zyssman">
-                                        <img src="./assets/photos/profil-pic.png" className="avatar" alt="avatar" />
+                                        <img src="/assets/team-members/sylvain_picture.jpeg" className="avatar" alt="avatar" />
                                     </div>
                                     <div className="name-role">
                                         <div property="schema:member" typeof="schema:Person" resource="#sylvain.zyssman">
@@ -116,7 +120,9 @@ const OurTeam = () => {
                                         <p property="schema:description"></p>
                                     </div>
                                 </div>
-                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                <a href="https://www.linkedin.com/in/sylvainzyssman/" target="_blank">
+                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                </a>    
                             </div>
                         </div>
                     </div>
@@ -129,7 +135,7 @@ const OurTeam = () => {
                                 <a id="#remy.teboul" href="#"></a>
                                 <div className="avatar-name-role">
                                     <div property="schema:member" typeof="schema:Person" resource="#remy.teboul">
-                                        <img src="./assets/photos/profil-pic.png" className="avatar" alt="avatar" />
+                                        <img src="/assets/team-members/remy_picture.jpeg" className="avatar" alt="avatar" />
                                     </div>
                                     <div className="name-role">
                                         <div property="schema:member" typeof="schema:Person" resource="#remy.teboul">
@@ -151,7 +157,9 @@ const OurTeam = () => {
                                         <p property="schema:description"></p>
                                     </div>
                                 </div>
-                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                <a href='https://www.linkedin.com/in/remyteboul/' target='_blank'>
+                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -164,7 +172,7 @@ const OurTeam = () => {
                                 <a id="#celine.cherqui" href="#"></a>
                                 <div className="avatar-name-role">
                                     <div property="schema:member" typeof="schema:Person" resource="#celine.cherqui">
-                                        <img src="./assets/photos/profil-pic.png" className="avatar" alt="avatar" />
+                                        <img src="/assets/team-members/celine_picture.jpeg" className="avatar" alt="avatar" />
                                     </div>
                                     <div className="name-role">
                                         <div property="schema:member" typeof="schema:Person" resource="#celine.cherqui">
@@ -187,7 +195,9 @@ const OurTeam = () => {
                                         <p property="schema:description"></p>
                                     </div>
                                 </div>
-                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                <a href="https://www.linkedin.com/in/celine-cherqui-oneway-recrutement-experience-candidats-collaborateurs/" target="_blank">
+                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -200,7 +210,7 @@ const OurTeam = () => {
                                 <a id="#ethan.fajnkuchen" href="#"></a>
                                 <div className="avatar-name-role">
                                     <div property="schema:member" typeof="schema:Person" resource="#ethan.fajnkuchen">
-                                        <img src="./assets/photos/profil-pic.png" className="avatar" alt="avatar" />
+                                        <img src="/assets/team-members/ethan_picture.jpg" className="avatar" alt="avatar" />
                                     </div>
                                     <div className="name-role">
                                         <div property="schema:member" typeof="schema:Person" resource="#ethan.fajnkuchen">
@@ -222,7 +232,9 @@ const OurTeam = () => {
                                         <p property="schema:description"> </p>
                                     </div>
                                 </div>
-                                <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                <a href="https://www.linkedin.com/in/ethan-fajnkuchen/" target="_blank">
+                                    <img src="./assets/pictos/icon-linkedin.svg" alt="icon-linkedin" className="icon" />
+                                </a>   
                             </div>
                         </div>
                     </div>

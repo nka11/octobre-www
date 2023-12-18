@@ -1,39 +1,45 @@
+import { Navbar, Nav } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 import OctobreLogo from "./OctobreLogo";
+import IconMenu from './../icons/Menu.svg';
+import IconRDV from './../icons/messenger.svg'
 
 const OctobreHeader = () => {
   return (
     <header className='container-xl'>
-    <nav className="navbar navbar-expand-lg navbar-light bg-white">
-      <a className="navbar-brand" href="#">
-        <OctobreLogo />
-      </a> 
-      <div className="ml-2 mr-4 logo-text">
-        <span>Partenaire de la transformation digitale des PME et ETI</span>
-      </div>
-
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse ml-4" id="navbarNav">
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">A propos</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Etude de cas</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">L'équipe</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <button className="ml-4">Prendre RDV</button>
-    </nav>
-  </header>
+      <Navbar expand="lg" bg="white" variant="light">
+        <Container>
+        <Navbar.Brand href="#">
+          <OctobreLogo />
+        </Navbar.Brand>
+          <div className="ml-2 mr-4 desktop-logo-text">
+            <span>Partenaire de la transformation digitale des PME et ETI</span>
+          </div> 
+        <Navbar.Toggle aria-controls="navbarNav">
+          <IconMenu/>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="navbarNav">
+          <Nav className="mr-auto">
+            <Nav.Link className='nav-item' href="#about">À propos</Nav.Link>
+            <Nav.Link className='nav-item' href="#case-studies">Cas Clients</Nav.Link>
+            <Nav.Link className='nav-item' href="#team">L'équipe</Nav.Link>
+            <Nav.Link className='nav-item' href="#contact">Nous Contacter</Nav.Link>
+            <div className='mobile-rdv-button'>
+          <IconRDV />
+        </div>
+          </Nav>
+        </Navbar.Collapse>
+        <button className="ml-4 desktop-rdv-button">Prendre RDV</button>
+        <div className='mobile-rdv-button'>
+          <IconRDV />
+        </div>
+        </Container>
+      </Navbar>
+      <div className=" mobile-logo-text">
+            <span>Partenaire de la transformation digitale des PME et ETI</span>
+        </div> 
+    </header>
   );
-}
+};
+
 export default OctobreHeader;

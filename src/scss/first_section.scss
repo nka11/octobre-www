@@ -28,7 +28,9 @@
     justify-content: center;
     align-items: center;
     height: 500px;
+    width: 20em;
     border-radius: 30px;
+    background-position: right;
 }
 
 .first_section .image-back .text-over {
@@ -40,12 +42,14 @@
 }
 
 .first_section .image-back .text-over p {
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: #fff;
-    max-width: 70%;
+    max-width: 80%;
     text-align: center;
     letter-spacing: -1.01px;
     margin-top: 1em;
+    line-height: 1.2em;
+    margin-bottom: 2em;
 }
 
 .first_section .split span {
@@ -67,4 +71,20 @@
 .first_section .image-back .text-over img {
     width: 30px;
     padding-top: 7em;
+}
+
+@include media-breakpoint-up(sm) {
+    .first_section .image-back {
+        width: auto !important;
+    }
+
+    .first_section .image-back .text-over p {
+        font-size: 2.5em !important;
+        color: #fff;
+        max-width: 70% !important;
+        text-align: center;
+        letter-spacing: -1.01px;
+        margin-top: 1em;
+
+    }
 }

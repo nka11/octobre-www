@@ -48,9 +48,9 @@ export function OctobreIndex() {
                 <section>
                     <div className="row5">
                         <div className="col octobre_deepdark_desc">
-                            Nos clients
+                            Ils nous font confiance !
                         </div>
-                        <div class=" container-fluid partners">
+                        <div className="container-fluid partners">
                             <img src="./assets/partners-logo/Arconic_logo_(horizontal).svg" alt="Logo Arconic" />
                             <img src="./assets/partners-logo/chauvin-arnoux-group-vector-logo.svg" alt="Logo Chauvin Arnoux" />
                             <img src="./assets/partners-logo/CORNORM_LOGO-ozlyaie70glwwn6uuajshil9pwtvukr6c3ifyqa156.svg" alt="Logo CorNorm" />

@@ -13,7 +13,7 @@ const ExpertiseSection = () => {
             </div>
             <div className="row">
                 <div className="col" property="schema:description">
-                    <p className="octobre_deepdark_desc">A la croisée des chemins entre l'IT et les Métiers</p>
+                    <p className="octobre_deepdark_desc">À la croisée des chemins entre l'IT et les Métiers</p>
                 </div>
             </div>
             <div className="container mt-4 expertise-presentation">
