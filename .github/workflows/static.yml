@@ -54,6 +54,7 @@ jobs:
           # Upload the generated build
           path: 'dist'
       - name: Deploy to GitHub Pages
+        if: ${{ github.ref == 'refs/heads/develop' }}
         id: deployment
         uses: actions/deploy-pages@v3
       - name: Assemble and deploy via FTP
@@ -63,7 +64,7 @@ jobs:
           server: ${{ vars.OCTOBRE_FTP_TARGET_HOST }}
           username: ${{ vars.OCTOBRE_FTP_TARGET_USER }}
           password: ${{ secrets.OCTOBRE_WWW_FTP_PASSWORD }}
-          local-dir: ./
+          local-dir: ./dist/
           server-dir: /
           timeout: 600000
   lighthouseci:
