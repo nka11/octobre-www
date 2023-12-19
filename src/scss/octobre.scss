@@ -153,11 +153,17 @@ button {
     padding-bottom: 0em;
 }
 
+/**
+Imports of External SCSS files.
+**/
+
 @import './header.scss';
 @import './first_section.scss';
-@import './expertise.scss';
 @import './about_us.scss';
+@import './expertise.scss';
 @import "./case_studies.scss";
 @import './our_team.scss';
 @import './contact_us.scss';
 @import './footer.scss';
+
+

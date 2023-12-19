@@ -9,24 +9,26 @@ const OctobreHeader = () => {
     <header className='container-xl'>
       <Navbar expand="lg" bg="white" variant="light">
         <Container>
+          
+        <Navbar.Toggle aria-controls="navbarNav">
+          <IconMenu/>
+        </Navbar.Toggle>
         <Navbar.Brand className='logo' href="#">
           <OctobreLogo />
         </Navbar.Brand>
           <div className="ml-2 mr-4 desktop-logo-text">
             <span>Partenaire de la transformation digitale des PME et ETI</span>
           </div> 
-        <Navbar.Toggle aria-controls="navbarNav">
-          <IconMenu/>
-        </Navbar.Toggle>
+
         <Navbar.Collapse id="navbarNav">
           <Nav className="mr-auto">
             <Nav.Link className='nav-item' href="#about">À propos</Nav.Link>
             <Nav.Link className='nav-item' href="#case-studies">Cas Clients</Nav.Link>
             <Nav.Link className='nav-item' href="#team">L'équipe</Nav.Link>
             <Nav.Link className='nav-item' href="#contact">Nous Contacter</Nav.Link>
-            <div className='mobile-rdv-button'>
-          <IconRDV />
-        </div>
+          <div className='mobile-rdv-button'>
+            <IconRDV />
+          </div>
           </Nav>
         </Navbar.Collapse>
         <button className="ml-4 desktop-rdv-button">Prendre RDV</button>
