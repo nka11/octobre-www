@@ -21,7 +21,7 @@ const CaseStudies = () => {
                     <div className="card case-study-large-card h-100 case-1 d-flex flex-column">
                         <div className="card-body mt-auto">
                             <div className="stats" property="schema:reviewBody">
-                                <div className="card-title">AMÉLIORATION DE</div>
+                                <div className="card-title">PLUS DE</div>
                                 <strong className="card-text-number">80%</strong>
                                 <div className="card-text">des utilisateurs estiment que les évolutions ont un impact positif sur leur efficacité.</div>
                             </div>
@@ -102,7 +102,7 @@ const CaseStudies = () => {
                         <div className="card-body mt-auto">
                             <div className="stats" property="schema:reviewBody">
                                 <div className="card-title">UNE ÉLIGIBILITÉ SUR</div>
-                                <strong className="card-text-number">30%</strong>
+                                <strong className="card-text-number">+ 30%</strong>
                                 <div className="card-text">d'appels d'offres en moins d'un an.</div>
                             </div>
                         </div>
