@@ -52,7 +52,7 @@ const CaseStudies = () => {
                                     "Octobre nous a aidés à mettre en oeuvre un nouvel
                                     <span property="schema:keywords"> outil de gestion "ERP" </span> 
                                     en s'appuyant sur notre système existant, et l'a configuré de sorte qu'il reponde à nos besoins et nos 
-                                    <span property="schema:keywords"> processus metiers."</span>
+                                    <span property="schema:keywords"> processus métiers."</span>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ const CaseStudies = () => {
                     <div className="card case-study-small-card h-100 case-2">
                         <div property="schema:reviewBody" className="card-body">
                             <div className="card-title" property="schema:itemReviewed" typeof="schema:Thing" resource="#devops">
-                                <span property="schema:name">USINE LOGICELLE</span>
+                                <span property="schema:name">USINE LOGICIELLE</span>
                             </div>
                             <div className="auteur" property="schema:author" typeof="schema:Person">
                                 <div className="photo-auteur">
@@ -131,7 +131,7 @@ const CaseStudies = () => {
                                 <div id='title-avis' className="card-title" property="schema:memberOf" typeof="schema:Organization">
                                     <span property="schema:name">PME dans le domaine aéronautique (BtB)</span>
                                 </div>
-                                <div id='body-avis' className="card-text" property="schema:reviewBody">"Octobre a réalisé un <span property="schema:keywords">audit</span> de notre <span property="schema:keywords">système d'information</span> et nous a accompagné pour obtenir les <span property="schema:keywords">certifications</span> de <span property="schema:keywords">conformité</span> exigées par nos partenaires."</div>
+                                <div id='body-avis' className="card-text" property="schema:reviewBody">"Octobre a réalisé un <span property="schema:keywords">audit</span> de notre <span property="schema:keywords">système d'information</span> et nous a accompagnés pour obtenir les <span property="schema:keywords">certifications</span> de <span property="schema:keywords">conformité</span> exigées par nos partenaires."</div>
                             </div>
                         </div>
                     </div>
