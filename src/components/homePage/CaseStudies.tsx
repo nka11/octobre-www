@@ -165,7 +165,7 @@ const CaseStudies = () => {
                             </div>
                             <div id="avis" property="schema:memberOf" typeof="schema:Organization">
                                 <div id='title-avis' className="card-title" property="schema:name">ETI dans le domaine de la logistique</div>
-                                <div id='body-avis' className="card-text" property="schema:reviewBody">"L'amélioration de notre CRM et de notre processus de recrutement nous a permis d'améliorer l'expérience candidats."</div>
+                                <div id='body-avis' className="card-text" property="schema:reviewBody">"L'amélioration de notre CRM et de notre processus de recrutement ont eu un impact positif sur l'expérience candidats."</div>
                             </div>
                         </div>
                     </div>
