@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import OctobreLogo from "./OctobreLogo";
 import IconMenu from './../icons/Menu.svg';
 import IconRDV from './../icons/messenger.svg'
+import RDVButton from './../components/atoms/RDVButton';
+
 
 const OctobreHeader = () => {
   return (
@@ -31,7 +33,10 @@ const OctobreHeader = () => {
           </div>
           </Nav>
         </Navbar.Collapse>
-        <button className="ml-4 desktop-rdv-button">Prendre RDV</button>
+        <RDVButton
+            className="ml-4 desktop-rdv-button"
+            text="Prendre RDV"
+        />
         <div className='mobile-rdv-button'>
           <IconRDV />
         </div>

@@ -10,8 +10,9 @@ import ContactForm from './components/ContactForm';
 
 import CookieConsent from "react-cookie-consent";
 
-export function OctobreIndex() {
+import RDVButton from './components/atoms/RDVButton';
 
+export function OctobreIndex() {
     return (
         <>
             <OctobreHeader />
@@ -31,8 +32,10 @@ export function OctobreIndex() {
                                 <span>Nous libérons</span> la puissance du digital au service de votre business
                             </p>
                             <div className="buttons">
-                                <button id="rdv-button">Prendre RDV</button>
-                                <button id="contact-button">Contact</button>
+                                <RDVButton
+                                    text="Prendre RDV"
+                                />
+                                {/* <button id="contact-button">Contact</button> */}
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12 quefaisons_image mt-4">   
@@ -60,7 +63,9 @@ export function OctobreIndex() {
                     </div>
                 </section>
                 <OurTeam />
-                <section style={{display: "none"}} className="container-lg contact-us">
+                <section 
+                    style={{display: "none"}} 
+                    className="container-lg contact-us">
                     <div className="picture">
                         <img src="./assets/photos/contact-pic.png" />
                     </div>
