@@ -37,7 +37,7 @@ export function OctobreIndex() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12 quefaisons_image mt-4">   
-                            <img src="/assets/photos/Que-faisons-nous-illu.jpg" alt="quefaisonsnous_image" />   
+                            <img src="./assets/photos/Que-faisons-nous-illu.jpg" alt="quefaisonsnous_image" />   
                         </div>
                     </div>
                 </div>
