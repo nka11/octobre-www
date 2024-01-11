@@ -32,9 +32,7 @@ export function OctobreIndex() {
                                 <span>Nous libérons</span> la puissance du digital au service de votre business
                             </p>
                             <div className="buttons">
-                                <RDVButton
-                                    text="Prendre RDV"
-                                />
+                                <RDVButton>Prendre RDV</RDVButton>
                                 {/* <button id="contact-button">Contact</button> */}
                             </div>
                         </div>
