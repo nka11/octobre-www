@@ -33,9 +33,9 @@ const OctobreHeader = () => {
           </div>
           </Nav>
         </Navbar.Collapse>
-        <RDVButton
-            className="ml-4 desktop-rdv-button"
-        >Prendre RDV</RDVButton>
+        <RDVButton className="ml-4 desktop-rdv-button">
+          Prendre RDV
+        </RDVButton>
         <RDVButton className='mobile-rdv-button'>
           <IconRDV />
         </RDVButton>
