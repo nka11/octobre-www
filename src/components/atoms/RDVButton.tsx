@@ -20,11 +20,11 @@ const RDVButton = (props:PropsWithChildren<RDVprops>) => {
         <PopupModal
           url="https://calendly.com/octobre-conseil"
           pageSettings={{
-            backgroundColor: 'ffffff',
+            backgroundColor: 'F4F0EE',
             hideEventTypeDetails: false,
             hideLandingPageDetails: false,
-            primaryColor: '00a2ff',
-            textColor: '4d5055'
+            primaryColor: '1C1C1C',
+            textColor: '5C5148'
           }}
           utm={{}}
           prefill={{}}
