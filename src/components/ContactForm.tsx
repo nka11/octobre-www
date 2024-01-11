@@ -7,12 +7,12 @@ const ContactForm = () => {
                 </a>
             </h2>
             <form>
-                <input className="left-input" placeholder="Nom" type="text" />
-                <input placeholder="Prénom" type="text" />
-                <input placeholder="Nom de l'entreprise" type="text" id="entreprise" />
-                <input className="left-input" placeholder="Email" type="email" />
-                <input placeholder="Téléphone" type="tel" />
-                <textarea placeholder="Votre message"></textarea>
+                <input name="senderFirstName" className="left-input" placeholder="Nom" type="text" />
+                <input name="senderLastName" placeholder="Prénom" type="text" />
+                <input name="senderOrganization" placeholder="Nom de l'entreprise" type="text" id="entreprise" />
+                <input name="senderEmail" className="left-input" placeholder="Email" type="email" />
+                <input name="senderPhone" placeholder="Téléphone" type="tel" />
+                <textarea name="messageText" placeholder="Votre message"></textarea>
                 <button type="submit">Envoyer</button>
             </form>
         </div>
