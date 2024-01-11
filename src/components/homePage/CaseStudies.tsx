@@ -40,7 +40,7 @@ const CaseStudies = () => {
                                 <img src="/assets/photos/profil-pic.png" />
                                 </div>
                                 <div className="infos-auteur" property="schema:name">
-                                    <div id="new" className='card-text' property="schema:givenName">Eric</div>
+                                    <div id="new" className='card-text' property="schema:givenName"><strong>Eric</strong></div>
                                     <div id="new" className='card-text' property="schema:jobTitle">Directeur des opérations</div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ const CaseStudies = () => {
                                 <img src="/assets/photos/profil-pic.png" />
                                 </div>
                                 <div className="infos-auteur" property="schema:name">
-                                    <div id="new" className='card-text' property="schema:givenName">Robert</div>
+                                    <div id="new" className='card-text' property="schema:givenName"><strong>Robert</strong></div>
                                     <div id="new" className='card-text' property="schema:jobTitle">Directeur général</div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@ const CaseStudies = () => {
                                 </div>
                                 <div className="infos-auteur" property="schema:name">
                                     <div id="new" className='card-text'>
-                                        <span property="schema:givenName">Pascal</span>
+                                        <span property="schema:givenName"><strong>Pascal</strong></span>
                                     </div>
                                     <div id="new" className='card-text'>
                                         <span property="schema:jobTitle">Directeur commercial</span>
@@ -159,13 +159,13 @@ const CaseStudies = () => {
                                 <img src="/assets/photos/profil-pic.png" />
                                 </div>
                                 <div className="infos-auteur" property="schema:name">
-                                    <div id="new" className='card-text' property="schema:givenName">Xavier</div>
+                                    <div id="new" className='card-text' property="schema:givenName"><strong>Xavier</strong></div>
                                     <div id="new" className='card-text' property="schema:jobTitle">Directeur des ressources humaines</div>
                                 </div>
                             </div>
                             <div id="avis" property="schema:memberOf" typeof="schema:Organization">
                                 <div id='title-avis' className="card-title" property="schema:name">ETI dans le domaine de la logistique</div>
-                                <div id='body-avis' className="card-text" property="schema:reviewBody">"L'amélioration de notre CRM et de notre processus de recrutement nous a permis d'améliorer l'expérience candidats."</div>
+                                <div id='body-avis' className="card-text" property="schema:reviewBody">"L'amélioration de notre CRM et de notre processus de recrutement ont eu un impact positif sur l'expérience candidats."</div>
                             </div>
                         </div>
                     </div>
