@@ -11,6 +11,7 @@ import ContactForm from './components/ContactForm';
 import CookieConsent from "react-cookie-consent";
 
 import RDVButton from './components/atoms/RDVButton';
+import { Button } from 'react-bootstrap';
 
 export function OctobreIndex() {
     return (
@@ -32,7 +33,9 @@ export function OctobreIndex() {
                                 <span>Nous libérons</span> la puissance du digital au service de votre business
                             </p>
                             <div className="buttons">
-                                <RDVButton>Prendre RDV</RDVButton>
+                                <Button>
+                                    <RDVButton>Prendre RDV</RDVButton>
+                                </Button>
                                 {/* <button id="contact-button">Contact</button> */}
                             </div>
                         </div>

@@ -1,32 +1,27 @@
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import OctobreLogo from "./OctobreLogo";
 import IconMenu from './../icons/Menu.svg';
 import IconRDV from './../icons/messenger.svg'
 import RDVButton from './../components/atoms/RDVButton';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 
 const OctobreHeader = () => {
-  const collapsibleRef = useRef<HTMLDivElement>(null);
-
+  const desktopButton = useRef<HTMLButtonElement>(null);
+  const [hiddenMenuButton, setMobileHidden] = useState(false)
+  // Some handlers for events
+  // https://github.com/react-bootstrap/react-bootstrap/issues/6400
   
-  // useEffect(() => {
-  //   console.log("useEffect")
-  //   const element = collapsibleRef.current;
-  //   function handleShow() {
-  //     console.log("show menu event")
-      
-  //   };
-  //   if (element != null) {
-  //     // hide.bs.collapse
-  //     // show.bs.collapse
-  //     console.log("Adding event listener to");
-  //     console.log(element);
-  //     // element.addEventListener('*', (e) => console.log('type: %s, e: %O', e.type, e), false);
-  //     element.addEventListener('show.bs.collapse', handleShow);
-  //   }
-  // }, [collapsibleRef]);
+  function handleShow() {
+    console.log("show menu event")
+    setMobileHidden(true);
+    
+    
+  };
+  function handleHide() {
+    setMobileHidden(false);
+  }
 
   return (
     <header className='container-xl'>
@@ -42,19 +37,25 @@ const OctobreHeader = () => {
           <div className="ml-2 mr-4 desktop-logo-text">
             <span>Partenaire de la transformation digitale des PME et ETI</span>
           </div> 
-          <Navbar.Collapse ref={ collapsibleRef } id="octobreNav">
+          <Navbar.Collapse onEnter={ handleShow } onExited={ handleHide } id="octobreNav">
             <Nav className="mr-auto">
               <Nav.Link className='nav-item' href="#about">À propos</Nav.Link>
               <Nav.Link className='nav-item' href="#case-studies">Cas Clients</Nav.Link>
               <Nav.Link className='nav-item' href="#team">L'équipe</Nav.Link>
-              <Nav.Link className='nav-item' href="#contact">Nous Contacter</Nav.Link>
+              <Nav.Link className='nav-item mobile-rdv-button' href="#contact">
+                <RDVButton>
+                  Prendre RDV
+                </RDVButton>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         
-        <RDVButton className="ml-4 desktop-rdv-button">
-          Prendre RDV
-        </RDVButton>
-        <RDVButton className='mobile-rdv-button'>
+        <Button className="ml-4 desktop-rdv-button">
+          <RDVButton ref={ desktopButton }>
+            Prendre RDV
+          </RDVButton>
+        </Button>
+        <RDVButton hidden={ hiddenMenuButton } className='mobile-rdv-button'>
           <IconRDV />
         </RDVButton>
         </Container>
