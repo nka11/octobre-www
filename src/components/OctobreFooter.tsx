@@ -14,7 +14,7 @@ const OctobreFooter = () => {
                             <li><a href="#expertises">Nos expertises</a></li>
                             <li><a href="#case-studies">Cas clients</a></li>
                             <li><a href="#team">L'équipe</a></li>
-                            <li><a href="#contact">Nous contacter</a></li>
+                            <li style={{ "display": "none" }}><a href="#contact">Nous contacter</a></li>
                         </ul>
                         <ul className="menu-2 col" style={{ "display": "none" }}>
                             <li>Mentions Légales</li>
