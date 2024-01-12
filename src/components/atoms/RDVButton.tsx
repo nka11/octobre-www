@@ -23,7 +23,7 @@ const RDVButton = (props:PropsWithChildren<RDVprops>) => {
             backgroundColor: 'F4F0EE',
             hideEventTypeDetails: false,
             hideLandingPageDetails: false,
-            primaryColor: '1C1C1C',
+            primaryColor: '3a1b05', //'1C1C1C',
             textColor: '5C5148'
           }}
           utm={{}}
