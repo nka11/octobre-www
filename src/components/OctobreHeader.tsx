@@ -9,26 +9,36 @@ import { useRef, useState } from 'react';
 
 const OctobreHeader = () => {
   const desktopButton = useRef<HTMLButtonElement>(null);
-  const [hiddenMenuButton, setMobileHidden] = useState(false)
+  const navMenu = useRef<HTMLDivElement>(null);
+  
+  const [hiddenMenuButton, setMobileHidden] = useState(false);
+  const [navExpanded, setNavExpanded] = useState(false);
+  
   // Some handlers for events
   // https://github.com/react-bootstrap/react-bootstrap/issues/6400
   
   function handleShow() {
-    console.log("show menu event")
     setMobileHidden(true);
-    
-    
   };
   function handleHide() {
     setMobileHidden(false);
   }
 
+  function navSelected() {
+    
+    setNavExpanded(false);
+  }
+
+  function toggleNav() {
+    setNavExpanded(!navExpanded);
+  }
+
   return (
     <header className='container-xl'>
-      <Navbar expand="lg" bg="white" variant="light">
+      <Navbar className="fixed-top" style={{"position": "fixed"}} expand="lg" bg="white" variant="light">
         <Container>
           
-        <Navbar.Toggle aria-controls="octobreNav">
+        <Navbar.Toggle onClick={ toggleNav } aria-controls="octobreNav">
           <IconMenu/>
         </Navbar.Toggle>
         <Navbar.Brand className='logo' href="#">
@@ -37,8 +47,8 @@ const OctobreHeader = () => {
           <div className="ml-2 mr-4 desktop-logo-text">
             <span>Partenaire de la transformation digitale des PME et ETI</span>
           </div> 
-          <Navbar.Collapse onEnter={ handleShow } onExited={ handleHide } id="octobreNav">
-            <Nav className="mr-auto">
+          <Navbar.Collapse in={ navExpanded } ref={ navMenu } onEnter={ handleShow } onExited={ handleHide } id="octobreNav">
+            <Nav onSelect={ navSelected } className="mr-auto">
               <Nav.Link className='nav-item' href="#about">À propos</Nav.Link>
               <Nav.Link className='nav-item' href="#case-studies">Cas Clients</Nav.Link>
               <Nav.Link className='nav-item' href="#team">L'équipe</Nav.Link>
