@@ -76,6 +76,11 @@
     text-align: center;
 }
 
+.mobile-rdv-button {
+    display: inline-block;
+    background-color: transparent;
+}
+
 @include media-breakpoint-up(lg) {
 
     .mobile-logo-text {
@@ -91,7 +96,7 @@
     }
 
     .desktop-rdv-button {
-        display: none !important;
+        display: inline-block !important;   
     }
 
     .navbar .logo {
@@ -101,8 +106,3 @@
 
     }
 }
-
-.mobile-rdv-button {
-    display: none !important;
-}
-
