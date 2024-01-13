@@ -34,8 +34,8 @@ const OctobreHeader = () => {
   }
 
   return (
-    <header className='container-xl'>
-      <Navbar className="fixed-top" style={{"position": "fixed"}} expand="lg" bg="white" variant="light">
+    <header className='fixed-top container-xl bg-white'>
+      <Navbar expand="lg" bg="white" variant="light">
         <Container>
           
         <Navbar.Toggle onClick={ toggleNav } aria-controls="octobreNav">
