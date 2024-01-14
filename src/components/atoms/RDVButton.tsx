@@ -20,7 +20,7 @@ const RDVButton = forwardRef<HTMLButtonElement, PropsWithChildren<RDVprops>>(
             { props.children }
             </span>
             <PopupModal
-            url="https://calendly.com/octobre-conseil"
+            url="https://calendly.com/octobre-conseil/30min"
             pageSettings={{
                 backgroundColor: 'F4F0EE',
                 hideEventTypeDetails: false,
