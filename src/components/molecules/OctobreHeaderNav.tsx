@@ -1,13 +1,13 @@
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
-import OctobreLogo from "./OctobreLogo";
-import IconMenu from './../icons/Menu.svg';
-import IconRDV from './../icons/messenger.svg'
-import RDVButton from './../components/atoms/RDVButton';
+import OctobreLogo from "../OctobreLogo";
+import IconMenu from './../../icons/Menu.svg';
+import IconRDV from './../../icons/messenger.svg'
+import RDVButton from '../atoms/RDVButton';
 import { useRef, useState } from 'react';
 
 
-const OctobreHeader = () => {
+const OctobreHeaderNav = () => {
   const desktopButton = useRef<HTMLButtonElement>(null);
   const navMenu = useRef<HTMLDivElement>(null);
   
@@ -77,4 +77,4 @@ const OctobreHeader = () => {
   );
 };
 
-export default OctobreHeader;
+export default OctobreHeaderNav;

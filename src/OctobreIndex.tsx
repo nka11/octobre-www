@@ -1,6 +1,6 @@
 import './App.css'
 import './scss/octobre.scss'
-import OctobreHeader from './components/OctobreHeader';
+import OctobreHeaderNav from './components/molecules/OctobreHeaderNav';
 import OctobreIntro from './components/homePage/OctobreIntro';
 import ExpertiseSection from './components/homePage/ExpertiseSection';
 import CaseStudies from './components/homePage/CaseStudies';
@@ -14,7 +14,7 @@ import AboutUs from './components/homePage/AboutUs';
 export function OctobreIndex() {
     return (
         <>
-            <OctobreHeader />
+            <OctobreHeaderNav />
             <main style={{"marginTop":"7em"}}>
                 <h1 style={{ "display": "none" }}>Octobre Conseil</h1>
 
