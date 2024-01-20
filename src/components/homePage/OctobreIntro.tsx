@@ -1,7 +1,7 @@
 
 import IconArrow from '../../icons/arrow.svg';
 
-const FirstSection = () => {
+const OctobreIntro = () => {
   return (
     <section className="first_section">
             <div className="split">
@@ -17,4 +17,4 @@ const FirstSection = () => {
         </section>
   );
 }
-export default FirstSection;
+export default OctobreIntro;

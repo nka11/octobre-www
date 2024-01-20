@@ -1,7 +1,7 @@
 import './App.css'
 import './scss/octobre.scss'
-import OctobreHeader from './components/OctobreHeader';
-import FirstSection from './components/homePage/FirstSection';
+import OctobreHeaderNav from './components/molecules/OctobreHeaderNav';
+import OctobreIntro from './components/homePage/OctobreIntro';
 import ExpertiseSection from './components/homePage/ExpertiseSection';
 import CaseStudies from './components/homePage/CaseStudies';
 import OurTeam from './components/homePage/OurTeam';
@@ -9,44 +9,18 @@ import OctobreFooter from './components/OctobreFooter';
 import ContactForm from './components/ContactForm';
 
 import CookieConsent from "react-cookie-consent";
-
-import RDVButton from './components/atoms/RDVButton';
-import { Button } from 'react-bootstrap';
+import AboutUs from './components/homePage/AboutUs';
 
 export function OctobreIndex() {
     return (
         <>
-            <OctobreHeader />
-            <main>
+            <OctobreHeaderNav />
+            <main style={{"marginTop":"7em"}}>
                 <h1 style={{ "display": "none" }}>Octobre Conseil</h1>
 
-                <FirstSection />
-                <ExpertiseSection/>
-
-                <section>
-            <div className="about-us" typeof="schema:Organization" resource=".">
-                <div className="container-xl">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-12 col-sm-12 quefaisons_text mb-4">
-                            <h2 className="quefaisons_label"><a id="about" href="#about">QUE FAISONS-NOUS ?</a></h2>
-                            <p className="quefaisons_description" property="schema:description">
-                                <span>Nous libérons</span> la puissance du digital au service de votre business
-                            </p>
-                            <div className="buttons">
-                                <Button>
-                                    <RDVButton>Prendre RDV</RDVButton>
-                                </Button>
-                                {/* <button id="contact-button">Contact</button> */}
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-12 col-sm-12 quefaisons_image mt-4">   
-                            <img src="./assets/photos/Que-faisons-nous-illu.jpg" alt="quefaisonsnous_image" />   
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+                <OctobreIntro />
+                <ExpertiseSection/>       
+                <AboutUs/>
                 <CaseStudies />
 
                 <section>

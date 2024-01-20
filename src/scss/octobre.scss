@@ -58,11 +58,6 @@ body, html {
     font-family: 'Brown Regular';
 }
 
-
-header {
-    margin-top: 1.2em;
-}
-
 .octobre_row {
     margin-top: 3em;
 }
@@ -134,7 +129,6 @@ button {
     .octobre_content_box_brown {
         padding-top: 3em !important ;
         padding-bottom: 3em !important;
-        margin-bottom: 7em !important;
 
 
     }
@@ -157,7 +151,7 @@ button {
 Imports of External SCSS files.
 **/
 
-@import './header.scss';
+@import './headerNav.scss';
 @import './first_section.scss';
 @import './about_us.scss';
 @import './expertise.scss';
