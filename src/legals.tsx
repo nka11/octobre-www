@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import OctobreIndex from './OctobreIndex.tsx'
 import './index.css'
 import OctobreHeaderNav from './components/molecules/OctobreHeaderNav.tsx'
 import Legals from './components/MentionsLegales/Legals.tsx'
