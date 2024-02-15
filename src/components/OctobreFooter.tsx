@@ -1,7 +1,15 @@
+import Legals from './MentionsLegales/Legals';
 import ContactSvgLabel from './contact.svg'
+import Modal from 'react-bootstrap/Modal';
+import { Button } from 'react-bootstrap';
+import { useState } from 'react';
 
 const OctobreFooter = () => {
+    const [showLegals, setShowLegals] = useState(false);
+    const handleShowLegals = () => setShowLegals(true);
+    const handleCloseLegals = () => setShowLegals(false);
     return (
+        <>
         <footer className="container-xl footer" typeof="schema:Organization" resource=".">
             <div className="logo">
                 <img property="schema:logo" src="assets/Logo_octobre_conseil.svg" />
@@ -14,10 +22,10 @@ const OctobreFooter = () => {
                             <li><a href="#expertises">Nos expertises</a></li>
                             <li><a href="#case-studies">Cas clients</a></li>
                             <li><a href="#team">L'équipe</a></li>
+                            <li onClick={handleShowLegals}>Mentions Légales</li>
                             <li style={{ "display": "none" }}><a href="#contact">Nous contacter</a></li>
                         </ul>
                         <ul className="menu-2 col" style={{ "display": "none" }}>
-                            <li>Mentions Légales</li>
                             <li>Conditions générales</li>
                             <li>Cookies</li>
                             <li>RGPD</li>
@@ -55,8 +63,25 @@ const OctobreFooter = () => {
                     <p>Tous droits réservés. <span property="schema:name">Octobre</span> 2023</p>
                 </div>
             </div>
-
         </footer>
+        <Modal show={showLegals} onHide={handleCloseLegals}>
+
+            <Modal.Dialog >
+                <Modal.Header closeButton>
+                    <Modal.Title>Mentions Legales</Modal.Title>
+                </Modal.Header>
+
+                <Modal.Body>
+                    <Legals/>
+                </Modal.Body>
+
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseLegals}>Close</Button>
+                </Modal.Footer>
+            </Modal.Dialog>
+        </Modal>
+        </>
+        
     );
   }
   export default OctobreFooter;
