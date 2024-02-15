@@ -27,12 +27,10 @@ const OctobreFooter = () => {
                 </div>
                 <div className="transformation ">
                     <div className="row">
-                        {/* <div className="pic-td col">
-                            <img src="./assets/photos/logo_TN.png" alt="pic_transition-digital" />
-                        </div>
+                        
                         <div className="text-partenaire col">
                             <p property="schema:description">Partenaire de la transformation digitale des PME et ETI.</p>
-                        </div> */}
+                        </div> 
                     </div>
                 </div>
             </nav>
