@@ -44,9 +44,9 @@ const OctobreHeaderNav = () => {
         <Navbar.Brand className='logo' href="#">
           <OctobreLogo />
         </Navbar.Brand>
-          <div className="ml-2 mr-4 desktop-logo-text">
+          {/* <div className="ml-2 mr-4 desktop-logo-text">
             <span>Partenaire de la transformation digitale des PME et ETI</span>
-          </div> 
+          </div>  */}
           <Navbar.Collapse in={ navExpanded } ref={ navMenu } onEnter={ handleShow } onExited={ handleHide } id="octobreNav">
             <Nav onSelect={ navSelected } className="mr-auto">
               <Nav.Link className='nav-item' href="#about">À propos</Nav.Link>
