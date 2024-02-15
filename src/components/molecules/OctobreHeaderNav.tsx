@@ -49,10 +49,10 @@ const OctobreHeaderNav = () => {
           </div>  */}
           <Navbar.Collapse in={ navExpanded } ref={ navMenu } onEnter={ handleShow } onExited={ handleHide } id="octobreNav">
             <Nav onSelect={ navSelected } className="mr-auto">
-              <Nav.Link className='nav-item' href="#about">À propos</Nav.Link>
-              <Nav.Link className='nav-item' href="#case-studies">Cas Clients</Nav.Link>
-              <Nav.Link className='nav-item' href="#team">L'équipe</Nav.Link>
-              <Nav.Link className='nav-item mobile-rdv-button' href="#contact">
+              <Nav.Link className='nav-item' href="/#about">À propos</Nav.Link>
+              <Nav.Link className='nav-item' href="/#case-studies">Cas Clients</Nav.Link>
+              <Nav.Link className='nav-item' href="/#team">L'équipe</Nav.Link>
+              <Nav.Link className='nav-item mobile-rdv-button' href="/#contact">
                 <RDVButton>
                   Prendre RDV
                 </RDVButton>
