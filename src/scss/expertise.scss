@@ -7,6 +7,38 @@
 
 }
 
+.expertiseDetailsOverrive {
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgba(104, 104, 104, 0.5);
+}
+
+.expertiseDetails {
+   position: relative;
+   opacity: 100%;
+   border: 5px solid #F4F0EE;
+   background-color: #F4F0EE;
+   top: 10em;
+}
+.expertiseDetails .closeExpertiseButton {
+   stroke: #686868;
+   width: 2em;
+   height: 2em;
+   cursor: pointer;
+}
+.expertiseDetails .expertiseTopBar {
+   display: flex;
+   flex: content;
+   width: 100%;
+   flex-direction: row-reverse;
+}
+
+.expertiseDetails .expertiseDetailContent {
+   background-color: white;
+   text-align: justify;
+   padding: 0;
+}
 
 .expertise-presentation .expertise {
     background-color: #F4F0EE;
@@ -19,10 +51,20 @@
 
 .expertise-presentation .card.expertise {
    background-color: white;
+   cursor: zoom-in;
 }
 .expertise-presentation .card img {
     width: 50px;
     margin-left: 20px;
+ }
+ .expertise-presentation .card .card-img-top {
+   width: 50px;
+ }
+ .expertise-presentation .card .card-img-top > svg {
+   width: 100%;
+   padding-bottom: 92%;
+   height: 1px;
+   overflow: visible
  }
 
  .expertise-presentation .card .card-body {
@@ -43,7 +85,9 @@
  }
 
  @include media-breakpoint-up(md) { 
-
+   .expertise-presentation .card .card-img-top {
+      padding-top: 5em;
+    }
     .expertise-presentation .expertise {
         background-color: #F4F0EE;
         border-radius: 30px;
