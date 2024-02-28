@@ -7,21 +7,26 @@ import SuiviProd from "../molecules/SuiviProd";
 import RHDesc from "../molecules/RHDesc";
 const ExpertiseSection = () => {
     const [isExpertiseDetailVisible,setExpertideDetailsVisible] = useState(false)
+    const [expertiseDetailsTitle,setExpertiseDetailsTitle]  = useState("")
     const [expertiseDetailsContent,setExpertiseDetailsContent] = useState(<></>)
     const showArchi = () => {
       setExpertideDetailsVisible(true)
+      setExpertiseDetailsTitle("Architecture de Solution Digitale")
       setExpertiseDetailsContent(<ArchiDesc></ArchiDesc>)
     }
     const showProjectMake = () => {
       setExpertideDetailsVisible(true)
+      setExpertiseDetailsTitle("Réalisation de Projets")
       setExpertiseDetailsContent(<ProjectMake></ProjectMake>)
     }
     const showSuiviProd = () => {
       setExpertideDetailsVisible(true)
+      setExpertiseDetailsTitle("Suivi de Production")
       setExpertiseDetailsContent(<SuiviProd></SuiviProd>)
     }
     const showRHDesc = () => {
       setExpertideDetailsVisible(true)
+      setExpertiseDetailsTitle("Recrutement / Stratégie RH")
       setExpertiseDetailsContent(<RHDesc></RHDesc>)
     }
     const hideDetails = () => {
@@ -57,7 +62,7 @@ const ExpertiseSection = () => {
               
                   <div className="col-lg-3 col-md-6 mb-4">
                     <div onClick={showProjectMake} className="card expertise h-100">
-                      <img src="./assets/pictos/afficher-la-fleche-vers-le-bas.svg" className="card-img-top" alt="Image 1"/>
+                      <img src="./assets/pictos/IconProjet3.svg" className="card-img-top" alt="Image 1"/>
                       <div className="card-body">
                         <p className="card-text" id="break" property="schema:description">Réalisation de Projets</p>
                       </div>
@@ -66,7 +71,7 @@ const ExpertiseSection = () => {
               
                   <div className="col-lg-3 col-md-6 mb-4">
                     <div onClick={showSuiviProd} className="card expertise h-100">
-                      <img src="./assets//pictos/cloud-upload-alt.svg" className="card-img-top" alt="Image 1"/>
+                      <img src="./assets//pictos/IconMonitoring.svg" className="card-img-top" alt="Image 1"/>
                       <div className="card-body">
                         <p className="card-text" property="schema:description">Suivi de Production</p>
                       </div>
@@ -75,7 +80,7 @@ const ExpertiseSection = () => {
               
                   <div className="col-lg-3 col-md-6 mb-4">
                     <div onClick={showRHDesc} className="card expertise h-100">
-                      <img src="./assets//pictos/enveloppes.svg" className="card-img-top" alt="Image 1"/>
+                      <img src="./assets//pictos/IconRecruit.svg" className="card-img-top" alt="Image 1"/>
                       <div className="card-body">
                         <p className="card-text" property="schema:description">Recrutement / Stratégie RH</p>
                       </div>
@@ -89,7 +94,7 @@ const ExpertiseSection = () => {
                 </div>
             </div>
         </section>
-        <ExpertiseDetails hide={hideDetails} visible={isExpertiseDetailVisible}>{expertiseDetailsContent}</ExpertiseDetails>
+        <ExpertiseDetails title={expertiseDetailsTitle} hide={hideDetails} visible={isExpertiseDetailVisible}>{expertiseDetailsContent}</ExpertiseDetails>
         </>
     );
   }

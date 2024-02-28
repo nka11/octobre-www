@@ -5,9 +5,6 @@
 const RHDesc = () => {
 
     return(<div>
-    <h3>
-        Recrutement / Stratégie RH
-    </h3>
     <p style={{
         'textAlign': 'justify',
         'padding': '1em'

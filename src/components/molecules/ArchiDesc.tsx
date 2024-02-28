@@ -5,9 +5,7 @@
 const ArchiDesc = () => {
 
     return(<div>
-    <h3>
-    Architecture de Solution Digitale
-    </h3>
+    
     <p style={{
         'textAlign': 'justify',
         'padding': '1em'

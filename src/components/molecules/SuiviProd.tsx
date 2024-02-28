@@ -5,9 +5,6 @@
 const SuiviProd = () => {
 
     return(<div>
-    <h3>
-        Suivi de Production
-    </h3>
     <p style={{
         'textAlign': 'justify',
         'padding': '1em'
