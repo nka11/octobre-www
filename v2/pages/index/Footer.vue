@@ -1,9 +1,9 @@
 <template>
   <footer class="container min-w-xl mx-auto sm:px-4 pt-20 mt-20 border-t-2 border-octobre-cream" typeof="schema:Organization" resource=".">
     <div class="flex flex-wrap w-full justify-center"><img property="schema:logo" src="/public/decorations/Logo_octobre_conseil.svg"></div>
-    <nav class="footer-container flex flex-wrap w-full justify-center py-5 text-octobre-mid-grey">
+    <nav class="footer-container flex flex-wrap w-full justify-center py-5 text-octobre-grey">
       <div class="footer-menu">
-        <div class="flex flex-wrap ">
+        <div class="flex flex-wrap mb-5">
           <ul class="menu-1 relative flex-grow max-w-full flex-1 px-4">
             <li><a href="#about">À propos</a></li>
             <li><a href="#expertises">Nos expertises</a></li>
@@ -21,14 +21,14 @@
         </div>
       </div>
       <div class="transformation ">
-        <div class="flex flex-wrap ">
+        <div class="flex flex-wrap w-1/2 text-sm">
           <div class="text-partenaire relative flex-grow max-w-full flex-1 px-4">
             <p property="schema:description">Partenaire de la transformation digitale des PME et ETI.</p>
           </div>
         </div>
       </div>
     </nav>
-    <div class="flex flex-wrap w-full justify-center">
+    <div class="flex flex-wrap w-full justify-center my-10">
       <div class="">
         <button class="flex flex-wrap content-center items-center border border-octobre-grey px-6 py-2" type="submit">
           <svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1"
@@ -65,7 +65,7 @@
                   style="font-size: 5.39913px; font-family: Brown; stroke-width: 0.449927;"></path>
               </g>
             </svg></span></button></div>
-      <div class="rights">
+      <div class="rights mt-10 text-octobre-grey">
         <p>Tous droits réservés. <span property="schema:name">Octobre</span> 2023</p>
       </div>
     </div>
