@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-display: swap;
+    font-family: 'Brown Regular';
+    src: url(/renderer/fonts/Brown-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Brown Regular Alt';
+    src: url(/renderer/fonts/Brown-RegularAlt.ttf) format('truetype');
+}
+
+body {
+    @apply text-octobre-dark-grey;
+    font-family: Brown Regular;
+}
+
+button {
+  @apply text-[1.15em] pt-[0.5em] pb-[1em] px-[em] rounded-[30px] border-0;
+  font-family: Brown Regular;
+}
+
+.block-color-green .spe-col {
+    @apply bg-octobre-light-green;
+}
+.block-color-green .strong-block {
+    @apply bg-octobre-green text-white;
+}
+
+
+/* Expertise theme Projet */
+.block-color-blue .strong-block {
+    @apply bg-octobre-blue text-white;
+}
+
+.block-color-blue .spe-col {
+    @apply bg-octobre-light-blue;
+}
+
+/* Expertise theme Prod */
+.block-color-ocre .strong-block {
+    @apply bg-octobre-ocre text-white;
+}
+.block-color-ocre .spe-col {
+    @apply bg-octobre-light-ocre;
+}
+
+/* Expertise theme RH */
+.block-color-violet .strong-block {
+    @apply bg-octobre-violet text-white;
+}
+.block-color-violet .spe-col {
+    @apply bg-octobre-light-violet;
+}
+
+.expertise {
+    @apply bg-octobre-cream;
+}
