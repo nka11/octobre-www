@@ -7,4 +7,4 @@ if (typeof(PhusionPassenger) !== 'undefined') {
     port = 'passenger';
 }
 process.env.PORT = port
-import("./index.ts");
+import("./index.mjs");

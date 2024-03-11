@@ -14,11 +14,9 @@
 import express from 'express'
 import compression from 'compression'
 import { renderPage } from 'vike/server'
-import { root } from './root.js'
+import { root } from './root.ts'
 const isProduction = process.env.NODE_ENV === 'production'
 const port = process.env.PORT || 3000
-
-startServer()
 
 async function startServer() {
   const app = express()
@@ -75,3 +73,5 @@ async function startServer() {
   app.listen(port)
   console.log(`Server running at http://localhost:${port}`)
 }
+
+export default startServer
