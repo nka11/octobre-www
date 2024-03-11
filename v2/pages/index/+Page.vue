@@ -26,7 +26,7 @@
     </section>
     <Team></Team>
     <section class="container min-w-lg mx-auto sm:px-4 contact-us" style="display: none;">
-      <div class="picture"><img src="./assets/photos/contact-pic.png"></div>
+      <div class="picture"><img src="/public/images/photos/contact-pic.png"></div>
       <div class="form">
         <h2 class="contact-us-title"><a id="contact" href="#contact">Contactez-nous</a></h2>
         <form><input name="senderFirstName" class="left-input" placeholder="Nom" type="text"><input

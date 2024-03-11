@@ -24,7 +24,7 @@
                                 <span property="schema:name">{{ props.title }}</span>
                             </div>
                             <div class="auteur strong-block w-fit self-center lg:self-start rounded-[30px] py-4 px-5">
-                                <div class="photo-auteur hidden"><img src="./assets/photos/profil-pic.png"></div>
+                                <!-- <div class="photo-auteur hidden"><img src="./assets/photos/profil-pic.png"></div> -->
                                 <div class="infos-auteur" property="schema:name">
                                     <div id="new" class="mb-0" property="schema:givenName">
                                         <strong>{{ props.author.firstName }}</strong>
