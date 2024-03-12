@@ -15,10 +15,11 @@ import express from 'express'
 import compression from 'compression'
 import { renderPage } from 'vike/server'
 import { root } from './root.ts'
-const isProduction = process.env.NODE_ENV === 'production'
-const port = process.env.PORT
+
 
 async function startServer() {
+  const isProduction = process.env.NODE_ENV === 'production'
+  const port = process.env.PORT
   const app = express()
 
   app.use(compression())
