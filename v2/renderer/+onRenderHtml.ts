@@ -29,6 +29,8 @@ const onRenderHtml: OnRenderHtmlAsync = async (pageContext): ReturnType<OnRender
         <link rel="icon" href="${logoUrl}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${desc}" />
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         <title>${title}</title>
       </head>
       <body>

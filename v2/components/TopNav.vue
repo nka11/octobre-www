@@ -85,7 +85,7 @@
                             <a href="/expertise"  class="lg:h-fit py-2 px-4 no-underline">Notre expertise</a>
                             <a
                             href="/#contact" 
-                            
+                            :onclick="calendlyonClick"
                             class="py-2 px-4 no-underline lg:hidden"><span>Prendre RDV</span></a>
                         </div>
                     </div>
@@ -95,9 +95,9 @@
             <!-- <div class="flex-grow items-center hidden lg:inline" > -->
             <div class="flex">
                 <button type="button" 
-                
-                    class="rdvbutton hidden lg:inline-block ml-4 desktop-rdv-button align-middle text-center select-none border font-normal whitespace-no-wrap py-2 px-3 leading-normal no-underline btn-primary"><span>Prendre
-                    RDV</span>
+                    :onclick="calendlyonClick"
+                    class="rdvbutton hidden lg:inline-block ml-4 desktop-rdv-button align-middle text-center select-none border font-normal whitespace-no-wrap py-2 px-3 leading-normal no-underline btn-primary">
+                    <span>Prendre RDV</span>
                 </button>
             </div>
             <span 
@@ -127,6 +127,8 @@
             class="lg:hidden mobile-logo-text transition-all duration-500 ease-custom"><span>Partenaire de la transformation digitale des PME et ETI</span></div>
       </header>
     </div>
+    <div class="calendly-octobre">
+    </div>
 </template>
 <script setup lang="ts">
 import { ref } from 'vue'
@@ -143,6 +145,16 @@ const toggleNav = () => {
     contactIcon.value.classList.toggle('hide')
     contactIcon.value.classList.toggle('show')
 }
+
+let calendlyPageSettings = JSON.stringify({
+                backgroundColor: 'F4F0EE',
+                hideEventTypeDetails: false,
+                hideLandingPageDetails: false,
+                primaryColor: '3a1b05', //'1C1C1C',
+                textColor: '5C5148'
+            })
+
+let calendlyonClick = `Calendly.initPopupWidget({url: 'https://calendly.com/octobre-conseil/30min',pageSettings: ${calendlyPageSettings}});return false;`
 
 </script>
 

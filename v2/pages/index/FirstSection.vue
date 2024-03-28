@@ -1,12 +1,12 @@
 <template>
     <section class="first-section w-full">
       <div class="split w-full px-10">
-        <div class="flex flex-col mt-5 justify-center bg-right-bottom rounded-[30px] h-[500px] bg-[url('/public/images/first_back_sm.png')] md:bg-[url('/public/images/first_back_md.png')] lg:bg-[url('/public/images/first_back_lg.png')] xl:bg-[url('/public/images/first_back_xl.png')] container min-w-sm mx-auto sm:px-4 justify-items-center max-w-screen-xl">
+        <div class="flex flex-col mt-5 justify-center bg-right-bottom rounded-[30px] h-[500px] bg-[url('/public/images/first_back_sm.png')] md:bg-[url('/public/images/first_back_md.png')] lg:bg-[url('/images/first_back_lg.png')] xl:bg-[url('/images/first_back_xl.png')] container min-w-sm mx-auto sm:px-4 justify-items-center max-w-screen-xl">
           <div class="flex flex-col justify-around text-center" typeof="schema:Organization" resource=".">
             <div class="flex flex-row justify-around text-center">
               <p class="text-white font-bold leading-relaxed text-4xl pt-9 pb-20 max-w-[60%]" property="schema:description">
                 Construisons ensemble des solutions digitales 
-                <span class="text-nowrap inline-block after:block after:-top-[0.5em] after:relative after:-bottom-[.125rem] after:-right-[.5rem] after:-left-[.5rem] after:h-[0.75rem] after:bg-cover after:w-content after:bg-no-repeat after:bg-[url('/public/decorations/ligne-header.svg')]">
+                <span class="text-nowrap inline-block after:block after:-top-[0.5em] after:relative after:-bottom-[.125rem] after:-right-[.5rem] after:-left-[.5rem] after:h-[0.75rem] after:bg-cover after:w-content after:bg-no-repeat after:bg-[url('/decorations/ligne-header.svg')]">
                   sur-mesure</span></p>
             </div>
             <div class="flex flex-row justify-around">

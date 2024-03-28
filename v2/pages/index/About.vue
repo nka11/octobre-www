@@ -7,7 +7,7 @@
               <h2 class="text-center text-octobre-mid-grey my-6 text-lg"><a href="#about">QUE FAISONS-NOUS ?</a></h2>
               <p class="text-center leading-relaxed text-octobre-dark-grey text-[40px]" property="schema:description">
                 <span
-                    class="inline-block after:block after:-top-[1.5rem] after:relative after:-bottom-[.125rem] after:-right-[.5rem] after:-left-[.5rem] after:h-[0.75rem] after:bg-cover after:w-auto after:bg-no-repeat after:bg-[url(/public/decorations/underline_about.svg)]"
+                    class="inline-block after:block after:-top-[1.5rem] after:relative after:-bottom-[.125rem] after:-right-[.5rem] after:-left-[.5rem] after:h-[0.75rem] after:bg-cover after:w-auto after:bg-no-repeat after:bg-[url(/decorations/underline_about.svg)]"
                 >Nous libérons</span>
                 la puissance du digital au service de votre business</p>
               <div class="flex flex-row justify-center mt-12 mb-5">
