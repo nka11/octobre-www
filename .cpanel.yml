@@ -110,5 +110,5 @@ deployment:
 
       cloudlinux-selector start  \
           --json --interpreter nodejs \
-          --domain develop-www.octobre.tech \
+          --domain ${TARGET_SUBDOMAIN_PREFIX}www.octobre.tech \
           --app-root octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2
