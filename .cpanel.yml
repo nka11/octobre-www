@@ -3,4 +3,112 @@ deployment:
   tasks:
     - echo "Deployment from push"
     - env > ${HOME}/push.env
-    - echo "Perform branch"
+    - echo "Perform deploy develop branch"
+    - |
+      set -x
+      set -e
+      export PATH=${PATH}:/opt/alt/alt-nodejs19/root/usr/bin/
+
+      TARGET_SUBDOMAIN_PREFIX=devoctobre
+      TARGET_DOMAIN=kani9001.odns.fr
+      APP_ENV_VARS="{}"
+      NODE_VERSION="19.9.0"
+      # Github host aliased for deploy key
+      REMOTE_REPO=${HOME}/repos/octobre.website/.git
+      ORIG_PREFIX=${TARGET_SUBDOMAIN_PREFIX}
+      GITHUB_BRANCH=develop
+
+      mkdir -p ${HOME}/octobre.tech/deployments/
+      cd ${HOME}/octobre.tech/deployments/
+      if [[ ! -d ${TARGET_SUBDOMAIN_PREFIX}www ]]; then
+          git clone ${REMOTE_REPO} ${TARGET_SUBDOMAIN_PREFIX}www
+      fi
+      cd ${TARGET_SUBDOMAIN_PREFIX}www
+      git fetch origin
+      git restore .
+      git checkout origin/${GITHUB_BRANCH}
+
+      
+      CREATE_OCTOBRE_DOMAIN=$(uapi --output=jsonpretty \
+          DomainInfo list_domains | jq "isempty(.result.data.sub_domains[] 
+          | select(. == \"${TARGET_SUBDOMAIN_PREFIX}www.${TARGET_DOMAIN}\"))")
+
+
+      if [[ "${CREATE_OCTOBRE_DOMAIN}" == "true" ]]; then
+          uapi --output=jsonpretty \
+          SubDomain addsubdomain \
+          domain=${TARGET_SUBDOMAIN_PREFIX}www \
+          rootdomain=${TARGET_DOMAIN} \
+          dir=${HOME}${HOME}/octobre.tech/${TARGET_SUBDOMAIN_PREFIX}www
+      fi
+
+      CREATE_OCTOBRE_APP=$(cloudlinux-selector get   \
+          --json --interpreter nodejs \
+          --domain ${TARGET_SUBDOMAIN_PREFIX}www.${TARGET_DOMAIN} \
+          | jq 'isempty(.available_versions 
+                | to_entries[] | .value.users
+                | select(.) 
+                | .'${USER}'.applications 
+                | to_entries[]
+                | select(.value.domain == "'${TARGET_SUBDOMAIN_PREFIX}'www.'${TARGET_DOMAIN}'"))')
+
+      if [[ "${CREATE_OCTOBRE_APP}" == "true" ]]; then
+          set +x # deactivate trace to hide sensitive information
+          cloudlinux-selector create   \
+              --json --interpreter nodejs \
+              --domain ${TARGET_SUBDOMAIN_PREFIX}www.${TARGET_DOMAIN} \
+              --app-root octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2 \
+              --app-uri '/' \
+              --version "${NODE_VERSION}" \
+              --startup-file server/index.cjs \
+              --passenger-log-file octobre.tech/logs/${TARGET_SUBDOMAIN_PREFIX}www.passenger.log \
+              --env-vars "${APP_ENV_VARS}"
+          set -x
+          cloudlinux-selector set --json \
+              --interpreter nodejs  \
+              --domain ${TARGET_SUBDOMAIN_PREFIX}www.${TARGET_DOMAIN} \
+              --app-root octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2 \
+              --config-files package.json
+      else
+          cloudlinux-selector stop  \
+          --json --interpreter nodejs \
+          --domain ${TARGET_SUBDOMAIN_PREFIX}www.${TARGET_DOMAIN} \
+          --app-root octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2
+      fi
+
+      set +x
+
+      cloudlinux-selector set --json \
+          --interpreter nodejs  \
+          --domain ${TARGET_SUBDOMAIN_PREFIX}www.${TARGET_DOMAIN} \
+          --app-root octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2 \
+          --passenger-log-file octobre.tech/logs/${TARGET_SUBDOMAIN_PREFIX}www.passenger.log \
+          --startup-file server/index.cjs \
+          --app-mode production \
+          --new-app-uri '/' \
+          --env-vars "${APP_ENV_VARS}"
+      set -x
+      #    
+      cloudlinux-selector install-modules \
+          --json --interpreter nodejs \
+          --domain ${TARGET_SUBDOMAIN_PREFIX}www.${TARGET_DOMAIN} \
+          --app-root octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2
+
+      # source /home/riqa3212/nodevenv/octobre.tech/deployments/devmbcs/src/node/19/bin/activate
+      # cd /home/riqa3212/octobre.tech/deployments/devmbcs/src/node
+      # npm run build
+      source ${HOME}/nodevenv/octobre.tech/deployments/develop-www/v2/${NODE_VERSION%%.*}/bin/activate
+      cd ${HOME}/octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2
+
+      npm install
+      npm install --include dev
+      #npm run build
+      # 
+      echo $(cloudlinux-selector run-script --json --interpreter nodejs \
+          --app-root octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2 \
+          --script-name build | jq -r '.data') | base64 -d
+
+      cloudlinux-selector start  \
+          --json --interpreter nodejs \
+          --domain develop-www.octobre.tech \
+          --app-root octobre.tech/deployments/develop-www/v2
