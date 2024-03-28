@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-    - |
-      echo "Deployment from push"
-      env > ${HOME}/push.env
+    - echo "Deployment from push"
+    - env > ${HOME}/push.env
