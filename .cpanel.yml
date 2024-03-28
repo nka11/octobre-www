@@ -11,7 +11,9 @@ deployment:
 
       TARGET_SUBDOMAIN_PREFIX=devoctobre
       TARGET_DOMAIN=kani9001.odns.fr
-      APP_ENV_VARS="{}"
+      APP_ENV_VARS='{
+        "NODE_OPTIONS": "--loader ts-node/esm"
+      }'
       NODE_VERSION="19.9.0"
       # Github host aliased for deploy key
       REMOTE_REPO=${HOME}/repos/octobre.website/.git
