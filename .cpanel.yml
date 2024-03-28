@@ -3,4 +3,4 @@ deployment:
   tasks:
     - |
       echo "Deployment from push"
-      env > ~/push.env
+      env > ${HOME}/push.env
