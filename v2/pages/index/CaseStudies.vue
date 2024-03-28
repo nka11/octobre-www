@@ -195,7 +195,7 @@ import CaseStudyBox from '#root/components/CaseStudyBox.vue';
 
 const case_studies = [{
     class: 'block-color-green',
-    backgroundImage: '/public/images/use-cases/case_study_1_back.jpeg',
+    backgroundImage: '/images/use-cases/case_study_1_back.jpeg',
     kpi: {
         prefix: 'PLUS DE',
         strong: '80%',
@@ -216,7 +216,7 @@ const case_studies = [{
     },
     {
         class: "block-color-blue",
-        backgroundImage: "/public/images/use-cases/case_study_2_back.jpg",
+        backgroundImage: "/images/use-cases/case_study_2_back.jpg",
         kpi: {
             prefix: "AMÉLIORATION DE",
             strong: "20%",
@@ -237,7 +237,7 @@ const case_studies = [{
     }
     ,{
         class: "block-color-ocre",
-        backgroundImage: "/public/images/use-cases/case_study_3_back.jpeg",
+        backgroundImage: "/images/use-cases/case_study_3_back.jpeg",
         kpi: {
             prefix: "UNE ÉLIGIBILITÉ SUR",
             strong: "+ 30%",
@@ -259,7 +259,7 @@ const case_studies = [{
     }
     ,{
         class: "block-color-violet",
-        backgroundImage: "/public/images/use-cases/case_study_4_back.jpg",
+        backgroundImage: "/images/use-cases/case_study_4_back.jpg",
         kpi: {
             prefix: "ACQUISITION DE",
             strong: "40%",
