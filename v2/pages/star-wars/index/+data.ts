@@ -9,6 +9,7 @@ import type { MovieDetails, Movie } from '../types'
 import type { PageContextServer } from 'vike/types'
 
 const data = async (pageContext: PageContextServer) => {
+  console.log(pageContext);
   await sleep(700) // Simulate slow network
 
   const response = await fetch('https://brillout.github.io/star-wars/api/films.json')

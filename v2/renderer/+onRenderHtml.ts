@@ -5,7 +5,7 @@ import { renderToString as renderToString_ } from '@vue/server-renderer'
 import type { App } from 'vue'
 import { escapeInject, dangerouslySkipEscape } from 'vike/server'
 import { createApp } from './app'
-import logoUrl from './OctobreIcon.svg'
+import logoUrl from './OctobreIcon.svg?url'
 import type { OnRenderHtmlAsync } from 'vike/types'
 import { getPageTitle } from './getPageTitle'
 
