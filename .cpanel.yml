@@ -41,7 +41,7 @@ deployment:
             SubDomain addsubdomain \
             domain=${TARGET_SUBDOMAIN_PREFIX}www \
             rootdomain=${TARGET_DOMAIN} \
-            dir=${HOME}/octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2/dist/client
+            dir=${HOME}/octobre.tech/${TARGET_SUBDOMAIN_PREFIX}www/
       fi
      
       source ${HOME}/nodevenv/octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2/${NODE_VERSION%%.*}/bin/activate
@@ -50,6 +50,7 @@ deployment:
       npm install
       npm install --include dev
       npm run build
+      cp -R dist/client/* ${HOME}/octobre.tech/${TARGET_SUBDOMAIN_PREFIX}www/
       # CREATE_OCTOBRE_APP=$(cloudlinux-selector get   \
       #     --json --interpreter nodejs \
       #     --domain ${TARGET_SUBDOMAIN_PREFIX}www.${TARGET_DOMAIN} \
