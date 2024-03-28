@@ -43,8 +43,8 @@ deployment:
             rootdomain=${TARGET_DOMAIN} \
             dir=${HOME}/octobre.tech/${TARGET_SUBDOMAIN_PREFIX}www/
       fi
-     
-      source ${HOME}/nodevenv/octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2/${NODE_VERSION%%.*}/bin/activate
+      source /opt/alt/alt-nodejs19/enable
+      # source ${HOME}/nodevenv/octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2/${NODE_VERSION%%.*}/bin/activate
       cd ${HOME}/octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2
 
       npm install
