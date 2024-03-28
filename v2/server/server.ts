@@ -75,4 +75,4 @@ async function startServer() {
   console.log(`Server running on port ${port}`)
 }
 
-export default startServer
+export default startServer;

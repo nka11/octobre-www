@@ -9,4 +9,4 @@ if (typeof(PhusionPassenger) !== 'undefined') {
 }
 process.env.PORT = port
 console.log(`Selected port is ${port}`)
-import("./index.mjs");
+import("./server.ts")();
