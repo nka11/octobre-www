@@ -1,14 +1,17 @@
 <template>
 <div class="flex bg-white justify-center justify-items-center mx-1 sm:mx-2">
     <div class="flex flex-col flex-wrap justify-center items-center justify-items-center">
-        <h1 class="text-center text-3xl font-bold mb-6">Bienvenue chez Octobre Conseil<br/>
-            <span class="text-sm">Pionniers de la Transformation Digitale Soutenue par l'État</span></h1>
+        
         
         
         <div class="flex flex-col justify-center m-0">
-            <p class="p-5 mb-2 lg:px-6 text-justify bg-octobre-cream rounded-[30px] text-lg">
-                Au cœur de l'innovation numérique, Octobre Conseil se distingue comme le maître d'œuvre de votre transition digitale, exploitant de manière stratégique les leviers financiers gouvernementaux. Notre réputation d'excellence découle de notre engagement absolu envers l'élaboration de solutions digitales portées par une équipe d'experts à la pointe de la technologie.
-            </p>
+            <div class="p-5 mb-2 lg:px-6 text-justify bg-octobre-cream rounded-[30px] text-lg">
+                <h1 class="text-center text-3xl font-bold mb-6">Bienvenue chez Octobre Conseil<br/>
+                    <span class="text-sm">Pionniers de la Transformation Digitale Soutenue par l'État</span></h1>
+                    <div class="mb-0 text-justify rounded-[30px] bg-white text-octobre-grey px-4 py-6">
+                        Au cœur de l'innovation numérique, Octobre Conseil se distingue comme le maître d'œuvre de votre transition digitale, exploitant de manière stratégique les leviers financiers gouvernementaux. Notre réputation d'excellence découle de notre engagement absolu envers l'élaboration de solutions digitales portées par une équipe d'experts à la pointe de la technologie.
+                    </div>
+            </div>
             <div class="expertise group flex flex-col md:odd:flex-row md:even:flex-row-reverse rounded-[30px] justify-center items-center w-full expert-archi">
                 <div class="hidden md:flex flex-wrap lg:w-1/2 md:w-full pr-4 pl-4 justify-center h-full content-center">
                     <div class="flex flex-wrap w-full justify-around">
