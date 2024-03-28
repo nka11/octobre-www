@@ -82,6 +82,7 @@
                             <a href="/#about"  class="lg:h-fit py-2 px-4 no-underline">À propos</a>
                             <a href="/#case-studies"  class="lg:h-fit py-2 px-4 no-underline">Cas Clients</a>
                             <a href="/#team"  class="lg:h-fit py-2 px-4 no-underline">L'équipe</a>
+                            <a href="/expertise"  class="lg:h-fit py-2 px-4 no-underline">Notre expertise</a>
                             <a
                             href="/#contact" 
                             

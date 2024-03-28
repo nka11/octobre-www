@@ -37,7 +37,6 @@
       </div>
     </section>
   </main>
-  <Footer></Footer>
 </div>
 
 </template>
@@ -48,5 +47,4 @@ import Expertise from './Expertise.vue';
 import About from './About.vue';
 import CaseStudies from './CaseStudies.vue'
 import Team from './Team.vue';
-import Footer from '#root/components/Footer.vue';
 </script>

@@ -1,15 +1,24 @@
 <template>
-  <footer class="container min-w-xl mx-auto sm:px-4 pt-20 mt-20 border-t-2 border-octobre-cream" typeof="schema:Organization" resource=".">
-    <div class="flex flex-wrap w-full justify-center"><img property="schema:logo" src="/decorations/Logo_octobre_conseil.svg"></div>
+  <footer class="container flex flex-row min-w-xl mx-auto sm:px-4 pt-20 mt-20 border-t-2 border-octobre-cream" typeof="schema:Organization" resource="/">
+    <div class="flex flex-wrap w-full">
+      <img property="schema:logo" src="/decorations/Logo_octobre_conseil.svg">
+      <div class="transformation ">
+        <div class="flex flex-wrap w-1/2 text-sm">
+          <div class="text-partenaire relative flex-grow max-w-full flex-1 px-4">
+            <p property="schema:description">Partenaire de la transformation digitale des PME et ETI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <nav class="footer-container flex flex-wrap w-full justify-center py-5 text-octobre-grey">
       <div class="footer-menu">
         <div class="flex flex-wrap mb-5">
           <ul class="menu-1 relative flex-grow max-w-full flex-1 px-4">
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#expertises">Nos expertises</a></li>
-            <li><a href="#case-studies">Cas clients</a></li>
-            <li><a href="#team">L'équipe</a></li>
-            <li>Mentions Légales</li>
+            <li><a href="/#about">À propos</a></li>
+            <li><a href="/expertise">Nos expertises</a></li>
+            <li><a href="/#case-studies">Cas clients</a></li>
+            <li><a href="/#team">L'équipe</a></li>
+            <li><a href="/about">Mentions Légales</a></li>
             <li style="display: none;"><a href="#contact">Nous contacter</a></li>
           </ul>
           <ul class="menu-2 relative flex-grow max-w-full flex-1 px-4" style="display: none;">
@@ -20,13 +29,7 @@
           </ul>
         </div>
       </div>
-      <div class="transformation ">
-        <div class="flex flex-wrap w-1/2 text-sm">
-          <div class="text-partenaire relative flex-grow max-w-full flex-1 px-4">
-            <p property="schema:description">Partenaire de la transformation digitale des PME et ETI.</p>
-          </div>
-        </div>
-      </div>
+      
     </nav>
     <div class="flex flex-wrap w-full justify-center my-10">
       <div class="">

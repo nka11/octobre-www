@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <a :href="props.member.linkedIn" target="_blank">
-                        <img src="/public/icons/icon-linkedin.svg" alt="icon-linkedin" class="icon">
+                        <img src="/icons/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                     </a>
                 </div>
             </div>

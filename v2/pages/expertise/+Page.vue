@@ -5,11 +5,14 @@
         
         
         <div class="flex flex-col justify-center m-0">
-            <div class="p-5 mb-2 lg:px-6 text-justify bg-octobre-cream rounded-[30px] text-lg">
+            <div class="p-5 mb-2 lg:px-6 text-justify bg-octobre-white rounded-[30px] text-lg">
                 <h1 class="text-center text-3xl font-bold mb-6">Nos domaines d'expertise chez Octobre Conseil<br/>
                     <span class="text-sm">Pionniers de la Transformation Digitale Soutenue par l'État</span></h1>
                     <div class="mb-0 text-justify rounded-[30px] bg-white text-octobre-grey px-4 py-6">
-                        Au cœur de l'innovation numérique, Octobre Conseil se distingue comme le maître d'œuvre de votre transition digitale, exploitant de manière stratégique les leviers financiers gouvernementaux. Notre réputation d'excellence découle de notre engagement absolu envers l'élaboration de solutions digitales portées par une équipe d'experts à la pointe de la technologie.
+                        Au cœur de l'innovation numérique, Octobre Conseil se distingue comme le maître d'œuvre de votre
+                        transition digitale, exploitant de manière stratégique les leviers financiers gouvernementaux.
+                        Notre réputation d'excellence découle de notre engagement absolu envers l'élaboration de solutions
+                        digitales portées par une équipe d'experts à la pointe de la technologie.
                     </div>
             </div>
             <div class="expertise group flex flex-col md:odd:flex-row md:even:flex-row-reverse rounded-[30px] justify-center items-center w-full expert-archi">
@@ -185,12 +188,17 @@
                     </div>
                 </div>
             </div>
-            <p class="p-5 mb-2 lg:px-6 text-justify bg-octobre-cream rounded-[30px] text-lg">
-                En choisissant Octobre Conseil, vous ne faites pas qu'adopter la transformation digitale; vous écrivez une nouvelle ère pour votre entreprise. Nous sommes les alchimistes qui fusionnent technologie, avantages gouvernementaux et ressources humaines exceptionnelles. Ensemble, nous sculptons le futur numérique de votre entreprise, où l'excellence devient la norme.
+            <p class="p-5 mb-2 lg:px-6 text-justify bg-octobre-white rounded-[30px] text-lg">
+                <div class="mb-0 text-justify rounded-[30px] bg-white text-octobre-grey px-4 py-6">
+
+                    En choisissant Octobre Conseil, vous ne faites pas qu'adopter la transformation digitale;
+                    vous écrivez une nouvelle ère pour votre entreprise. Nous sommes les alchimistes qui fusionnent technologie,
+                    avantages gouvernementaux et ressources humaines exceptionnelles. Ensemble, nous sculptons le futur numérique
+                    de votre entreprise, où l'excellence devient la norme.
+                </div>
             </p>
 
         </div>
-        <Footer></Footer>
     </div>
 </div>
 </template>
@@ -199,7 +207,6 @@ import IconArchi from '#root/components/icons/IconArchi.vue'
 import IconProjet from '#root/components/icons/IconProjet.vue';
 import IconProd  from '#root/components/icons/IconProd.vue';
 import IconRH from '#root/components/icons/IconRH.vue';
-import Footer from '#root/components/Footer.vue';
 </script>
 <style scoped>
 /* Expertise theme Archi */
