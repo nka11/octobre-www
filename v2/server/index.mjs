@@ -3,6 +3,6 @@
 // register("ts-node/esm", pathToFileURL("./"));
 
 
-import startServer from './server'
+import startServer from './server.ts'
 
 startServer()
