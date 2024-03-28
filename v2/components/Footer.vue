@@ -1,5 +1,5 @@
 <template>
-  <footer class="container flex flex-row min-w-xl mx-auto sm:px-4 pt-20 mt-20 border-t-2 border-octobre-cream" typeof="schema:Organization" resource="/">
+  <footer class="container sm:flex sm:flex-row min-w-xl mx-auto sm:px-4 pt-20 mt-20 border-t-2 border-octobre-cream" typeof="schema:Organization" resource="/">
     <div class="flex flex-wrap w-full">
       <img property="schema:logo" src="/decorations/Logo_octobre_conseil.svg">
       <div class="transformation ">

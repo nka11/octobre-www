@@ -101,7 +101,7 @@
                 </button>
             </div>
             <span 
-                
+                :onclick="calendlyonClick"
                 class="mt-3 w-[26px] lg:hidden mobile-rdv-button">
               <svg 
                   ref="contactIcon"
