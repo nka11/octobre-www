@@ -62,7 +62,7 @@ deployment:
               --app-root octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2 \
               --app-uri '/' \
               --version "${NODE_VERSION}" \
-              --startup-file server/index.cjs \
+              --startup-file server/index.js \
               --passenger-log-file octobre.tech/logs/${TARGET_SUBDOMAIN_PREFIX}www.passenger.log \
               --env-vars "${APP_ENV_VARS}"
           set -x
@@ -85,7 +85,7 @@ deployment:
           --domain ${TARGET_SUBDOMAIN_PREFIX}www.${TARGET_DOMAIN} \
           --app-root octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2 \
           --passenger-log-file octobre.tech/logs/${TARGET_SUBDOMAIN_PREFIX}www.passenger.log \
-          --startup-file server/index.cjs \
+          --startup-file server/index.js \
           --app-mode production \
           --new-app-uri '/' \
           --env-vars "${APP_ENV_VARS}"
