@@ -97,7 +97,7 @@ deployment:
       # source /home/riqa3212/nodevenv/octobre.tech/deployments/devmbcs/src/node/19/bin/activate
       # cd /home/riqa3212/octobre.tech/deployments/devmbcs/src/node
       # npm run build
-      source ${HOME}/nodevenv/octobre.tech/deployments/develop-www/v2/${NODE_VERSION%%.*}/bin/activate
+      source ${HOME}/nodevenv/octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2/${NODE_VERSION%%.*}/bin/activate
       cd ${HOME}/octobre.tech/deployments/${TARGET_SUBDOMAIN_PREFIX}www/v2
 
       npm install
