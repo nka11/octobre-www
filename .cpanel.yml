@@ -7,7 +7,7 @@ deployment:
     - |
       set -x
       set -e
-      export PATH=${PATH}:/opt/alt/alt-nodejs19/root/usr/bin/
+      export PATH=${PATH}:/opt/alt/alt-nodejs19/root/usr/bin/:${HOME}/.local/bin
 
       TARGET_SUBDOMAIN_PREFIX=devoctobre
       TARGET_DOMAIN=kani9001.odns.fr
