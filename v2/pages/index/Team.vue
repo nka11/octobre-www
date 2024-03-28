@@ -192,7 +192,7 @@ const members = [{
         roleName: "Co-fondateur & Responsable des opérations",
         description: [],
         linkedIn: "https://www.linkedin.com/in/samuel-assoun-72847367/",
-        pic: "/public/images/team-members/samuel_picture.jpg"
+        pic: "/images/team-members/samuel_picture.jpg"
     },{
         id: "nkaragezian",
         givenName: "Nicolas",
@@ -205,7 +205,7 @@ const members = [{
             "Specialiste en Informatique Générale"
         ],
         linkedIn: "https://www.linkedin.com/in/nicolask/",
-        pic: "/public/images/team-members/nicolas_picture.jpg"
+        pic: "/images/team-members/nicolas_picture.jpg"
     },{
         id: "szyssman",
         givenName: "Sylvain",
@@ -216,7 +216,7 @@ const members = [{
             "Le mentor"
         ],
         linkedIn: "https://www.linkedin.com/in/sylvainzyssman/",
-        pic: "/public/images/team-members/sylvain_picture.jpeg"
+        pic: "/images/team-members/sylvain_picture.jpeg"
     },{
         id: "rteboul",
         givenName: "Remy",
@@ -226,7 +226,7 @@ const members = [{
         description: [
         ],
         linkedIn: "https://www.linkedin.com/in/remyteboul/",
-        pic: "/public/images/team-members/remy_picture.jpeg"
+        pic: "/images/team-members/remy_picture.jpeg"
     },{
         id: "ccherqui",
         givenName: "Céline",
@@ -236,7 +236,7 @@ const members = [{
         description: [
         ],
         linkedIn: "https://www.linkedin.com/in/celine-cherqui-oneway-recrutement-experience-candidats-collaborateurs/",
-        pic: "/public/images/team-members/celine_picture.jpeg"
+        pic: "/images/team-members/celine_picture.jpeg"
     },{
         id: "efajnkuchen",
         givenName: "Ethan",
@@ -246,7 +246,7 @@ const members = [{
         description: [
         ],
         linkedIn: "https://www.linkedin.com/in/ethan-fajnkuchen/",
-        pic: "/public/images/team-members/ethan_picture.jpg"
+        pic: "/images/team-members/ethan_picture.jpg"
     }
 
 ]

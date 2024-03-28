@@ -1,12 +1,12 @@
 <template>
-<div class="flex bg-white justify-center justify-items-center mx-1 sm:mx-2">
+<div class="container min-w-lg mx-auto sm:px-4 flex bg-white justify-center justify-items-center ">
     <div class="flex flex-col flex-wrap justify-center items-center justify-items-center">
         
         
         
         <div class="flex flex-col justify-center m-0">
             <div class="p-5 mb-2 lg:px-6 text-justify bg-octobre-cream rounded-[30px] text-lg">
-                <h1 class="text-center text-3xl font-bold mb-6">Bienvenue chez Octobre Conseil<br/>
+                <h1 class="text-center text-3xl font-bold mb-6">Nos domaines d'expertise chez Octobre Conseil<br/>
                     <span class="text-sm">Pionniers de la Transformation Digitale Soutenue par l'État</span></h1>
                     <div class="mb-0 text-justify rounded-[30px] bg-white text-octobre-grey px-4 py-6">
                         Au cœur de l'innovation numérique, Octobre Conseil se distingue comme le maître d'œuvre de votre transition digitale, exploitant de manière stratégique les leviers financiers gouvernementaux. Notre réputation d'excellence découle de notre engagement absolu envers l'élaboration de solutions digitales portées par une équipe d'experts à la pointe de la technologie.
@@ -190,6 +190,7 @@
             </p>
 
         </div>
+        <Footer></Footer>
     </div>
 </div>
 </template>
@@ -198,6 +199,7 @@ import IconArchi from '#root/components/icons/IconArchi.vue'
 import IconProjet from '#root/components/icons/IconProjet.vue';
 import IconProd  from '#root/components/icons/IconProd.vue';
 import IconRH from '#root/components/icons/IconRH.vue';
+import Footer from '#root/components/Footer.vue';
 </script>
 <style scoped>
 /* Expertise theme Archi */

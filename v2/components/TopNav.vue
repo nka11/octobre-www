@@ -22,7 +22,7 @@
                 </svg>
               </button>
               <div class="lg:flex w-full content-center lg:justify-between lg:items-center">
-                  <a href="#" class="logo flex content-center pt-1 pb-0 lg:pb-1 mr-4 text-lg whitespace-no-wrap">
+                  <a href="/" class="logo flex content-center pt-1 pb-0 lg:pb-1 mr-4 text-lg whitespace-no-wrap">
                     <svg class="w-[140px]" width="183px" height="49px" viewBox="0 0 183 49" id="svg4" sodipodi:docname="Logo_octobre.svg"
                       inkscape:version="1.3 (0e150ed, 2023-07-21)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"

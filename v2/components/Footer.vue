@@ -1,6 +1,6 @@
 <template>
   <footer class="container min-w-xl mx-auto sm:px-4 pt-20 mt-20 border-t-2 border-octobre-cream" typeof="schema:Organization" resource=".">
-    <div class="flex flex-wrap w-full justify-center"><img property="schema:logo" src="/public/decorations/Logo_octobre_conseil.svg"></div>
+    <div class="flex flex-wrap w-full justify-center"><img property="schema:logo" src="/decorations/Logo_octobre_conseil.svg"></div>
     <nav class="footer-container flex flex-wrap w-full justify-center py-5 text-octobre-grey">
       <div class="footer-menu">
         <div class="flex flex-wrap mb-5">
