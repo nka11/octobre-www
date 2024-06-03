@@ -52,18 +52,21 @@
                 
                 <div class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-projet bg-octobre-expertise-projet-bg">
                     <RealisationProjet></RealisationProjet>
-                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col rounded-[30px] md:rounded-none md:group-odd:rounded-r-[30px] md:group-even:rounded-l-[30px]">
-                        <div class="relative flex min-w-0 break-words expertise-small-card h-full">
-                            <div class="flex-auto p-6">
-                                <div class="mb-3 card-title" >
+                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
+                        <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
+                            <div class="flex-auto p-3 sm:p-6 xl:px-14">
+                                <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
                                     <span>
                                         Réalisation de Projets
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="mb-0 text-justify text-octobre-grey px-4 py-6">
+                                    <div class="mb-0  text-octobre-dark-grey px-4 py-6">
                                         Nous ne nous contentons pas de gérer des projets ; 
                                         nous les orchestrons avec une précision exceptionnelle.
+                                    </div>
+                                    <div class="mb-0 text-octobre-grey px-4 py-6">
+                                        
                                         Nos experts en gestion de projet, tech lead, et en conception et développement sont les artisans de vos aspirations digitales.
                                         Le suivi opérationnel minutieux assure une exécution sans faille.
                                     </div>
@@ -75,17 +78,19 @@
     
                 <div class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-prod">
                     <SuiviProd></SuiviProd>
-                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col md:rounded-none md:group-odd:rounded-r-[30px] md:group-even:rounded-l-[30px]">
-                        <div class="relative flex min-w-0 break-words expertise-small-card h-full">
-                            <div class="flex-auto p-6">
-                                <div class="mb-3 card-title" >
+                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
+                        <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
+                            <div class="flex-auto p-3 sm:p-6 xl:px-14">
+                                <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
                                     <span>
                                         Suivi de Production
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="mb-0 text-justify text-octobre-grey px-4 py-6">
+                                    <div class="mb-0  text-octobre-dark-grey px-4 py-6">
                                         Le suivi opérationnel chez Octobre Conseil est une fusion d'art et de science.
+                                    </div>
+                                    <div class="mb-0 text-octobre-grey px-4 py-6">
                                         Nos services FinOps sculptent les coûts avec une précision chirurgicale,
                                         tandis que notre gestion des incidents, avec alerting et détection des menaces,
                                         crée une forteresse numérique impénétrable.
@@ -100,17 +105,19 @@
     
                 <div class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-rh bg-octobre-expertise-rh-bg">
                     <Recrutement></Recrutement>
-                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col rounded-[30px] md:rounded-none md:group-odd:rounded-r-[30px] md:group-even:rounded-l-[30px]">
-                        <div class="relative flex min-w-0 break-words expertise-small-card h-full">
-                            <div class="flex-auto p-6">
-                                <div class="mb-3 card-title" >
+                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col ">
+                        <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
+                            <div class="flex-auto p-3 sm:p-6 xl:px-14">
+                                <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
                                     <span>
                                         Recrutement / Stratégie RH
                                     </span>
                                 </div>
                                 <div>
-                                    <div class="mb-0 text-justify text-octobre-grey px-4 py-6">
+                                    <div class="mb-0  text-octobre-dark-grey px-4 py-6">
                                         Nous comprenons que la technologie n'est rien sans les talents qui la propulsent.
+                                    </div>
+                                    <div class="mb-0 text-octobre-grey px-4 py-6">
                                         Octobre Conseil offre bien plus qu'un simple accompagnement ;
                                         nous sommes les architectes de votre capital humain.
                                         De la délégation de personnel à la formation et au mentoring,

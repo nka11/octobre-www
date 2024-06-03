@@ -288,4 +288,33 @@ const case_studies = [{
 .auteur {
     @apply inline-block;
 }
+
+.block-color-green .spe-col {
+    @apply bg-octobre-light-green;
+}
+.block-color-green .strong-block {
+    @apply bg-octobre-green text-white;
+}
+
+.block-color-violet .spe-col {
+    @apply bg-octobre-light-violet;
+}
+.block-color-violet .strong-block {
+    @apply bg-octobre-violet text-white;
+}
+
+.block-color-ocre .spe-col {
+    @apply bg-octobre-light-ocre;
+}
+.block-color-ocre .strong-block {
+    @apply bg-octobre-ocre text-white;
+}
+
+.block-color-blue .spe-col {
+    @apply bg-octobre-light-blue;
+}
+.block-color-blue .strong-block {
+    @apply bg-octobre-blue text-white;
+}
+
 </style>
