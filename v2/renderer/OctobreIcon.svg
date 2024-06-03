@@ -20,7 +20,7 @@
        y1="38.206871"
        x2="106"
        y2="20.783131"
-       id="linearGradient-1"
+       id="octobreLogoGradient-1"
        gradientUnits="userSpaceOnUse">
       <stop
          stop-color="#B5530C"
@@ -77,13 +77,13 @@
            aria-label="bre" />
         <use
            id="Oval-Copy"
-           stroke="url(#linearGradient-1)"
+           stroke="url(#octobreLogoGradient-1)"
            mask="url(#mask-3)"
            stroke-width="8"
            stroke-linejoin="round"
            stroke-dasharray="6, 2.6"
            xlink:href="#path-2"
-           style="stroke:url(#linearGradient-1)" />
+           style="stroke:url(#octobreLogoGradient-1)" />
       </g>
     </g>
   </g>

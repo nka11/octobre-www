@@ -21,6 +21,8 @@ dist
 dist-ssr
 *.local
 
+v2/public/vrac
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

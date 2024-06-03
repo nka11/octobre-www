@@ -10,6 +10,9 @@ export default {
       },
       colors: {
         'octobre-cream': '#f4f0ee',
+        "octobre-expertise-intro-bg":'#f8f4f2',
+        "octobre-expertise-projet-bg":'#f5f6f9',
+        "octobre-expertise-rh-bg":'#f7f5f9',
         'octobre-light-blue': '#d4eced',
         'octobre-blue': '#296fe5',
         'octobre-light-ocre': '#eddfd4',

@@ -42,7 +42,7 @@
        y1="85.4110516%"
        x2="100%"
        y2="18.3966546%"
-       id="linearGradient-1">
+       id="octobreConseilLogoGradient-1">
       <stop
          stop-color="#B5530C"
          offset="0%"
@@ -99,7 +99,7 @@
              aria-label="bre" />
           <use
              id="Oval-Copy"
-             stroke="url(#linearGradient-1)"
+             stroke="url(#octobreConseilLogoGradient-1)"
              mask="url(#mask-3)"
              stroke-width="8"
              stroke-linejoin="round"

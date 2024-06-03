@@ -36,7 +36,7 @@
                       inkscape:window-maximized="1" inkscape:current-layer="Group-5"></sodipodi:namedview> -->
                     <title id="title1">FC431F3A-3ECC-47A3-B2B7-21B8B0702AD2</title>
                     <defs id="defs3">
-                      <linearGradient x1="14.1851327%" y1="85.4110516%" x2="100%" y2="18.3966546%" id="linearGradient-1">
+                      <linearGradient x1="14.1851327%" y1="85.4110516%" x2="100%" y2="18.3966546%" id="octobreNavLogoGradient-1">
                         <stop stop-color="#B5530C" offset="0%" id="stop1"></stop>
                         <stop stop-color="#EB9D34" offset="49.261484%" id="stop2"></stop>
                         <stop stop-color="#F72900" offset="100%" id="stop3"></stop>
@@ -62,7 +62,7 @@
                             id="bre" aria-label="bre"
                             style="font-size: 52px; font-family: Brown-Regular, Brown; letter-spacing: -1.19036px; fill: rgb(28, 28, 28);">
                           </path>
-                          <use id="Oval-Copy" stroke="url(#linearGradient-1)" mask="url(#mask-3)" stroke-width="8"
+                          <use id="Oval-Copy" stroke="url(#octobreNavLogoGradient-1)" mask="url(#mask-3)" stroke-width="8"
                             stroke-linejoin="round" stroke-dasharray="6,2.6" xlink:href="#path-2"></use>
                         </g>
                       </g>
