@@ -1,0 +1,124 @@
+<template>
+    <svg
+   width="50.006248mm"
+   height="50.006248mm"
+   viewBox="0 0 50.006248 50.006248"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed, 2023-07-21)"
+   sodipodi:docname="bg_projet.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.2102413"
+     inkscape:cx="66.590151"
+     inkscape:cy="9.5128787"
+     inkscape:window-width="1312"
+     inkscape:window-height="449"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       x1="94.5"
+       y1="0"
+       x2="94.5"
+       y2="189"
+       id="ProjetBGSmallGradient-1"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#1414DF"
+         offset="0%"
+         id="stop1" />
+      <stop
+         stop-color="#6969FF"
+         offset="100%"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#ProjetBGSmallGradient-2"
+       id="ProjetBGSmallGradient9"
+       x1="60.611946"
+       y1="10.626558"
+       x2="0"
+       y2="65.513016"
+       gradientTransform="scale(1.0075473,0.99250926)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="0.91148359"
+       y1="0.15980238"
+       x2="0"
+       y2="0.98518598"
+       id="ProjetBGSmallGradient-2">
+      <stop
+         stop-color="#9595FF"
+         offset="0%"
+         id="stop3" />
+      <stop
+         stop-color="#1414DF"
+         offset="100%"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#ProjetBGSmallGradient-2"
+       id="ProjetBGSmallGradient1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(1.0075473,0.99250926)"
+       x1="60.611946"
+       y1="10.626558"
+       x2="0"
+       y2="65.513016" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-87.047916,-146.05)">
+    <g
+       id="Buzzer"
+       transform="matrix(0.26458333,0,0,0.26458333,87.047916,146.05)"
+       style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+      <path
+         d="M 94.5,189 C 146.69091,189 189,146.69091 189,94.5 189,42.309091 146.69091,0 94.5,0 42.309091,0 0,42.309091 0,94.5 0,146.69091 42.309091,189 94.5,189 Z"
+         id="Oval"
+         stroke="url(#ProjetBGSmallGradient-1)"
+         stroke-width="4"
+         stroke-linecap="round"
+         stroke-dasharray="0, 22"
+         style="stroke:url(#ProjetBGSmallGradient-1)" />
+      <path
+         d="m 95,177 c 45.28735,0 82,-36.71265 82,-82 0,-45.287349 -36.71265,-82 -82,-82 -45.287349,0 -82,36.712651 -82,82 0,45.28735 36.712651,82 82,82 z"
+         id="path4"
+         fill="#9f9fff"
+         opacity="0.161989" />
+    </g>
+    <g
+       id="workflow-setting-(1)"
+       transform="matrix(0.26458333,0,0,0.26458333,102.12917,162.45417)"
+       fill="url(#ProjetBGSmallGradient-2)"
+       fill-rule="nonzero"
+       style="fill:url(#ProjetBGSmallGradient9);stroke:none;stroke-width:1">
+      <path
+         d="m 36.290633,25.276596 h -5.583174 c -3.079121,0 -5.583175,2.519234 -5.583175,5.617021 v 5.617021 c 0,3.097788 2.504054,5.617022 5.583175,5.617022 h 5.583174 c 3.079121,0 5.583174,-2.519234 5.583174,-5.617022 v -5.617021 c 0,-3.097787 -2.504053,-5.617021 -5.583174,-5.617021 z m 0,11.234042 h -5.583174 v -5.617021 h 5.583174 z m 0,-33.7021274 h -5.583174 c -3.079121,0 -5.583175,2.5192341 -5.583175,5.6170213 v 5.6170211 c 0,3.097787 2.504054,5.617022 5.583175,5.617022 h 5.583174 c 3.079121,0 5.583174,-2.519235 5.583174,-5.617022 V 8.4255319 c 0,-3.0977872 -2.504053,-5.6170213 -5.583174,-5.6170213 z m 0,11.2340424 H 30.707459 V 8.4255319 h 5.583174 z m 0,33.702128 h -5.583174 c -3.079121,0 -5.583175,2.519234 -5.583175,5.617021 v 5.617021 c 0,3.097788 2.504054,5.617022 5.583175,5.617022 h 5.583174 c 3.079121,0 5.583174,-2.519234 5.583174,-5.617022 v -5.617021 c 0,-3.097787 -2.504053,-5.617021 -5.583174,-5.617021 z m 0,11.234042 h -5.583174 v -5.617021 h 5.583174 z m 27.91308,-28.402468 c -0.47457,0 -0.954723,-0.120766 -1.393002,-0.37634 l -2.121606,-1.232936 c -1.970861,2.232766 -4.634035,3.833617 -7.648949,4.451489 v 3.09217 c 0,1.553107 -1.24784,2.808511 -2.791587,2.808511 -1.543748,0 -2.791587,-1.255404 -2.791587,-2.808511 v -5.617021 c 0,-1.550298 1.247839,-2.808511 2.791587,-2.808511 4.617285,0 8.374761,-3.780255 8.374761,-8.425531 0,-4.645277 -3.757476,-8.425532 -8.374761,-8.425532 -1.543748,0 -2.791587,-1.2582132 -2.791587,-2.8085111 V 2.8085106 C 47.456982,1.2582128 48.704821,0 50.248569,0 c 1.543747,0 2.791587,1.2582128 2.791587,2.8085106 v 3.0921702 c 3.014914,0.6178724 5.68088,2.2187235 7.648949,4.4514892 l 2.121606,-1.232936 c 1.331587,-0.7751489 3.040038,-0.3173617 3.813308,1.027915 0.770478,1.345277 0.312658,3.061277 -1.021721,3.836426 l -2.113231,1.227319 c 0.466195,1.398638 0.717438,2.892766 0.717438,4.445872 0,1.553106 -0.254035,3.050042 -0.717438,4.445872 l 2.113231,1.227319 c 1.33717,0.775149 1.794991,2.493958 1.021721,3.836426 -0.519235,0.907149 -1.454417,1.409872 -2.420306,1.409872 z M 20.696827,52.198979 c 2.177438,2.187829 2.177438,5.754638 0,7.942468 l -5.005316,5.035659 C 15.147152,65.724766 14.432506,66 13.717859,66 c -0.714646,0 -1.429292,-0.275234 -1.973652,-0.822894 -1.09151,-1.098127 -1.09151,-2.873106 0,-3.971234 l 2.213729,-2.227149 H 9.770555 C 4.3827918,58.978723 0,54.569362 0,49.148936 v -8.425532 c 0,-5.420425 4.3827918,-9.829787 9.770555,-9.829787 h 6.978968 c 1.540956,0 2.791587,1.258213 2.791587,2.808511 0,1.550297 -1.250631,2.80851 -2.791587,2.80851 H 9.770555 c -2.3086425,0 -4.1873807,1.890128 -4.1873807,4.212766 v 8.425532 c 0,2.322639 1.8787382,4.212766 4.1873807,4.212766 h 4.187381 l -2.213729,-2.227149 c -1.09151,-1.098128 -1.09151,-2.873106 0,-3.971234 1.091511,-1.098128 2.855794,-1.098128 3.947304,0 z"
+         id="Shape"
+         style="fill:url(#ProjetBGSmallGradient1)" />
+    </g>
+  </g>
+</svg>
+</template>

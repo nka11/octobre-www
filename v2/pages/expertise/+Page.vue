@@ -26,10 +26,10 @@
             <div class="flex flex-col justify-center m-0">
 
                 <div class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full py-20">
-                   <Architecture></Architecture> 
+                   <div class="hidden lg:flex"><Architecture></Architecture></div> 
                     <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
-                        <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
-                            <div class="flex-auto p-3 sm:p-6 xl:px-14">
+                        <div class="relative flex min-w-full min-h-fit break-words expertise-small-card h-full lg:px-14 xl:px-20">
+                            <div class="flex-auto p-3 sm:p-6 xl:px-14 z-10">
                                 <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
                                     <span>Architecture de Solution Digitale</span>
                                 </div>
@@ -51,7 +51,7 @@
                 </div>
                 
                 <div class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-projet bg-octobre-expertise-projet-bg">
-                    <RealisationProjet></RealisationProjet>
+                    <div class="hidden lg:flex"><RealisationProjet></RealisationProjet></div>
                     <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
                         <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
                             <div class="flex-auto p-3 sm:p-6 xl:px-14">
@@ -77,7 +77,7 @@
                 </div>
     
                 <div class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-prod">
-                    <SuiviProd></SuiviProd>
+                    <div class="hidden lg:flex"><SuiviProd></SuiviProd></div>
                     <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
                         <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
                             <div class="flex-auto p-3 sm:p-6 xl:px-14">
@@ -104,7 +104,7 @@
                 </div>
     
                 <div class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-rh bg-octobre-expertise-rh-bg">
-                    <Recrutement></Recrutement>
+                    <div class="hidden lg:flex"><Recrutement></Recrutement></div>
                     <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col ">
                         <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
                             <div class="flex-auto p-3 sm:p-6 xl:px-14">
@@ -149,6 +149,7 @@ import Recrutement from '#root/components/illustrations/Recrutement.vue'
 import RealisationProjet from '#root/components/illustrations/RealisationProjets.vue';
 import SuiviProd  from '#root/components/illustrations/SuiviProd.vue';
 import IconInteractive from '#root/components/icons/IconInteractive.vue';
+import ProjetBgSmall from '#root/components/illustrations/ProjetsBgSmall.vue'
 </script>
 <style scoped>
 
