@@ -149,8 +149,9 @@ import Recrutement from '#root/components/illustrations/Recrutement.vue'
 import RealisationProjet from '#root/components/illustrations/RealisationProjets.vue';
 import SuiviProd  from '#root/components/illustrations/SuiviProd.vue';
 import IconInteractive from '#root/components/icons/IconInteractive.vue';
-import ProjetBgSmall from '#root/components/illustrations/ProjetsBgSmall.vue'
+// import ProjetBgSmall from '#root/components/illustrations/ProjetsBgSmall.vue'
 </script>
+
 <style scoped>
 
 
