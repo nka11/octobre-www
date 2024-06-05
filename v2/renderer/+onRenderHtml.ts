@@ -23,7 +23,7 @@ const onRenderHtml: OnRenderHtmlAsync = async (pageContext): ReturnType<OnRender
   const desc = pageContext.data?.description || pageContext.config.description || 'Octobre Conseil'
 
   const documentHtml = escapeInject`<!DOCTYPE html>
-    <html lang="fr">
+    <html lang="fr" prefix="skos: http://www.w3.org/2004/02/skos/core# owl: http://www.w3.org/2002/07/owl# og: http://ogp.me/ns# dc: http://purl.org/dc/terms/ schema: http://schema.org/">
       <head>
         <meta charset="UTF-8" />
         <link rel="icon" href="${logoUrl}" />

@@ -1,6 +1,9 @@
 <template>
     <div class="lg:w-1/3 md:w-1/2 xs:w-1/2 px-4 mb-4 grid grid-rows-1 xs:grid-cols-1 w-full">
-        <div class="relative flex flex-row xs:flex-col w-full rounded-[30px] break-words border bg-white  team-card h-full" property="schema:member" typeof="schema:Role" :resource="`#${props.member.roleId}`">
+        <div 
+            property="schema:member" typeof="schema:Role" :resource="`#${props.member.roleId}`"
+            class="relative flex flex-row xs:flex-col w-full rounded-[30px] break-words border bg-white  team-card h-full"
+             >
             <div class="flex-auto p-4 xs:p-6">
                 <div class="w-full flex flex-row xs:flex-col xs:py-8 justify-start items-center">
                     <a :id="`#${props.member.id}`" href="#">
@@ -8,7 +11,7 @@
                     <div class="grow flex flex-row xs:flex-col xs:py-2 items-center text-center">
                         <div class="min-w-20"
                             property="schema:member" typeof="schema:Person" :resource="`#${props.member.id}`">
-                            <img
+                            <img property="schema:image"
                                 :src="props.member.pic" class="avatar" alt="avatar">
                         </div>
                         <div class="text-left pl-4 xs:pl-0 py-2 xs:py-4 xs:text-center">
@@ -29,6 +32,7 @@
                         <p property="schema:description"></p>
                         </div>
                     </div>
+                    <span property="schema:sameAs" class="hidden">{{ props.member.linkedIn }}</span>
                     <a :href="props.member.linkedIn" target="_blank">
                         <img src="/icons/icon-linkedin.svg" alt="icon-linkedin" class="icon">
                     </a>

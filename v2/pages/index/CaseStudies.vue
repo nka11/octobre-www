@@ -197,9 +197,9 @@ const case_studies = [{
     class: 'block-color-green',
     backgroundImage: '/images/use-cases/case_study_1_back.jpeg',
     kpi: {
-        prefix: 'PLUS DE',
+        prefix: 'PLUS DE ',
         strong: '80%',
-        suffix: 'des utilisateurs estiment que les évolutions ont un impact positif sur leur efficacité.'
+        suffix: ' des utilisateurs estiment que les évolutions ont un impact positif sur leur efficacité.'
     },
     title: "Digitalisation de l'operationnel",
     author: {
@@ -218,9 +218,9 @@ const case_studies = [{
         class: "block-color-blue",
         backgroundImage: "/images/use-cases/case_study_2_back.jpg",
         kpi: {
-            prefix: "AMÉLIORATION DE",
+            prefix: "AMÉLIORATION DE ",
             strong: "20%",
-            suffix: "de satisfaction client en augmentant la fréquence de mise à jour de notre produit"
+            suffix: " de satisfaction client en augmentant la fréquence de mise à jour de notre produit"
         },
         title: "USINE LOGICIELLE",
         author: {
@@ -239,9 +239,9 @@ const case_studies = [{
         class: "block-color-ocre",
         backgroundImage: "/images/use-cases/case_study_3_back.jpeg",
         kpi: {
-            prefix: "UNE ÉLIGIBILITÉ SUR",
+            prefix: "UNE ÉLIGIBILITÉ SUR ",
             strong: "+ 30%",
-            suffix: "d'appels d'offres en moins d'un an."
+            suffix: " d'appels d'offres en moins d'un an."
         },
         title: "PERFORMANCE SÉCURISÉE / CYBER-HYGIÈNE",
         author: {
@@ -261,7 +261,7 @@ const case_studies = [{
         class: "block-color-violet",
         backgroundImage: "/images/use-cases/case_study_4_back.jpg",
         kpi: {
-            prefix: "ACQUISITION DE",
+            prefix: "ACQUISITION DE ",
             strong: "40%",
             suffix: " sur les fonctions supports et commerciales et une réduction significative du Turn Over."
         },

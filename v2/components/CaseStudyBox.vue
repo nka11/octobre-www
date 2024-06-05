@@ -1,6 +1,6 @@
 <template>
     <div :class="props.class" class="mt-2 case-study group flex flex-col-reverse rounded-[30px] justify-center items-center w-full"
-      property="schema:review" typeof="schema:Review">
+      property="schema:review" typeof="schema:Review" :resource="`#review-${props.title}`">
       <div class="flex flex-col-reverse lg:group-odd:flex-row-reverse lg:group-even:flex-row lg:flex-auto rounded-[30px] w-full justify-center lg:justify-normal h-full">
       <div 
         :style="styleBackground"
@@ -19,13 +19,13 @@
                 </div>
                 <div class="p-4 lg:w-full sm:w-full pr-4 pl-4 spe-col rounded-t-[30px] lg:group-odd:rounded-l-[30px] lg:group-odd:rounded-tr-none lg:group-even:rounded-r-[30px] lg:group-even:rounded-tl-none">
                     <div class="relative flex flex-col w-full break-words case-study-small-card h-full">
-                        <div property="schema:reviewBody" class="flex flex-col w-full p-6 justify-center justify-items-center content-center ">
+                        <div class="flex flex-col w-full p-6 justify-center justify-items-center content-center ">
                             <div class="mb-3 text-center lg:text-left uppercase text-xl lg:text-3xl font-bold py-5" >
                                 <span property="schema:name">{{ props.title }}</span>
                             </div>
-                            <div class="auteur strong-block w-fit self-center lg:self-start rounded-[30px] py-4 px-5">
+                            <div property="schema:author" typeof="schema:Person" :resource="`#review-${props.title}-author`" class="auteur strong-block w-fit self-center lg:self-start rounded-[30px] py-4 px-5">
                                 <!-- <div class="photo-auteur hidden"><img src="./assets/photos/profil-pic.png"></div> -->
-                                <div class="infos-auteur" property="schema:name">
+                                <div class="infos-auteur">
                                     <div id="new" class="mb-0" property="schema:givenName">
                                         <strong>{{ props.author.firstName }}</strong>
                                     </div>
@@ -35,10 +35,12 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-items-center justify-center content-center bg-white rounded-[30px] px-6 py-4 mt-6">
-                                <div class="text-center py-2" property="schema:memberOf" typeof="schema:Organization">
-                                    <span property="schema:name">
-                                        {{ props.review.memberOf }}
-                                    </span>
+                                <div property="schema:author" typeof="schema:Person" :resource="`#review-${props.title}-author`">
+                                    <div class="text-center py-2" property="schema:memberOf" typeof="schema:Organization">
+                                        <span property="schema:name">
+                                            {{ props.review.memberOf }}
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="mb-0 text-justify text-octobre-mid-grey" property="schema:reviewBody"> 
                                     "<div class="inline" v-html="$props.review.body"></div>"

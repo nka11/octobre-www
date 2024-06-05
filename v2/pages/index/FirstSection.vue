@@ -2,7 +2,7 @@
     <section class="first-section w-full">
       <div class="split w-full px-10">
         <div class="flex flex-col mt-5 justify-center bg-right-bottom rounded-[30px] h-[500px] bg-[url('/public/images/first_back_sm.png')] md:bg-[url('/public/images/first_back_md.png')] lg:bg-[url('/images/first_back_lg.png')] xl:bg-[url('/images/first_back_xl.png')] container min-w-sm mx-auto sm:px-4 justify-items-center max-w-screen-xl">
-          <div class="flex flex-col justify-around text-center" typeof="schema:Organization" resource=".">
+          <div class="flex flex-col justify-around text-center" typeof="schema:Organization owl:Thing" resource=".">
             <div class="flex flex-row justify-around text-center">
               <p class="text-white font-bold leading-relaxed text-4xl pt-9 pb-20 max-w-[60%]" property="schema:description">
                 Construisons ensemble des solutions digitales 
