@@ -12,7 +12,7 @@
                                 :src="props.member.pic" class="avatar" alt="avatar">
                         </div>
                         <div class="text-left pl-4 xs:pl-0 py-2 xs:py-4 xs:text-center">
-                            <div property="schema:member" typeof="schema:Person" resource="#{{ props.member.givenName }}.{{ props.member.familyName }}">
+                            <div property="schema:member" typeof="schema:Person" :resource="'#' + props.member.givenName + '.' + props.member.familyName">
                                 <div class="person-name" property="schema:name"><span
                                     property="schema:givenName">{{ props.member.givenName }}&nbsp;</span><span
                                     property="schema:familyName">{{ props.member.familyName }}</span></div>
