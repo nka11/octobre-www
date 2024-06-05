@@ -139,15 +139,13 @@
                     </div>
                 </div>
             </div>
-            <p class="p-5 mb-2 lg:px-6 text-justify bg-octobre-white rounded-[30px] text-lg">
-                <div class="mb-0 text-justify text-octobre-grey px-4 py-6">
+            <div class="mb-0 text-justify text-octobre-grey px-4 py-6">
 
-                    En choisissant Octobre Conseil, vous ne faites pas qu'adopter la transformation digitale;
-                    vous écrivez une nouvelle ère pour votre entreprise. Nous sommes les alchimistes qui fusionnent technologie,
-                    avantages gouvernementaux et ressources humaines exceptionnelles. Ensemble, nous sculptons le futur numérique
-                    de votre entreprise, où l'excellence devient la norme.
-                </div>
-            </p>
+                En choisissant Octobre Conseil, vous ne faites pas qu'adopter la transformation digitale;
+                vous écrivez une nouvelle ère pour votre entreprise. Nous sommes les alchimistes qui fusionnent technologie,
+                avantages gouvernementaux et ressources humaines exceptionnelles. Ensemble, nous sculptons le futur numérique
+                de votre entreprise, où l'excellence devient la norme.
+            </div>
 
         </div>
     </div>
