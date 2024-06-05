@@ -23,7 +23,7 @@
                             <div class="mb-3 text-center lg:text-left uppercase text-xl lg:text-3xl font-bold py-5" >
                                 <span property="schema:name">{{ props.title }}</span>
                             </div>
-                            <div property="schema:author" typeof="schema:Person" :resource="`#review-${props.title}-author`" class="auteur strong-block w-fit self-center lg:self-start rounded-[30px] py-4 px-5">
+                            <div property="schema:author" typeof="schema:Person" :resource="`#review-${props.title.replaceAll(/([^a-zA-Z])/g, '')}-author`" class="auteur strong-block w-fit self-center lg:self-start rounded-[30px] py-4 px-5">
                                 <!-- <div class="photo-auteur hidden"><img src="./assets/photos/profil-pic.png"></div> -->
                                 <div class="infos-auteur">
                                     <div id="new" class="mb-0" property="schema:givenName">
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-items-center justify-center content-center bg-white rounded-[30px] px-6 py-4 mt-6">
-                                <div property="schema:author" typeof="schema:Person" :resource="`#review-${props.title}-author`">
+                                <div property="schema:author" typeof="schema:Person" :resource="`#review-${props.title.replaceAll(/([^a-zA-Z])/g, '')}-author`">
                                     <div class="text-center py-2" property="schema:memberOf" typeof="schema:Organization">
                                         <span property="schema:name">
                                             {{ props.review.memberOf }}
