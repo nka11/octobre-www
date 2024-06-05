@@ -55,9 +55,9 @@ deployment:
       RewriteEngine On 
       RewriteCond %{HTTP:X-Forwarded-Proto} !https
       RewriteCond %{HTTPS} !on
-      RewriteRule ^(.*) https://octobre.tech/%{REQUEST_URI} [L,R=301]
-      SetEnvIf Host "www" IS_WWW
-      Header add Link "<https://octobre.tech/%{REQUEST_URI}e>; rel=\"canonical\"" env=IS_WWW
+      RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+      SetEnvIf Host "www.*" IS_WWW
+      Header add Link "<https://octobre.tech%{REQUEST_URI}s>; rel=\"canonical\"" env=IS_WWW
       EOF
       # CREATE_OCTOBRE_APP=$(cloudlinux-selector get   \
       #     --json --interpreter nodejs \
