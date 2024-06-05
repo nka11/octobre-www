@@ -1,6 +1,6 @@
 <template>
     <div class="lg:w-1/3 md:w-1/2 xs:w-1/2 px-4 mb-4 grid grid-rows-1 xs:grid-cols-1 w-full">
-        <div class="relative flex flex-row xs:flex-col w-full rounded-[30px] break-words border bg-white  team-card h-full" property="schema:member" typeof="schema:Role">
+        <div class="relative flex flex-row xs:flex-col w-full rounded-[30px] break-words border bg-white  team-card h-full" property="schema:member" typeof="schema:Role" :resource="`#${props.member.roleId}`">
             <div class="flex-auto p-4 xs:p-6">
                 <div class="w-full flex flex-row xs:flex-col xs:py-8 justify-start items-center">
                     <a :id="`#${props.member.id}`" href="#">
@@ -12,7 +12,7 @@
                                 :src="props.member.pic" class="avatar" alt="avatar">
                         </div>
                         <div class="text-left pl-4 xs:pl-0 py-2 xs:py-4 xs:text-center">
-                            <div property="schema:member" typeof="schema:Person" :resource="'#' + props.member.givenName + '.' + props.member.familyName">
+                            <div property="schema:member" typeof="schema:Person" :resource="`#${props.member.id}`">
                                 <div class="person-name" property="schema:name"><span
                                     property="schema:givenName">{{ props.member.givenName }}&nbsp;</span><span
                                     property="schema:familyName">{{ props.member.familyName }}</span></div>
@@ -46,6 +46,7 @@ const props = defineProps<{
         familyName: String,
         jobTitle: String,
         roleName: String,
+        roleId: String,
         pic: string,
         description: String[],
         linkedIn: string

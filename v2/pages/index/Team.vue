@@ -189,7 +189,8 @@ const members = [{
         givenName: "Samuel",
         familyName: "Assoun",
         jobTitle: "L'alchimiste",
-        roleName: "Co-fondateur & Responsable des opérations",
+        roleName: "Co-fondateur & Responsable des Opérations",
+        roleId: "funder+op",
         description: [],
         linkedIn: "https://www.linkedin.com/in/samuel-assoun-72847367/",
         pic: "/images/team-members/samuel_picture.jpg"
@@ -199,6 +200,7 @@ const members = [{
         familyName: "Karageuzian",
         jobTitle: "Digital Shaman",
         roleName: "Co-fondateur & Architecte Solution",
+        roleId: "funder+SolutionArchitecte",
         description: [
             "IAM & SSO Expert (SAML/OIDC - LDAP & Provider + client implementation)",
             "Artisan du code",
@@ -212,6 +214,7 @@ const members = [{
         familyName: "Zyssman",
         jobTitle: "IA, machine learning & MLOps expert",
         roleName: "Data Strategy Officer",
+        roleId: "dataStrategyOfficer",
         description: [
             "Le mentor"
         ],
@@ -223,6 +226,7 @@ const members = [{
         familyName: "Teboul",
         jobTitle: "L'artistet",
         roleName: "UX / UI Designer",
+        roleId: "userExperienceDesign",
         description: [
         ],
         linkedIn: "https://www.linkedin.com/in/remyteboul/",
@@ -233,6 +237,7 @@ const members = [{
         familyName: "Cherqui",
         jobTitle: "L'Attrape-talents",
         roleName: "Responsable recrutement / marque employeur",
+        roleId: "TalentRecruter",
         description: [
         ],
         linkedIn: "https://www.linkedin.com/in/celine-cherqui-oneway-recrutement-experience-candidats-collaborateurs/",
@@ -243,6 +248,7 @@ const members = [{
         familyName: "Fajnkuchen",
         jobTitle: "Le prince des hackers / Petit scarabée",
         roleName: "Ingénieur Logiciel",
+        roleId: "softwareEngineer",
         description: [
         ],
         linkedIn: "https://www.linkedin.com/in/ethan-fajnkuchen/",
