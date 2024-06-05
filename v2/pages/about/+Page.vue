@@ -2,8 +2,8 @@
   <div class="container flex flex-col w-max">
 
     <h2 class="text-center text-3xl p-12">Mentions légales</h2>
-        <div class="flex">
-            <div class="basis-2/3 p-8 text-justify bg-octobre-expertise-intro-bg">
+        <div class="md:flex">
+            <div class="md:basis-2/3 p-8 text-justify bg-octobre-expertise-intro-bg">
               <h3 class="text-2xl py-6">Données personnelles</h3>
               <p>
                   Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée,
@@ -32,7 +32,7 @@
                   Le présent site est soumis à la loi française.
               </p>
             </div>
-            <div class="basis-1/3 pl-6">
+            <div class="md:basis-1/3 pl-6">
                 <h3 class="text-2xl py-6">Éditeur du site :</h3>
                 <p>
                     85 Conseil et Recrutement <br/>
