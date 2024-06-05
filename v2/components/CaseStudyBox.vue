@@ -1,6 +1,6 @@
 <template>
     <div :class="props.class" class="mt-2 case-study group flex flex-col-reverse rounded-[30px] justify-center items-center w-full"
-      property="schema:review" typeof="schema:Review" :resource="`#review-${props.title}`">
+      property="schema:review" typeof="schema:Review" :resource="`#review-${props.title.replaceAll(/([^a-zA-Z])/g, '')}`">
       <div class="flex flex-col-reverse lg:group-odd:flex-row-reverse lg:group-even:flex-row lg:flex-auto rounded-[30px] w-full justify-center lg:justify-normal h-full">
       <div 
         :style="styleBackground"
