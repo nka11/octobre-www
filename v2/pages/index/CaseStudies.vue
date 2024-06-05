@@ -1,5 +1,6 @@
 <template>
-    <section class="px-3 container min-w-md mx-auto sm:px-4 case_studies mt-14 pt-16 border-t border-octobre-cream" typeof="schema:Organization" resource=".">
+    <section
+        class="px-3 container min-w-md mx-auto sm:px-4 case_studies mt-14 pt-16 border-t border-octobre-cream">
       <div class="flex flex-wrap ">
         <div class="relative flex-grow max-w-full flex-1 px-4 py-4">
           <h2 class="text-center text-octobre-grey text-[1.5em]"><a id="case-studies" href="#case-studies">CAS CLIENTS</a></h2>
@@ -202,12 +203,14 @@ const case_studies = [{
         suffix: ' des utilisateurs estiment que les évolutions ont un impact positif sur leur efficacité.'
     },
     title: "Digitalisation de l'operationnel",
+    itemReviewed: "/expertise/#architecture-it",
     author: {
         firstName: 'Eric',
         title: 'Directeur des opérations',
+        memberOf: 'PME dans le domaine de la logistique',
     },
     review: {
-        memberOf: 'PME dans le domaine de la logistique',
+        rating: 5,
         body: "Octobre nous a aidés à mettre en oeuvre un nouvel \
                                     <span property=\"schema:keywords\"> outil de gestion \"ERP\" </span>\
                                     en s'appuyant sur notre système existant, et l'a configuré de sorte qu'il reponde à nos besoins et nos \
@@ -223,12 +226,14 @@ const case_studies = [{
             suffix: " de satisfaction client en augmentant la fréquence de mise à jour de notre produit"
         },
         title: "USINE LOGICIELLE",
+        itemReviewed: "/expertise/#architecture-it",
         author: {
             firstName: "Robert",
             title: "Directeur général",
+            memberOf: "Editeur BtB de solutions métiers",
         },
         review: {
-            memberOf: "Editeur BtB de solutions métiers",
+            rating: 5,
             body: "La pratique <span \
                             property=\"schema:keywords\">agile</span> et l'expertise <span \
                             property=\"schema:keywords\">Devops</span> d'Octobre ont permis d'accélérer l'évolution des \
@@ -244,12 +249,14 @@ const case_studies = [{
             suffix: " d'appels d'offres en moins d'un an."
         },
         title: "PERFORMANCE SÉCURISÉE / CYBER-HYGIÈNE",
+        itemReviewed: "/expertise/#architecture-it",
         author: {
             firstName: "Pascal",
             title: "Directeur commercial",
+            memberOf: "PME dans le domaine aéronautique (BtB)",
         },
         review: {
-            memberOf: "PME dans le domaine aéronautique (BtB)",
+            rating: 5,
             body: "Octobre a réalisé un <span \
                     property=\"schema:keywords\">audit</span> de notre <span property=\"schema:keywords\">système\
                     d'information</span> et nous a accompagnés pour obtenir les <span \
@@ -266,12 +273,14 @@ const case_studies = [{
             suffix: " sur les fonctions supports et commerciales et une réduction significative du Turn Over."
         },
         title: "MARQUE EMPLOYEUR 3.0",
+        itemReviewed: "/expertise/#resources-humaines",
         author: {
             firstName: "Xavier",
             title: "Directeur des ressources humaines",
+            memberOf: "ETI dans le domaine de la logistique",
         },
         review: {
-            memberOf: "ETI dans le domaine de la logistique",
+            rating: 5,
             body: "L'amélioration de notre CRM et de notre processus de recrutement ont eu un impact positif sur l'expérience&nbsp;candidats."
         }
     }

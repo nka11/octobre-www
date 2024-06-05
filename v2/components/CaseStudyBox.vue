@@ -1,13 +1,19 @@
 <template>
     <div :class="props.class" class="mt-2 case-study group flex flex-col-reverse rounded-[30px] justify-center items-center w-full"
-      property="schema:review" typeof="schema:Review" :resource="`#review-${props.title.replaceAll(/([^a-zA-Z])/g, '')}`">
+      typeof="schema:Review" :about="`/#review-${props.title.replaceAll(/([^a-zA-Z])/g, '')}`">
+      <div class="hidden">
+          <span property="schema:itemReviewed" typeof="skos:Concept" :resource="`${props.itemReviewed}`"></span>
+          <span property="schema:reviewRating" typeof="schema:Rating">
+            <span property="schema:ratingValue" :content="props.review.rating"></span>
+          </span>
+      </div>
       <div class="flex flex-col-reverse lg:group-odd:flex-row-reverse lg:group-even:flex-row lg:flex-auto rounded-[30px] w-full justify-center lg:justify-normal h-full">
       <div 
         :style="styleBackground"
         class="flex rounded-[30px] w-full h-full lg:h-auto justify-around lg:flex-col-reverse lg:justify-normal lg:justify-items-start bg-left-top bg-cover  lg:group-odd:rounded-l-none lg:group-even:rounded-r-none lg:group-odd:rounded-r-[30px] lg:group-even:rounded-l-[30px]">
           <div class="flex flex-row-reverse w-full justify-end h-auto">
               <div class="flex justify-self-end w-full p-6 lg:group-even:ml-auto mt-auto strong-block lg:w-1/2 rounded-b-[30px] lg:group-odd:rounded-bl-none lg:group-odd:rounded-r-[30px] lg:group-odd:rounded-t-[30px] lg:group-even:rounded-br-none lg:group-even:rounded-l-[30px] lg:group-even:rounded-t-[30px]">
-                  <div class="flex flex-col justify-center w-full lg:justify-start"  property="schema:reviewBody">
+                  <div property="schema:reviewBody" class="flex flex-col justify-center w-full lg:justify-start">
                       <div class="mb-3 w-full text-center text-lg">{{ props.kpi.prefix }}</div>
                       <strong class="text-7xl w-full text-center pt-1 pb-3">{{ props.kpi.strong }}</strong>
                       <div class="mb-0 text-sm text-center">{{ props.kpi.suffix }}</div>
@@ -38,7 +44,7 @@
                                 <div property="schema:author" typeof="schema:Person" :resource="`#review-${props.title.replaceAll(/([^a-zA-Z])/g, '')}-author`">
                                     <div class="text-center py-2" property="schema:memberOf" typeof="schema:Organization">
                                         <span property="schema:name">
-                                            {{ props.review.memberOf }}
+                                            {{ props.author.memberOf }}
                                         </span>
                                     </div>
                                 </div>
@@ -65,13 +71,15 @@ const props = defineProps<{
         suffix: String
     },
     title: String,
+    itemReviewed: String,
     author: {
         firstName: String,
         title: String,
+        memberOf: String,
     },
     review: {
-        memberOf: String,
-        body: String
+        body: String,
+        rating: Number,
     }
 }>()
 const styleBackground = reactive({

@@ -31,7 +31,7 @@
                     class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full py-20">
                    <div class="hidden lg:flex"><Architecture></Architecture></div> 
                     <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
-                        <div typeof="skos:Concept owl:Thing" resource="/expertise/#architecture-it" property="schema:knowsAbout"
+                        <div resource="/expertise/#architecture-it" property="schema:knowsAbout" typeof="skos:Concept owl:Thing" 
                              class="relative flex min-w-full min-h-fit break-words expertise-small-card h-full lg:px-14 xl:px-20">
                             <div class="flex-auto p-3 sm:p-6 xl:px-14 z-10">
                                 <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >

@@ -16,7 +16,7 @@
             </div>
             <div class="container px-4 mt-4 expertise-presentation pb-10">
                 <div class="flex flex-wrap justify-center justify-items-center">
-                    <ExpertiseCard v-for="expertise in expertises" :title="expertise.title"><component :is="expertise.icon"></component></ExpertiseCard>
+                    <ExpertiseCard v-for="expertise in expertises" :title="expertise.title" :about="expertise.about"><component :is="expertise.icon"></component></ExpertiseCard>
                     
                 </div>
             </div>
@@ -37,16 +37,20 @@ import IconRH from '#root/components/icons/IconRH.vue';
 import ExpertiseCard from '#root/components/ExpertiseCard.vue';
 const expertises = [{
         icon: IconArchi,
-        title: "Architecture de solution Digitale"
+        title: "Architecture de solution Digitale",
+        about: "/expertise/#architecture-it"
     },{
         icon: IconProd,
-        title: "Suivi de production"
+        title: "Suivi de production",
+        about: "/expertise/#suivi-production"
     },{
         icon: IconProjet,
-        title: "Gestion de projets"
+        title: "Gestion de projets",
+        about: "/expertise/#project-management"
     },{
         icon: IconRH,
-        title: "Recrutement & Strategie RH"
+        title: "Recrutement & Strategie RH",
+        about: "/expertise/#resources-humaines"
     }
 ]
 
