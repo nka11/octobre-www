@@ -27,11 +27,12 @@
             </div>
             <div class="flex flex-col justify-center m-0">
 
-                <div typeof="skos:Concept owl:Thing" resource="/expertise/#architecture-it" property="schema:knowsAbout" 
+                <div 
                     class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full py-20">
                    <div class="hidden lg:flex"><Architecture></Architecture></div> 
                     <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
-                        <div class="relative flex min-w-full min-h-fit break-words expertise-small-card h-full lg:px-14 xl:px-20">
+                        <div typeof="skos:Concept owl:Thing" resource="/expertise/#architecture-it" property="schema:knowsAbout"
+                             class="relative flex min-w-full min-h-fit break-words expertise-small-card h-full lg:px-14 xl:px-20">
                             <div class="flex-auto p-3 sm:p-6 xl:px-14 z-10">
                                 <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
                                     <span property="skos:prefLabel">Architecture de Solution Digitale</span>
@@ -53,11 +54,12 @@
                     </div>
                 </div>
                 
-                <div typeof="skos:Concept owl:Thing" resource="/expertise/#project-management" property="schema:knowsAbout"
+                <div
                     class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-projet bg-octobre-expertise-projet-bg">
                     <div class="hidden lg:flex"><RealisationProjet></RealisationProjet></div>
                     <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
-                        <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
+                        <div typeof="skos:Concept owl:Thing" resource="/expertise/#project-management" property="schema:knowsAbout"
+                             class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
                             <div class="flex-auto p-3 sm:p-6 xl:px-14">
                                 <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
                                     <span property="skos:prefLabel">
@@ -80,11 +82,12 @@
                     </div>
                 </div>
     
-                <div typeof="skos:Concept owl:Thing" resource="/expertise/#suivi-production" property="schema:knowsAbout" 
+                <div  
                     class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-prod">
                     <div class="hidden lg:flex"><SuiviProd></SuiviProd></div>
                     <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
-                        <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
+                        <div typeof="skos:Concept owl:Thing" resource="/expertise/#suivi-production" property="schema:knowsAbout"
+                             class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
                             <div class="flex-auto p-3 sm:p-6 xl:px-14">
                                 <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
                                     <span property="skos:prefLabel">
@@ -108,11 +111,12 @@
                     </div>
                 </div>
     
-                <div typeof="skos:Concept owl:Thing" resource="/expertise/#resources-humaines" property="schema:knowsAbout" 
+                <div 
                     class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-rh bg-octobre-expertise-rh-bg">
                     <div class="hidden lg:flex"><Recrutement></Recrutement></div>
                     <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col ">
-                        <div class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
+                        <div typeof="skos:Concept owl:Thing" resource="/expertise/#resources-humaines" property="schema:knowsAbout"
+                             class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
                             <div class="flex-auto p-3 sm:p-6 xl:px-14">
                                 <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
                                     <span property="skos:prefLabel">
