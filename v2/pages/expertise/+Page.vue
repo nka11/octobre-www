@@ -26,120 +26,10 @@
                 </div>
             </div>
             <div class="flex flex-col justify-center m-0">
-
-                <div 
-                    class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full py-20">
-                   <div class="hidden lg:flex"><Architecture></Architecture></div> 
-                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
-                        <div resource="/expertise/#architecture-it" property="schema:knowsAbout" typeof="skos:Concept owl:Thing" 
-                             class="relative flex min-w-full min-h-fit break-words expertise-small-card h-full lg:px-14 xl:px-20">
-                            <div class="flex-auto p-3 sm:p-6 xl:px-14 z-10">
-                                <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
-                                    <span property="skos:prefLabel">Architecture de Solution Digitale</span>
-                                </div>
-                                <div>
-                                    <div property="skos:editorialNote" class="mb-0  text-octobre-dark-grey px-4 py-6">
-                                        Notre approche commence par un cadrage méticuleux,
-                                        où chaque détail est soigneusement considéré.
-                                    </div>
-                                    <div property="skos:definition" class="mb-0 text-octobre-grey px-4 py-6">
-                                        
-                                        De l'expression sur mesure de vos besoins à l'intégration logicielle innovante,
-                                        en passant par la rédaction de roadmaps stratégiques,
-                                        nous sculptons des architectures digitales en phase avec vos besoins réels.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div
-                    class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-projet bg-octobre-expertise-projet-bg">
-                    <div class="hidden lg:flex"><RealisationProjet></RealisationProjet></div>
-                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
-                        <div typeof="skos:Concept owl:Thing" resource="/expertise/#project-management" property="schema:knowsAbout"
-                             class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
-                            <div class="flex-auto p-3 sm:p-6 xl:px-14">
-                                <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
-                                    <span property="skos:prefLabel">
-                                        Réalisation de Projets
-                                    </span>
-                                </div>
-                                <div>
-                                    <div property="skos:editorialNote" class="mb-0  text-octobre-dark-grey px-4 py-6">
-                                        Nous ne nous contentons pas de gérer des projets ; 
-                                        nous les orchestrons avec une précision exceptionnelle.
-                                    </div>
-                                    <div property="skos:definition" class="mb-0 text-octobre-grey px-4 py-6">
-                                        
-                                        Nos experts en gestion de projet, tech lead, et en conception et développement sont les artisans de vos aspirations digitales.
-                                        Le suivi opérationnel minutieux assure une exécution sans faille.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div  
-                    class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-prod">
-                    <div class="hidden lg:flex"><SuiviProd></SuiviProd></div>
-                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col">
-                        <div typeof="skos:Concept owl:Thing" resource="/expertise/#suivi-production" property="schema:knowsAbout"
-                             class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
-                            <div class="flex-auto p-3 sm:p-6 xl:px-14">
-                                <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
-                                    <span property="skos:prefLabel">
-                                        Suivi de Production
-                                    </span>
-                                </div>
-                                <div>
-                                    <div property="skos:editorialNote" class="mb-0  text-octobre-dark-grey px-4 py-6">
-                                        Le suivi opérationnel chez Octobre Conseil est une fusion d'art et de science.
-                                    </div>
-                                    <div property="skos:definition" class="mb-0 text-octobre-grey px-4 py-6">
-                                        Nos services FinOps sculptent les coûts avec une précision chirurgicale,
-                                        tandis que notre gestion des incidents, avec alerting et détection des menaces,
-                                        crée une forteresse numérique impénétrable.
-                                        La prévention des risques IT est inscrite dans notre ADN,
-                                        garantissant une tranquillité d'esprit à long terme.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div 
-                    class="expertise group flex flex-col-reverse md:even:flex-row md:odd:flex-row-reverse justify-center items-center w-full  py-20 expert-rh bg-octobre-expertise-rh-bg">
-                    <div class="hidden lg:flex"><Recrutement></Recrutement></div>
-                    <div class="lg:w-1/2 md:w-full sm:w-full pr-4 pl-4 spe-col ">
-                        <div typeof="skos:Concept owl:Thing" resource="/expertise/#resources-humaines" property="schema:knowsAbout"
-                             class="relative flex min-w-0 break-words expertise-small-card h-full lg:px-14 xl:px-20">
-                            <div class="flex-auto p-3 sm:p-6 xl:px-14">
-                                <div class="mb-1 sm:mb-2 p-1 sm:p-3 card-title" >
-                                    <span property="skos:prefLabel">
-                                        Recrutement / Stratégie RH
-                                    </span>
-                                </div>
-                                <div>
-                                    <div property="skos:editorialNote" class="mb-0  text-octobre-dark-grey px-4 py-6">
-                                        Nous comprenons que la technologie n'est rien sans les talents qui la propulsent.
-                                    </div>
-                                    <div property="skos:definition" class="mb-0 text-octobre-grey px-4 py-6">
-                                        Octobre Conseil offre bien plus qu'un simple accompagnement ;
-                                        nous sommes les architectes de votre capital humain.
-                                        De la délégation de personnel à la formation et au mentoring,
-                                        notre approche RH aide a concevoir la manière dont votre entreprises va embrasser le changement.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <ExpertiseSection v-for="expertise in expertises" :id="expertise.id" :title="expertise.title" :intro="expertise.intro" :description="expertise.description" :class="expertise.class"><component :is="expertise.illustration"></component></ExpertiseSection>
+                 
             </div>
-            <div class="mb-0 text-justify text-octobre-grey px-4 py-6">
+            <div property="schema:description" class="mb-0 text-justify text-octobre-grey px-4 py-6">
 
                 En choisissant Octobre Conseil, vous ne faites pas qu'adopter la transformation digitale;
                 vous écrivez une nouvelle ère pour votre entreprise. Nous sommes les alchimistes qui fusionnent technologie,
@@ -158,7 +48,57 @@ import RealisationProjet from '#root/components/illustrations/RealisationProjets
 import SuiviProd  from '#root/components/illustrations/SuiviProd.vue';
 import IconInteractive from '#root/components/icons/IconInteractive.vue';
 // import ProjetBgSmall from '#root/components/illustrations/ProjetsBgSmall.vue'
+import ExpertiseSection from "#root/components/ExpertiseSection.vue"
+
+const expertises = [
+    {
+        class: "",
+        illustration: Architecture,
+        id: "/expertise/#architecture-it",
+        title: "Architecture de Solution Digitale",
+        intro: `Notre approche commence par un cadrage méticuleux,
+                où chaque détail est soigneusement considéré.`,
+        description: `De l'expression sur mesure de vos besoins à l'intégration logicielle innovante,
+                                        en passant par la rédaction de roadmaps stratégiques,
+                                        nous sculptons des architectures digitales en phase avec vos besoins réels.`
+    },
+    {
+        class: "expert-projet bg-octobre-expertise-projet-bg",
+        id: "/expertise/#project-management",
+        illustration: RealisationProjet,
+        title: "Réalisation de Projets",
+        intro: `Nous ne nous contentons pas de gérer des projets ; 
+                nous les orchestrons avec une précision exceptionnelle.`,
+        description: `Nos experts en gestion de projet, tech lead, et en conception et développement sont les artisans de vos aspirations digitales.
+                    Le suivi opérationnel minutieux assure une exécution sans faille.`
+    },
+    {
+        class: "expert-prod",
+        id: "/expertise/#suivi-production",
+        illustration: SuiviProd,
+        title: "Suivi de Production",
+        intro: "Le suivi opérationnel chez Octobre Conseil est une fusion d'art et de science.",
+        description: `Nos services FinOps sculptent les coûts avec une précision chirurgicale,
+                    tandis que notre gestion des incidents, avec alerting et détection des menaces,
+                    crée une forteresse numérique impénétrable.
+                    La prévention des risques IT est inscrite dans notre ADN,
+                    garantissant une tranquillité d'esprit à long terme.`
+    },
+    {
+    class: "expert-rh bg-octobre-expertise-rh-bg",
+    id: "/expertise/#resources-humaines",
+    illustration: Recrutement,
+    title: "Recrutement / Stratégie RH",
+    intro: `Nous comprenons que la technologie n'est rien sans les talents qui la propulsent.`,
+    description: `Octobre Conseil offre bien plus qu'un simple accompagnement ;
+                nous sommes les architectes de votre capital humain.
+                De la délégation de personnel à la formation et au mentoring,
+                notre approche RH aide a concevoir la manière dont votre entreprises va embrasser le changement.`
+    }
+]
+
 </script>
+
 
 <style scoped>
 
@@ -169,26 +109,11 @@ import IconInteractive from '#root/components/icons/IconInteractive.vue';
 .case_button_up {
     @apply py-2 px-4 my-4 mb-6 rounded-[30px];
 }
-
-.expertise {
-    @apply my-2;
-}
-
 .case_button_down {
     @apply py-2 px-4 my-4 mt-6 rounded-[30px];
 }
-.expertise .spe-col .expertise-small-card .card-title {
-    font-size: 30px;
-    letter-spacing: 0;
-    width: 100%;
-    text-transform: uppercase;
-}
 
-@flex items-start (min-width: 992px)
-.expertise .spe-col .expertise-small-card .card-title {
-    text-align: left!important;
-    width: 80%;
-}
+
 .icon-expertise > svg {
     zoom: 200%;
 }

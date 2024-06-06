@@ -1,5 +1,5 @@
 <template>
-<svg width="653px" height="392px" viewBox="0 0 653 392" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="653px" height="392px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 653 392" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Group 13 Copy 3</title>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="octobreProdIlluGradient-1">

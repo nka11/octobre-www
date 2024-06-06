@@ -1,5 +1,5 @@
 <template>
-<svg width="650px" height="383px" viewBox="0 0 650 383" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="650px" height="383px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 650 383" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Illu-resalisation de projets</title>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="octobreProjetIlluGradient-1">
